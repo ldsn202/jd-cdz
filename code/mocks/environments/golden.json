@@ -1,0 +1,7 @@
+{
+  "envId": "golden",
+  "port": 8794,
+  "dataset": "golden-v1",
+  "storageRoot": ".data/golden",
+  "appEnvRef": "jd-charging-local"
+}

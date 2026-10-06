@@ -1,0 +1,193 @@
+{
+  "datasetId": "demo-10-v4",
+  "envId": "mock-env-a",
+  "assertions": [
+    {
+      "id": "SCALE-PROVIDERS",
+      "pass": true,
+      "detail": "去重服务商 10 / 清单 10"
+    },
+    {
+      "id": "SCALE-EVERY-PROVIDER-HAS-BUSINESS",
+      "pass": true,
+      "detail": "最小单家工单数 8"
+    },
+    {
+      "id": "SCALE-DISTRIBUTION-DIFFERS",
+      "pass": true,
+      "detail": "工单数分布 8—12"
+    },
+    {
+      "id": "SCALE-WORK-ORDERS",
+      "pass": true,
+      "detail": "工单 100 / 清单 100"
+    },
+    {
+      "id": "SCENARIO-TOTAL-1000",
+      "pass": true,
+      "detail": "九场景合计 100，去重 100（一工单只计一次）"
+    },
+    {
+      "id": "SCENARIO-LISTS-MATCH-DB",
+      "pass": true,
+      "detail": "场景清单与实际工单集合一致"
+    },
+    {
+      "id": "SCENARIO-pending_materials-PROVIDERS",
+      "pass": true,
+      "detail": "pending_materials 分布 10 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-pending_materials-FORMS",
+      "pass": true,
+      "detail": "pending_materials 涉文件格式 3 类"
+    },
+    {
+      "id": "SCENARIO-evidence_consistent-PROVIDERS",
+      "pass": true,
+      "detail": "evidence_consistent 分布 9 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-evidence_consistent-FORMS",
+      "pass": true,
+      "detail": "evidence_consistent 涉文件格式 3 类"
+    },
+    {
+      "id": "SCENARIO-quantity_diff-PROVIDERS",
+      "pass": true,
+      "detail": "quantity_diff 分布 8 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-quantity_diff-FORMS",
+      "pass": true,
+      "detail": "quantity_diff 涉文件格式 2 类"
+    },
+    {
+      "id": "SCENARIO-material_lacking-PROVIDERS",
+      "pass": true,
+      "detail": "material_lacking 分布 5 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-material_lacking-FORMS",
+      "pass": true,
+      "detail": "material_lacking 涉文件格式 3 类"
+    },
+    {
+      "id": "SCENARIO-billing_matched-PROVIDERS",
+      "pass": true,
+      "detail": "billing_matched 分布 7 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-billing_diff-PROVIDERS",
+      "pass": true,
+      "detail": "billing_diff 分布 10 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-billing_evidence_incomplete-PROVIDERS",
+      "pass": true,
+      "detail": "billing_evidence_incomplete 分布 3 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-coordination-PROVIDERS",
+      "pass": true,
+      "detail": "coordination 分布 3 家（门槛 1）"
+    },
+    {
+      "id": "SCENARIO-read_only-PROVIDERS",
+      "pass": true,
+      "detail": "read_only 分布 3 家（门槛 1）"
+    },
+    {
+      "id": "FORM-COVERAGE",
+      "pass": true,
+      "detail": "五类形态计数 {\"clear_table\":6,\"pdf_record\":2,\"image_record\":2}"
+    },
+    {
+      "id": "FORMAT-COUNT",
+      "pass": true,
+      "detail": "初始格式 10 份"
+    },
+    {
+      "id": "FORMAT-COND-complete",
+      "pass": true,
+      "detail": "complete 9 家"
+    },
+    {
+      "id": "FORMAT-COND-meaning_unknown",
+      "pass": true,
+      "detail": "meaning_unknown 1 家"
+    },
+    {
+      "id": "FORMAT-CONDITION-BEHAVIOR",
+      "pass": true,
+      "detail": "四种格式条件分布与说明关联符合设计"
+    },
+    {
+      "id": "BILL-PERIODS",
+      "pass": true,
+      "detail": "账期 2026-06,2026-07,2026-08"
+    },
+    {
+      "id": "BILL-MULTI-ORDER",
+      "pass": true,
+      "detail": "快速集不要求一账单多工单"
+    },
+    {
+      "id": "REL1-PROVIDER-ACCOUNT-RECORDS",
+      "pass": true,
+      "detail": "服务商—账号—业务记录归属一致"
+    },
+    {
+      "id": "REL2-ORDER-PO-ENTITLEMENT",
+      "pass": true,
+      "detail": "工单—购买订单—权益相互指向"
+    },
+    {
+      "id": "REL3-WO-PLAN-DETAIL",
+      "pass": true,
+      "detail": "工单—方案—正式明细指向同一工单，未提交为正常阶段"
+    },
+    {
+      "id": "REL4-MATERIAL-FILE",
+      "pass": true,
+      "detail": "材料索引—文件版本可实际请求（负例除外且核实不存在）"
+    },
+    {
+      "id": "REL5-RAW-FORMAT",
+      "pass": true,
+      "detail": "原资料—模板说明关联见 FORMAT-CONDITION-BEHAVIOR"
+    },
+    {
+      "id": "REL6-BILL-RECEIVABLE",
+      "pass": true,
+      "detail": "京东账单—服务商应收按工单/服务商/账期/币种对应"
+    },
+    {
+      "id": "REL7-FEE-TERMS-APPROVAL",
+      "pass": true,
+      "detail": "费用—条款—批准可核实覆盖范围（依据不完整场景按登记缺项）"
+    },
+    {
+      "id": "REL8-INITIAL-NO-REVIEW",
+      "pass": true,
+      "detail": "初始无退回/回复记录（0 条），回复链路由后续业务动作产生"
+    },
+    {
+      "id": "NEGATIVES-PRESERVED",
+      "pass": true,
+      "detail": "三个预设负例按登记保留"
+    },
+    {
+      "id": "DECIMAL-AMOUNTS",
+      "pass": true,
+      "detail": "金额均为十进制字符串"
+    },
+    {
+      "id": "VERSION-AND-TIME",
+      "pass": true,
+      "detail": "全部 1015 条记录带来源版本与更新时间"
+    }
+  ],
+  "passed": true,
+  "failedCount": 0
+}

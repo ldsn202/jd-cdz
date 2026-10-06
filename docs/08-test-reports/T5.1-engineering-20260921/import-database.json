@@ -1,0 +1,57 @@
+[
+  {
+    "results": [
+      {
+        "providers": 100
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "work_orders": 1000
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 1
+    }
+  },
+  {
+    "results": [
+      {
+        "contexts": 1000
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 2
+    }
+  },
+  {
+    "results": [
+      {
+        "inferred_work_items": 0
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "verified_contexts": 1000
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 16
+    }
+  }
+]

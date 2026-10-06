@@ -1,0 +1,7 @@
+{
+  "envId": "mock-env-b",
+  "port": 8792,
+  "dataset": "standard-v1",
+  "storageRoot": ".data/mock-env-b",
+  "appEnvRef": "jd-charging-local"
+}

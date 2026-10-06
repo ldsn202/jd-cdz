@@ -1,0 +1,14 @@
+-- TC-CFG-19.sql 格式变更重新处理（§3.6，联调验证）
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql：cfg-01 生效版 cfgv-01-1（来源格式 AJ-FMT 2026.03）。
+-- 来源格式版本变化（AJ-FMT 2026.03 → 2026.09）的新资料由资料域上传链路真实送入；
+-- 停止旧规则自动转换与配置调整事项的形成由程序真实产生，不由本文件 SQL 预置。
+-- ========== 数据清理 ==========
+-- 程序生成/更新的配置调整事项及关联记录受 DDL 触发器保护，禁止 DELETE/REPLACE；
+-- 执行后重置本地库（重载各域 DDL + TC-CFG-SEED.sql）恢复基线。
+-- 结果核验（供步骤 3 对照）：
+-- SELECT id, title, status FROM work_item WHERE item_kind='CONFIGURATION' AND service_provider_id='sp-01'
+--   AND id<>'wi-cfg-01';
+-- 历史保护核验（cfgv-01-1 及其试转换、启用记录应原样存在）：
+-- SELECT COUNT(*) FROM integration_config_version WHERE id='cfgv-01-1';
+-- SELECT COUNT(*) FROM configuration_enablement WHERE id='ce-01-1';

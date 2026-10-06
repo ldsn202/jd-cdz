@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "mode": "multi-file",
+  "planPath": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/main-delivery-plan-jd-charging.md",
+  "kanbanPath": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/task-kanban-jd-charging.md",
+  "subPlanPaths": [
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T0.1-project-scaffold.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T0.2-d1-migrations.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T1.1-common-identity.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T1.2-workbench-read.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T1.3-orders-materials-read.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T2.1-external-adapter.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T2.2-execution-internal.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T2.3-analysis-pipeline.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T3.1-installation-submit.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T3.2-review-supplement.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T3.3-reconciliation.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T3.4-provider-config.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T3.5-coordination.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T4.1-web-shell.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T4.2-web-workbench-orders.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T4.3-web-business-pages.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T5.1-e2e-integration.md",
+    "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T5.2-deploy-docs.md"
+  ],
+  "totalSectionsFound": 13,
+  "totalSectionsRequired": 13,
+  "totalTasksFound": 18,
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "missingSections": 0,
+    "missingTaskFields": 0,
+    "missingSubDeliveryPlans": 0,
+    "vagueWords": 0
+  }
+}

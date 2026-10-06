@@ -1,0 +1,70 @@
+{
+  "datasetId": "golden-v1",
+  "frozenAt": "2026-09-20T00:00:00+08:00",
+  "note": "固定样本的冻结预期：算式、原文位置与预期校验结论在装载前冻结；改坏任一关键值，独立校验必须失败。",
+  "expectations": [
+    {
+      "workOrderId": "WO-G-001",
+      "situations": ["拆合项", "总额一致但分项不一致"],
+      "formulas": [
+        { "expression": "12×30.00=360.00", "quantity": "12", "unitPrice": "30.00", "amount": "360.00" },
+        { "expression": "10×45.00=450.00", "quantity": "10", "unitPrice": "45.00", "amount": "450.00" },
+        { "expression": "360.00+450.00=810.00", "sumOf": ["360.00", "450.00"], "total": "810.00" }
+      ],
+      "physicalAssertions": [
+        "JD-BILL-G-001 两个分项，REC-G-001 单个合并分项 810.00（拆合项，结构不同）",
+        "双方总额一致但分项数 2≠1，不得仅凭总额判核对一致",
+        "MAT-G-001 为 2 页 PDF，第 2 页含 桥架安装 12米 与 电缆敷设 10米"
+      ],
+      "expectedValidatorIssues": []
+    },
+    {
+      "workOrderId": "WO-G-002",
+      "situations": ["单位差异", "固定费用"],
+      "formulas": [
+        { "expression": "2段×4米=8米（段×单段米数换算）", "segments": 2, "metersPerSegment": 4, "meters": 8 },
+        { "expression": "8×30.00=240.00", "quantity": "8", "unitPrice": "30.00", "amount": "240.00" },
+        { "expression": "240.00+60.00=300.00", "sumOf": ["240.00", "60.00"], "total": "300.00" }
+      ],
+      "physicalAssertions": [
+        "入场搬运为固定收费：billedQuantity/unitPrice 为 null，不得倒算数量单价",
+        "MAT-G-002 XLSX 计量表达为 2段×4米、折算数量 8（记录!B3/C3）"
+      ],
+      "expectedValidatorIssues": []
+    },
+    {
+      "workOrderId": "WO-G-003",
+      "situations": ["未知金额", "零金额", "负向调整"],
+      "formulas": [
+        { "expression": "0.00+(-30.00)=-30.00", "sumOf": ["0.00", "-30.00"], "total": "-30.00" }
+      ],
+      "physicalAssertions": [
+        "JD-BILL-G-003 分项金额 null 且原总额 null（未知不改零）",
+        "REC-G-003 含真实零值 0.00 与负向调整 -30.00，负值参与合计且不丢弃"
+      ],
+      "expectedValidatorIssues": []
+    },
+    {
+      "workOrderId": "WO-G-004",
+      "situations": ["范围不一致", "总分不符", "材料不足"],
+      "formulas": [
+        { "expression": "300.00+5.00=305.00≠310.00（总分不符负例保留）", "sumOf": ["300.00", "5.00"], "total": "305.00", "reported": "310.00" }
+      ],
+      "physicalAssertions": [
+        "JD-BILL-G-004 含归属未知分项（installationWorkOrderId=null，范围不一致保留，不任意分摊）",
+        "WO-G-004 无任何材料索引（必需材料缺失保持缺项）",
+        "总分不符已登记为 NEG-G1，校验器豁免计入未预期错误，但业务必须按预期进入核实"
+      ],
+      "expectedValidatorIssues": []
+    }
+  ],
+  "sameNameDifferentMeaning": {
+    "description": "G-FMT-1 与 G-FMT-2 同名字段 数量 含义不同（米数 vs 段数），不得按同名合并转换",
+    "fieldKey": "数量",
+    "meanings": { "G-FMT-1": "施工长度（米数）", "G-FMT-2": "施工段数（每段 4 米）" }
+  },
+  "sabotageProbes": [
+    { "description": "把 REC-G-001 合并分项改为 811.00", "expectCheck": "AMOUNT", "expectObject": "REC-G-001" },
+    { "description": "改动 MAT-G-002 文件一个字节", "expectCheck": "FILE", "expectObject": "MAT-G-002@material-1" }
+  ]
+}

@@ -1,0 +1,5 @@
+-- TC-INS-14.sql 无草稿页面（UI）
+-- 数据准备：与 TC-INS-02 使用同一数据状态。在重建后的空库依次执行 TC-INS-SEED.sql 与
+--           TC-INS-02.sql 的"数据准备"段（建立尚无草稿的事项 wi-tc-ins-prep-empty）。
+--           若与 TC-INS-02 同库连跑，无需重复执行。
+-- 数据清理：同 TC-INS-02：销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

@@ -1,0 +1,42 @@
+{
+  "health": {
+    "ok": true,
+    "service": "jd-charging-api",
+    "externalMode": "mock",
+    "aiMode": "real"
+  },
+  "billing": {
+    "total": 300,
+    "reviewAccess": "FORBIDDEN",
+    "reconAccess": "ALLOWED",
+    "summary": {
+      "reconciliationId": "reconciliation-c6cf5020-552e-4384-8e8e-c1d2ac5ab5b6",
+      "inputSnapshotId": "ais-a138a488-eb44-42b6-978c-d8f76e4b16fd",
+      "status": "NEEDS_INFORMATION",
+      "currency": "CNY",
+      "jdTotal": "17385.00",
+      "providerTotal": "17435.00",
+      "difference": "50.00"
+    },
+    "detailDifference": "50.00"
+  },
+  "detail": {
+    "analysisProgress": {
+      "state": "FAILED",
+      "description": "此前启动配置停用了真实分析，请恢复模型配置后重新分析。",
+      "errorCode": "MOCK_AI_NOT_ANALYSIS"
+    },
+    "canRequestAnalysis": true,
+    "runtimeError": "模型凭证尚未配置。请在本机运行“配置模型.command”，完成后自动分析会恢复。"
+  },
+  "missingModelRequest": {
+    "status": 503,
+    "body": {
+      "code": 50301,
+      "msg": "模型凭证尚未配置。请在本机运行“配置模型.command”，完成后自动分析会恢复。",
+      "requestId": "req-9b9078c6-5465-43e5-840b-fa757fc381e9",
+      "data": null
+    }
+  },
+  "checkedAt": "2026-09-27T07:47:24.574Z"
+}

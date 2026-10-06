@@ -1,0 +1,399 @@
+[
+  {
+    "path": "/providers?page=1&pageSize=20",
+    "status": 200,
+    "elapsedMs": 42,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-237dd66c-ac60-4f49-8674-8dce4f2d0fdb",
+      "data": {
+        "list": [
+          {
+            "providerId": "SP-100",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-099",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-098",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-097",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-096",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-095",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-094",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-093",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-092",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-091",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-090",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-089",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-088",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-087",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-086",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-085",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-084",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-083",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-082",
+            "displayName": ""
+          },
+          {
+            "providerId": "SP-081",
+            "displayName": ""
+          }
+        ],
+        "total": 100,
+        "page": 1,
+        "pageSize": 20
+      }
+    }
+  },
+  {
+    "path": "/work-orders?page=1&pageSize=20",
+    "status": 200,
+    "elapsedMs": 28,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-87f2358d-089c-44bb-a61f-a9196f3dd4f7",
+      "data": {
+        "list": [
+          {
+            "workOrderId": "WO-2609-0102",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0102",
+            "providerId": "SP-001",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0102",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:20.951Z",
+            "activeKinds": [
+              "INSTALLATION_PREPARATION"
+            ],
+            "activeItemCount": 1,
+            "updatedAt": "2026-09-21T04:41:20.748Z"
+          },
+          {
+            "workOrderId": "WO-2609-0997",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0997",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0997",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:32.041Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:32.041Z"
+          },
+          {
+            "workOrderId": "WO-2609-0932",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0932",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0932",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:32.025Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:32.025Z"
+          },
+          {
+            "workOrderId": "WO-2609-0906",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0906",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0906",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:32.017Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:32.017Z"
+          },
+          {
+            "workOrderId": "WO-2609-0873",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0873",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0873",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:32.010Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:32.010Z"
+          },
+          {
+            "workOrderId": "WO-2609-0864",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0864",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0864",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:32.002Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:32.002Z"
+          },
+          {
+            "workOrderId": "WO-2609-0853",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0853",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0853",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.995Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.995Z"
+          },
+          {
+            "workOrderId": "WO-2609-0767",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0767",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0767",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.987Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.987Z"
+          },
+          {
+            "workOrderId": "WO-2609-0381",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0381",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0381",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.980Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.980Z"
+          },
+          {
+            "workOrderId": "WO-2609-0361",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0361",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0361",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.972Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.972Z"
+          },
+          {
+            "workOrderId": "WO-2609-0065",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0065",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0065",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.965Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.965Z"
+          },
+          {
+            "workOrderId": "WO-2609-0012",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0012",
+            "providerId": "SP-100",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0012",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.958Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.958Z"
+          },
+          {
+            "workOrderId": "WO-2609-0940",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0940",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0940",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.902Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.902Z"
+          },
+          {
+            "workOrderId": "WO-2609-0739",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0739",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0739",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.894Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.894Z"
+          },
+          {
+            "workOrderId": "WO-2609-0649",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0649",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0649",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.887Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.887Z"
+          },
+          {
+            "workOrderId": "WO-2609-0627",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0627",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0627",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.880Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.880Z"
+          },
+          {
+            "workOrderId": "WO-2609-0486",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0486",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0486",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.873Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.873Z"
+          },
+          {
+            "workOrderId": "WO-2609-0482",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0482",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0482",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.862Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.862Z"
+          },
+          {
+            "workOrderId": "WO-2609-0403",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0403",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0403",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.855Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.855Z"
+          },
+          {
+            "workOrderId": "WO-2609-0174",
+            "sourceSystem": "installation_management",
+            "sourceId": "WO-2609-0174",
+            "providerId": "SP-099",
+            "providerName": null,
+            "purchaseOrderId": "PO-2609-0174",
+            "sourceState": "UNKNOWN",
+            "sourceVersion": "work-order-1",
+            "verifiedAt": "2026-09-21T04:11:31.848Z",
+            "activeKinds": [],
+            "activeItemCount": 0,
+            "updatedAt": "2026-09-21T04:11:31.848Z"
+          }
+        ],
+        "total": 1000,
+        "page": 1,
+        "pageSize": 20,
+        "asOf": "2026-09-21T04:44:31.909Z"
+      }
+    }
+  }
+]

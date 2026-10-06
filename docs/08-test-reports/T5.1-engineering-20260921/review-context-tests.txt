@@ -1,0 +1,13 @@
+✔ review writes source detail identity and matching version from bound context, ignoring newer unbound snapshot (19.320917ms)
+✔ review never chooses an arbitrary context when work order has no binding (16.350208ms)
+✔ receipt fallback retains source identity and version as one verified pair (16.103166ms)
+✔ receipt missing source id or version cannot supply a partial pair or local id fallback (31.226083ms)
+✔ bound detail without a version cannot borrow a different receipt version (11.882875ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 187.693125

@@ -1,0 +1,559 @@
+{
+  "q": {
+    "decisionId": "hd-5dd7f89a-fa90-42fa-aee7-bebdea80cea3",
+    "questionActionId": "qa-6ff56ad4-4767-4a3d-95d9-6dc435deb500",
+    "status": "APPLIED"
+  },
+  "reply": {
+    "decisionId": "hd-ef57fb10-d4a8-43b4-bb63-e1be623de268",
+    "status": "APPLIED"
+  },
+  "final": {
+    "workItemId": "work-e2093208-e790-4210-b653-60b714bdb9e5",
+    "title": "安装费用核对 · WO-2609-0061",
+    "kind": "RECONCILIATION",
+    "status": "READY",
+    "providerId": "SP-009",
+    "providerName": "瑞通充电桩安装（009）",
+    "workOrderId": "WO-2609-0061",
+    "assignee": {
+      "identityId": "local:acc-jd-business",
+      "displayName": "京东业务账号"
+    },
+    "rowVersion": 8,
+    "responsibilityVersion": 3,
+    "analysisGeneration": 3,
+    "analysisStatus": "AVAILABLE",
+    "updatedAt": "2026-09-27T12:06:58.995Z",
+    "reconciliationSummary": {
+      "reconciliationId": "reconciliation-c0132150-1508-4ed0-a15d-c94c66ab885b",
+      "inputSnapshotId": "ais-f8d57721-0bfe-4292-8a15-095f2fbaa8f9",
+      "status": "DIFFERENT",
+      "currency": "CNY",
+      "jdTotal": "860.00",
+      "providerTotal": "865.00",
+      "difference": "5.00"
+    },
+    "reconciliationSummaryAccess": "ALLOWED",
+    "analysis": {
+      "contextRecords": [
+        {
+          "inputId": "record-1",
+          "recordType": "INSTALLATION_WORK_ORDER",
+          "data": {
+            "installationWorkOrderId": "WO-2609-0061",
+            "purchaseOrderId": "PO-2609-0061",
+            "serviceProviderId": "SP-009",
+            "sourceSystem": "installation_management",
+            "sourceVersion": "work-order-1",
+            "sourceUpdatedAt": "2026-09-01T02:00:00.000Z"
+          }
+        },
+        {
+          "inputId": "record-10",
+          "recordType": "FEE_APPROVAL_RECORD",
+          "data": {
+            "sourceSystem": "billing-terms",
+            "sourceRecordId": "APR-2609-0035",
+            "sourceVersion": "approval-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "title": "费用批准 APR-2609-0035",
+            "sourceStatus": null,
+            "scope": "批准工单：WO-2609-0061",
+            "applicability": "APPLICABLE",
+            "applicabilityBasis": "批准记录明确覆盖工单 WO-2609-0061",
+            "recordText": "批准本工单按已验收数量及本期合同单价结算。充电桩基础施工：1项，含税单价 800.00 元；入场搬运：1次，含税单价 60.00 元。本次完整查询没有其他数量增加或单价调整的批准记录。服务商应收如与这些依据不同，须核实并修订原应收，不能直接按差额付款。",
+            "materialReferences": [],
+            "decision": "APPROVED",
+            "decidedAt": "2026-09-01T09:00:00+08:00",
+            "_lookup": {
+              "lookupScope": "目标工单 WO-2609-0061 关联服务商 SP-009 的计费条款（账期 2026-07）及针对该工单的费用批准记录",
+              "termListComplete": true,
+              "approvalListComplete": true,
+              "completeness": "COMPLETE"
+            }
+          }
+        },
+        {
+          "inputId": "record-2",
+          "recordType": "INSTALLATION_PLAN",
+          "data": {
+            "installationPlanId": "PLAN-0061",
+            "sourceSystem": "installation_management",
+            "sourceVersion": "plan-1",
+            "sourceUpdatedAt": "2026-09-01T02:00:00.000Z",
+            "items": [
+              {
+                "installationItem": "充电桩基础施工",
+                "plannedQuantity": 1,
+                "unit": "项",
+                "materialSupplier": "服务商",
+                "serviceScope": "供料及安装"
+              },
+              {
+                "installationItem": "入场搬运",
+                "plannedQuantity": 1,
+                "unit": "次",
+                "materialSupplier": "不涉及材料",
+                "serviceScope": "搬运服务"
+              }
+            ]
+          }
+        },
+        {
+          "inputId": "record-3",
+          "recordType": "INSTALLATION_DETAIL",
+          "data": {
+            "installationDetailId": "DTL-0061",
+            "sourceSystem": "installation_management",
+            "sourceVersion": "detail-1",
+            "sourceUpdatedAt": "2026-09-01T02:00:00.000Z",
+            "items": [
+              {
+                "installationItem": "充电桩基础施工",
+                "installedQuantity": 1,
+                "unit": "项",
+                "materialSupplier": "服务商",
+                "serviceScope": "供料及安装"
+              },
+              {
+                "installationItem": "入场搬运",
+                "installedQuantity": 1,
+                "unit": "次",
+                "materialSupplier": "不涉及材料",
+                "serviceScope": "搬运服务"
+              }
+            ]
+          }
+        },
+        {
+          "inputId": "record-4",
+          "recordType": "PURCHASE_ORDER",
+          "data": {
+            "purchaseOrderId": "PO-2609-0061",
+            "sourceSystem": "purchase_order_system",
+            "sourceVersion": "order-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00"
+          }
+        },
+        {
+          "inputId": "record-5",
+          "recordType": "INSTALLATION_ENTITLEMENT",
+          "data": {
+            "installationEntitlementId": "ENT-2609-0061",
+            "name": "充电桩安装权益",
+            "sourceSystem": "installation_entitlement_system",
+            "sourceVersion": "ent-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "coveredServiceScope": "充电桩安装",
+            "quantityType": "LIMITED",
+            "includedQuantity": 1,
+            "unit": "单",
+            "validity": "VALID",
+            "validityBasis": "源记录明确为当前有效",
+            "applicability": "APPLICABLE",
+            "applicabilityBasis": "源记录明确关联工单 WO-2609-0061"
+          }
+        },
+        {
+          "inputId": "record-6",
+          "recordType": "PROVIDER_RECEIVABLE",
+          "data": {
+            "retrievedAt": "2026-09-27T11:51:14.360Z",
+            "sourceSystem": "provider-receivable",
+            "serviceProviderId": "SP-009",
+            "providerReceivableId": "REC-2609-0035",
+            "installationWorkOrderId": "WO-2609-0061",
+            "sourceVersion": "receivable-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "previousSourceVersion": null,
+            "sourceRevisionNote": null,
+            "relatedWorkOrderIds": [
+              "WO-2609-0061"
+            ],
+            "currency": "CNY",
+            "taxBasis": "TAX_INCLUDED",
+            "sourceStatus": "应收确认中",
+            "effectiveStatus": "EFFECTIVE",
+            "reportedTotalAmount": "865.00",
+            "targetWorkOrderAmount": "865.00",
+            "itemsComplete": true,
+            "items": [
+              {
+                "billItemId": "rec-item-0035-01",
+                "itemName": "充电桩基础施工",
+                "installationWorkOrderId": "WO-2609-0061",
+                "chargeScope": "安装施工费用",
+                "billedQuantity": "1",
+                "unit": "项",
+                "unitPrice": "805.00",
+                "amount": "805.00"
+              },
+              {
+                "billItemId": "rec-item-0035-02",
+                "itemName": "入场搬运",
+                "installationWorkOrderId": "WO-2609-0061",
+                "chargeScope": "安装施工费用",
+                "billedQuantity": "1",
+                "unit": "次",
+                "unitPrice": "60.00",
+                "amount": "60.00"
+              }
+            ],
+            "completeness": "COMPLETE",
+            "missingParts": [],
+            "_programComparison": {
+              "algorithmVersion": "strict-exact-lines-2",
+              "status": "DIFFERENCE",
+              "currency": "CNY",
+              "taxBasis": "TAX_INCLUDED",
+              "jdAmount": "860.00",
+              "providerAmount": "865.00",
+              "differenceAmount": "5.00",
+              "groups": [
+                {
+                  "groupId": "group-1",
+                  "status": "DIFFERENCE",
+                  "members": [
+                    {
+                      "inputItemId": "aii-03242cf2-68b1-41cc-bfdf-86af840cd410",
+                      "billItemId": "rec-item-0035-01"
+                    },
+                    {
+                      "inputItemId": "aii-4af512e4-12c9-4941-a481-67194670454f",
+                      "billItemId": "jd-item-0035-01"
+                    }
+                  ],
+                  "jdAmount": "800.00",
+                  "providerAmount": "805.00",
+                  "differenceAmount": "5.00",
+                  "mappingBasis": "费用名称、明确收费范围与单位完全一致：[\"充电桩基础施工\",\"安装施工费用\",\"项\"]",
+                  "evidenceRefs": []
+                },
+                {
+                  "groupId": "group-2",
+                  "status": "MATCHED",
+                  "members": [
+                    {
+                      "inputItemId": "aii-03242cf2-68b1-41cc-bfdf-86af840cd410",
+                      "billItemId": "rec-item-0035-02"
+                    },
+                    {
+                      "inputItemId": "aii-4af512e4-12c9-4941-a481-67194670454f",
+                      "billItemId": "jd-item-0035-02"
+                    }
+                  ],
+                  "jdAmount": "60.00",
+                  "providerAmount": "60.00",
+                  "differenceAmount": "0",
+                  "mappingBasis": "费用名称、明确收费范围与单位完全一致：[\"入场搬运\",\"安装施工费用\",\"次\"]",
+                  "evidenceRefs": []
+                }
+              ],
+              "checks": {
+                "source_current": true,
+                "scope_confirmed": true,
+                "currency_tax_confirmed": true,
+                "items_complete": true,
+                "mapping_confirmed": true,
+                "total_checks_passed": true,
+                "groups_balanced": false,
+                "issues_resolved": true
+              },
+              "openIssues": [
+                "逐项金额、数量或单价存在差异"
+              ]
+            }
+          }
+        },
+        {
+          "inputId": "record-7",
+          "recordType": "JD_BILL",
+          "data": {
+            "retrievedAt": "2026-09-27T11:51:14.361Z",
+            "jdBillId": "JD-BILL-2609-0035",
+            "installationWorkOrderId": "WO-2609-0061",
+            "serviceProviderId": "SP-009",
+            "sourceSystem": "jd_bill_system",
+            "sourceVersion": "bill-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "relatedWorkOrderIds": [
+              "WO-2609-0061"
+            ],
+            "currency": "CNY",
+            "taxBasis": "TAX_INCLUDED",
+            "sourceStatus": "已出账",
+            "effectiveStatus": "EFFECTIVE",
+            "reportedTotalAmount": "860.00",
+            "targetWorkOrderAmount": "860.00",
+            "itemsComplete": true,
+            "items": [
+              {
+                "billItemId": "jd-item-0035-01",
+                "itemName": "充电桩基础施工",
+                "installationWorkOrderId": "WO-2609-0061",
+                "chargeScope": "安装施工费用",
+                "billedQuantity": "1",
+                "unit": "项",
+                "unitPrice": "800.00",
+                "amount": "800.00"
+              },
+              {
+                "billItemId": "jd-item-0035-02",
+                "itemName": "入场搬运",
+                "installationWorkOrderId": "WO-2609-0061",
+                "chargeScope": "安装施工费用",
+                "billedQuantity": "1",
+                "unit": "次",
+                "unitPrice": "60.00",
+                "amount": "60.00"
+              }
+            ],
+            "completeness": "COMPLETE",
+            "missingParts": [],
+            "_programComparison": {
+              "algorithmVersion": "strict-exact-lines-2",
+              "status": "DIFFERENCE",
+              "currency": "CNY",
+              "taxBasis": "TAX_INCLUDED",
+              "jdAmount": "860.00",
+              "providerAmount": "865.00",
+              "differenceAmount": "5.00",
+              "groups": [
+                {
+                  "groupId": "group-1",
+                  "status": "DIFFERENCE",
+                  "members": [
+                    {
+                      "inputItemId": "aii-03242cf2-68b1-41cc-bfdf-86af840cd410",
+                      "billItemId": "rec-item-0035-01"
+                    },
+                    {
+                      "inputItemId": "aii-4af512e4-12c9-4941-a481-67194670454f",
+                      "billItemId": "jd-item-0035-01"
+                    }
+                  ],
+                  "jdAmount": "800.00",
+                  "providerAmount": "805.00",
+                  "differenceAmount": "5.00",
+                  "mappingBasis": "费用名称、明确收费范围与单位完全一致：[\"充电桩基础施工\",\"安装施工费用\",\"项\"]",
+                  "evidenceRefs": []
+                },
+                {
+                  "groupId": "group-2",
+                  "status": "MATCHED",
+                  "members": [
+                    {
+                      "inputItemId": "aii-03242cf2-68b1-41cc-bfdf-86af840cd410",
+                      "billItemId": "rec-item-0035-02"
+                    },
+                    {
+                      "inputItemId": "aii-4af512e4-12c9-4941-a481-67194670454f",
+                      "billItemId": "jd-item-0035-02"
+                    }
+                  ],
+                  "jdAmount": "60.00",
+                  "providerAmount": "60.00",
+                  "differenceAmount": "0",
+                  "mappingBasis": "费用名称、明确收费范围与单位完全一致：[\"入场搬运\",\"安装施工费用\",\"次\"]",
+                  "evidenceRefs": []
+                }
+              ],
+              "checks": {
+                "source_current": true,
+                "scope_confirmed": true,
+                "currency_tax_confirmed": true,
+                "items_complete": true,
+                "mapping_confirmed": true,
+                "total_checks_passed": true,
+                "groups_balanced": false,
+                "issues_resolved": true
+              },
+              "openIssues": [
+                "逐项金额、数量或单价存在差异"
+              ]
+            }
+          }
+        },
+        {
+          "inputId": "record-8",
+          "recordType": "BILLING_TERM",
+          "data": {
+            "sourceSystem": "billing-terms",
+            "sourceRecordId": "TERMS-0035",
+            "sourceVersion": "terms-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "title": "计费条款 TERMS-0035",
+            "sourceStatus": null,
+            "scope": "2026-07-01 至 2026-07 月末；覆盖项目：桥架安装、电缆敷设、充电桩基础施工、接地装置安装、入场搬运",
+            "applicability": "APPLICABLE",
+            "applicabilityBasis": "条款记录明确归属服务商 SP-009 及账期 2026-07",
+            "recordText": "本期已确认合同：充电桩基础施工，单价 800.00 元/项，验收数量 1项；入场搬运，单价 60.00 元/次，验收数量 1次。计费数量采用本工单验收数量，单价采用上述含税合同单价；未经另行批准不得增加数量或调整单价。",
+            "materialReferences": [],
+            "effectiveStatus": "EFFECTIVE",
+            "_lookup": {
+              "lookupScope": "目标工单 WO-2609-0061 关联服务商 SP-009 的计费条款（账期 2026-07）及针对该工单的费用批准记录",
+              "termListComplete": true,
+              "approvalListComplete": true,
+              "completeness": "COMPLETE"
+            }
+          }
+        },
+        {
+          "inputId": "record-9",
+          "recordType": "BILLING_TERM",
+          "data": {
+            "sourceSystem": "billing-terms",
+            "sourceRecordId": "TERMS-0038",
+            "sourceVersion": "terms-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "title": "计费条款 TERMS-0038",
+            "sourceStatus": null,
+            "scope": "2026-07-01 至 2026-07 月末；覆盖项目：桥架安装、电缆敷设、充电桩基础施工、接地装置安装、入场搬运",
+            "applicability": "APPLICABLE",
+            "applicabilityBasis": "条款记录明确归属服务商 SP-009 及账期 2026-07",
+            "recordText": "本期已确认合同：入场搬运，单价 60.00 元/次，验收数量 1次；接地装置安装，单价 350.00 元/组，验收数量 1组；电缆敷设，单价 45.00 元/米，验收数量 14米；桥架安装，单价 30.00 元/米，验收数量 25米。计费数量采用本工单验收数量，单价采用上述含税合同单价；未经另行批准不得增加数量或调整单价。",
+            "materialReferences": [],
+            "effectiveStatus": "EFFECTIVE",
+            "_lookup": {
+              "lookupScope": "目标工单 WO-2609-0061 关联服务商 SP-009 的计费条款（账期 2026-07）及针对该工单的费用批准记录",
+              "termListComplete": true,
+              "approvalListComplete": true,
+              "completeness": "COMPLETE"
+            }
+          }
+        }
+      ],
+      "evidenceMaterials": [],
+      "resultId": "ar-a0bc290b-bf6b-4863-90ed-5fd46be0ccb3",
+      "runId": "analysis:work-e2093208-e790-4210-b653-60b714bdb9e5:3",
+      "inputSnapshotId": "ais-f8d57721-0bfe-4292-8a15-095f2fbaa8f9",
+      "analysisGeneration": 3,
+      "status": "ANALYZED",
+      "summary": "双方针对同一工单 WO-2609-0061 的费用记录仅在“充电桩基础施工”存在单价差异：京东账单为 800.00 元/项，服务商应收为 805.00 元/项，而合同条款与费用批准记录均支持 800.00 元/项。建议由服务商应收负责人核实该单价并修订原应收，本次不代为改账或扣减。",
+      "findings": [
+        {
+          "findingId": "finding-1",
+          "type": "FEE_EXPLANATION",
+          "content": {
+            "topic": "充电桩基础施工单价高于合同",
+            "explanation": "京东账单“充电桩基础施工”按 1 项、单价 800.00 元计列；服务商应收同一费用项目按 1 项、单价 805.00 元计列，双方数量与单位一致，差异只在单价。计费条款 TERMS-0035 明确该含税合同单价为 800.00 元/项，费用批准记录也批准按 1 项、含税单价 800.00 元结算，并说明完整查询未发现单价调整批准。因此服务商该项单价高于合同及批准依据，建议由服务商应收负责人核实差异原因并修订原应收。"
+          },
+          "evidenceRefs": [
+            {
+              "inputId": "record-7",
+              "blockId": null,
+              "jsonPointer": "/items/0/unitPrice",
+              "quote": "800.00"
+            },
+            {
+              "inputId": "record-6",
+              "blockId": null,
+              "jsonPointer": "/items/0/unitPrice",
+              "quote": "805.00"
+            },
+            {
+              "inputId": "record-8",
+              "blockId": null,
+              "jsonPointer": "/recordText",
+              "quote": "充电桩基础施工，单价 800.00 元/项，验收数量 1项"
+            },
+            {
+              "inputId": "record-10",
+              "blockId": null,
+              "jsonPointer": "/recordText",
+              "quote": "充电桩基础施工：1项，含税单价 800.00 元"
+            }
+          ]
+        },
+        {
+          "findingId": "finding-2",
+          "type": "FEE_EXPLANATION",
+          "content": {
+            "topic": "入场搬运计费一致",
+            "explanation": "京东账单与服务商应收的“入场搬运”均为 1 次、单价 60.00 元，两项一致；计费条款及费用批准记录对入场搬运同样载明 60.00 元/次、验收数量 1 次。该项未出现差异，无需处理。"
+          },
+          "evidenceRefs": [
+            {
+              "inputId": "record-7",
+              "blockId": null,
+              "jsonPointer": "/items/1/unitPrice",
+              "quote": "60.00"
+            },
+            {
+              "inputId": "record-6",
+              "blockId": null,
+              "jsonPointer": "/items/1/unitPrice",
+              "quote": "60.00"
+            },
+            {
+              "inputId": "record-8",
+              "blockId": null,
+              "jsonPointer": "/recordText",
+              "quote": "入场搬运，单价 60.00 元/次，验收数量 1次"
+            },
+            {
+              "inputId": "record-10",
+              "blockId": null,
+              "jsonPointer": "/recordText",
+              "quote": "入场搬运：1次，含税单价 60.00 元"
+            }
+          ]
+        },
+        {
+          "findingId": "finding-3",
+          "type": "FEE_EXPLANATION",
+          "content": {
+            "topic": "双方记录同工单同账期同范围",
+            "explanation": "京东账单与服务商应收均关联工单 WO-2609-0061、服务商 SP-009、币种 CNY 且为含税口径；计费条款账期覆盖 2026-07，安装计划与安装明细对充电桩基础施工、入场搬运的数量均为 1，与双方计列数量一致。可确认两份记录属同一工单同一账期同一费用范围，差异集中在充电桩基础施工的单价，而非项目对应或数量口径问题。"
+          },
+          "evidenceRefs": [
+            {
+              "inputId": "record-6",
+              "blockId": null,
+              "jsonPointer": "/installationWorkOrderId",
+              "quote": "WO-2609-0061"
+            },
+            {
+              "inputId": "record-7",
+              "blockId": null,
+              "jsonPointer": "/installationWorkOrderId",
+              "quote": "WO-2609-0061"
+            },
+            {
+              "inputId": "record-5",
+              "blockId": null,
+              "jsonPointer": "/applicabilityBasis",
+              "quote": "源记录明确关联工单 WO-2609-0061"
+            },
+            {
+              "inputId": "record-8",
+              "blockId": null,
+              "jsonPointer": "/scope",
+              "quote": "2026-07-01 至 2026-07 月末；覆盖项目：桥架安装、电缆敷设、充电桩基础施工、接地装置安装、入场搬运"
+            }
+          ]
+        }
+      ],
+      "openQuestions": [],
+      "validatedAt": "2026-09-27T11:51:40.122Z"
+    },
+    "analysisProgress": {
+      "state": "AVAILABLE",
+      "description": "分析已完成",
+      "errorCode": null
+    },
+    "analysisTriggerMode": "manual",
+    "analysisRuntimeError": null,
+    "canRequestAnalysis": true,
+    "activeSupplementRequest": null,
+    "pendingOperation": null,
+    "completion": null,
+    "allowedActions": [
+      "REQUEST_BILLING_VERIFICATION",
+      "RECORD_EXCEPTION_RESULT"
+    ],
+    "blockedReasons": [],
+    "relatedItems": []
+  }
+}

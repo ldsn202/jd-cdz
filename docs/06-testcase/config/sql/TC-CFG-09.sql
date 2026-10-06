@@ -1,0 +1,9 @@
+-- TC-CFG-09.sql 无权限启用被拒（40301，配置状态不变）
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql。无权限身份由开发登录的身份模拟配置发放凭据（common-contract.md §1），不由 SQL 构造。
+-- ========== 数据清理 ==========
+-- 40301 应不产生任何写入。核验无残留：
+-- SELECT * FROM configuration_enablement WHERE configuration_version_id='cfgv-01-2';
+-- SELECT * FROM configuration_activation_result WHERE enablement_id IN (SELECT id FROM configuration_enablement WHERE configuration_version_id='cfgv-01-2');
+-- 两行查询均应为空；cfg-01 的 current_version_id 应仍为 'cfgv-01-1'、row_version 应仍为 2：
+-- SELECT current_version_id, row_version FROM integration_config WHERE id='cfg-01';

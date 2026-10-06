@@ -1,0 +1,17 @@
+{
+  "caseId": "TC-WB-05",
+  "database": "isolated local D1",
+  "migrations": [
+    "0001_work-item.sql",
+    "0002_evidence.sql",
+    "0003_installation.sql",
+    "0004_reconciliation.sql",
+    "0005_integration-config.sql",
+    "0006_identity.sql",
+    "0007_execution.sql",
+    "0008_cross-domain-guards.sql",
+    "0009_attempt-lease-fence.sql"
+  ],
+  "preparedAt": 1789968326746,
+  "sourceSql": "/Users/hyhs/cursor/课件工坊/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/06-testcase/workbench/sql/TC-WB-05.sql"
+}

@@ -1,0 +1,61 @@
+{
+  "startedAt": "2026-09-21T05:29:04.300Z",
+  "envId": "life-check-c",
+  "restoreTo": "life-check-d",
+  "checks": [
+    {
+      "name": "restart retained verified D1 counts",
+      "passed": true,
+      "data": {
+        "providers": 5,
+        "orders": 20
+      }
+    },
+    {
+      "name": "actual runner exits in owned task space",
+      "passed": true,
+      "data": {}
+    },
+    {
+      "name": "old environment has an actual in-flight leased task",
+      "passed": true,
+      "data": {
+        "jobId": "bj-223dc322-a996-4a75-9af9-dbb55eab7118",
+        "attemptId": "ea-7cc3a268-e183-43c2-8cb8-5d8f6ac927ba"
+      }
+    },
+    {
+      "name": "paired restore reimports source snapshot to a distinct D1/R2/task environment",
+      "passed": true,
+      "data": {
+        "initialDigest": "9dbbcfe40ec78ef48175859502b6ef459b1001aa090c7debeed31c8c6fe9857e",
+        "workerUrl": "http://127.0.0.1:56043",
+        "providers": 5,
+        "orders": 20
+      }
+    },
+    {
+      "name": "paused old environment rejects new task claims",
+      "passed": true,
+      "data": {
+        "http": 409
+      }
+    },
+    {
+      "name": "old lease and credential cannot write switched entry",
+      "passed": true,
+      "data": {
+        "http": 401
+      }
+    },
+    {
+      "name": "failed partial environment cannot activate",
+      "passed": true,
+      "data": {
+        "http": 409
+      }
+    }
+  ],
+  "finishedAt": "2026-09-21T05:29:13.674Z",
+  "passed": true
+}

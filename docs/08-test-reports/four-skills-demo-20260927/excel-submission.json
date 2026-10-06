@@ -1,0 +1,74 @@
+{
+  "draft": {
+    "draftId": "draft-6b7f12fb-9b9c-472d-b849-3fbeb9f13058",
+    "draftVersionId": "draft-version-8493452e-1f90-4005-8754-8c3900b2e474",
+    "versionNo": 1,
+    "origin": "AI",
+    "editorIdentityId": null,
+    "rowVersion": 8,
+    "contextSnapshotId": "ctx-ff126a59-d1b2-44a3-bec0-cdb98e1041eb",
+    "analysisResultId": "ar-61cd656f-a56e-41e3-93c7-8203303d830a",
+    "items": [
+      {
+        "installationItem": "桥架安装",
+        "installedQuantity": 47,
+        "unit": "米",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      },
+      {
+        "installationItem": "接地装置安装",
+        "installedQuantity": 1,
+        "unit": "组",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      },
+      {
+        "installationItem": "电缆敷设",
+        "installedQuantity": 9,
+        "unit": "米",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      }
+    ],
+    "sourceMaterials": [
+      {
+        "materialVersionId": "smv-1c408ffa-b82b-4db4-8fd0-7db7df020202",
+        "sourceSystem": "file-service",
+        "sourceMaterialId": "MAT-00001",
+        "sourceVersion": "material-1"
+      }
+    ],
+    "openQuestions": [],
+    "editNotes": []
+  },
+  "accepted": {
+    "decisionId": "hd-854ea1b1-82e2-498b-9539-9e0e22d96bf0",
+    "operationId": "sub-54b5caa2-71ee-4a8b-8469-eaa0694d0218",
+    "jobId": "bj-d201c708-cea6-4afe-af50-c5f5614a2f60",
+    "workItemId": "work-5c546375-e918-4888-af65-49978b2ec49a",
+    "rowVersion": 9,
+    "status": "ACCEPTED"
+  },
+  "result": {
+    "operationId": "sub-54b5caa2-71ee-4a8b-8469-eaa0694d0218",
+    "workItemId": "work-5c546375-e918-4888-af65-49978b2ec49a",
+    "status": "SUCCEEDED",
+    "receipt": {
+      "submissionId": "sub-54b5caa2-71ee-4a8b-8469-eaa0694d0218",
+      "installationWorkOrderId": "WO-2609-0001",
+      "submissionStatus": "SUCCEEDED",
+      "pendingReason": null,
+      "installationDetail": {
+        "sourceSystem": "installation_management",
+        "installationDetailId": "DTL-0001",
+        "sourceVersion": "detail-1"
+      },
+      "resultDescription": "安装明细已提交，进入京东核查",
+      "verifiedAt": "2026-09-27T12:21:02.535Z",
+      "workOrderId": "WO-2609-0001"
+    },
+    "verifiedAt": "2026-09-27T12:21:02.539Z",
+    "localContinuationStatus": "COMPLETED"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "workItemId": "work-fc2573af-6105-45a8-9352-d6ab3a0acee1",
+  "title": "安装资料整理 · WO-2609-0002",
+  "kind": "INSTALLATION_PREPARATION",
+  "status": "READY",
+  "providerId": "SP-003",
+  "providerName": "远程机电充电桩安装（003）",
+  "workOrderId": "WO-2609-0002",
+  "assignee": {
+    "identityId": "local:acc-sp-003",
+    "displayName": "远程机电充电桩安装（003）账号"
+  },
+  "rowVersion": 10,
+  "responsibilityVersion": 1,
+  "analysisGeneration": 7,
+  "analysisStatus": "AVAILABLE",
+  "updatedAt": "2026-09-27T11:57:34.917Z",
+  "reconciliationSummary": null,
+  "reconciliationSummaryAccess": "NOT_APPLICABLE",
+  "analysis": {
+    "contextRecords": [
+      {
+        "inputId": "record-1",
+        "recordType": "INSTALLATION_WORK_ORDER",
+        "data": {
+          "installationWorkOrderId": "WO-2609-0002",
+          "purchaseOrderId": "PO-2609-0002",
+          "serviceProviderId": "SP-003",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "work-order-1",
+          "sourceUpdatedAt": "2026-09-01T01:01:00.000Z"
+        }
+      },
+      {
+        "inputId": "record-2",
+        "recordType": "INSTALLATION_PLAN",
+        "data": {
+          "installationPlanId": "PLAN-0002",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "plan-1",
+          "sourceUpdatedAt": "2026-09-01T01:01:00.000Z",
+          "items": [
+            {
+              "installationItem": "接地装置安装",
+              "plannedQuantity": 1,
+              "unit": "组",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "充电桩基础施工",
+              "plannedQuantity": 1,
+              "unit": "项",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "电缆敷设",
+              "plannedQuantity": 10,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "桥架安装",
+              "plannedQuantity": 52,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-3",
+        "recordType": "PURCHASE_ORDER",
+        "data": {
+          "purchaseOrderId": "PO-2609-0002",
+          "sourceSystem": "purchase_order_system",
+          "sourceVersion": "order-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00"
+        }
+      },
+      {
+        "inputId": "record-4",
+        "recordType": "INSTALLATION_ENTITLEMENT",
+        "data": {
+          "installationEntitlementId": "ENT-2609-0002",
+          "name": "充电桩安装权益",
+          "sourceSystem": "installation_entitlement_system",
+          "sourceVersion": "ent-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+          "coveredServiceScope": "充电桩安装",
+          "quantityType": "LIMITED",
+          "includedQuantity": 1,
+          "unit": "单",
+          "validity": "VALID",
+          "validityBasis": "源记录明确为当前有效",
+          "applicability": "APPLICABLE",
+          "applicabilityBasis": "源记录明确关联工单 WO-2609-0002"
+        }
+      }
+    ],
+    "evidenceMaterials": [
+      {
+        "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+        "materialVersionId": "smv-c17ee2ef-3a61-41b6-bfbf-f7700a29c370",
+        "sourceSystem": "file-service",
+        "sourceMaterialId": "MAT-00002",
+        "sourceVersion": "material-1"
+      }
+    ],
+    "resultId": "ar-a976d5df-34ec-488c-a925-ced884abaaee",
+    "runId": "analysis:work-fc2573af-6105-45a8-9352-d6ab3a0acee1:7",
+    "inputSnapshotId": "ais-cac34cdc-ac44-4ec6-a2a0-a2fb9a8187ea",
+    "analysisGeneration": 7,
+    "status": "ANALYZED",
+    "summary": "本工单 WO-2609-0002 已依据现场施工记录（材料 MAT-00002，共 1 页，已完整读取）整理出 4 个实际施工项目：接地装置安装 1 组、充电桩基础施工 1 项、电缆敷设 10 米、桥架安装 52 米，供料方均为服务商、作业范围均为供料及安装。材料完整、未发现缺页或待补充字段。请业务人员对照现场记录原件确认后决定是否采用该明细草稿。",
+    "findings": [
+      {
+        "findingId": "finding-1",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "接地装置安装",
+          "installedQuantity": 1,
+          "unit": "组",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "项目：接地装置安装；实际安装数量：1 组"
+          },
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "供料方：服务商；服务范围：供料及安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-2",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "充电桩基础施工",
+          "installedQuantity": 1,
+          "unit": "项",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "项目：充电桩基础施工；实际安装数量：1 项"
+          },
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "供料方：服务商；服务范围：供料及安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-3",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "电缆敷设",
+          "installedQuantity": 10,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "项目：电缆敷设；实际安装数量：10 米"
+          },
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "供料方：服务商；服务范围：供料及安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-4",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "桥架安装",
+          "installedQuantity": 52,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "项目：桥架安装；实际安装数量：52 米"
+          },
+          {
+            "inputId": "human-text-fa86da97-6072-4494-8e14-d1545a3a9a99",
+            "blockId": "page-1:human-text",
+            "jsonPointer": null,
+            "quote": "供料方：服务商；服务范围：供料及安装"
+          }
+        ]
+      }
+    ],
+    "openQuestions": [],
+    "validatedAt": "2026-09-27T11:57:34.917Z"
+  },
+  "analysisProgress": {
+    "state": "AVAILABLE",
+    "description": "分析已完成",
+    "errorCode": null
+  },
+  "analysisTriggerMode": "manual",
+  "analysisRuntimeError": null,
+  "canRequestAnalysis": true,
+  "activeSupplementRequest": null,
+  "pendingOperation": null,
+  "completion": null,
+  "allowedActions": [
+    "CONFIRM_INSTALLATION_DRAFT",
+    "SUBMIT_INSTALLATION_DETAIL"
+  ],
+  "blockedReasons": [],
+  "relatedItems": []
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "results": [
+      {
+        "id": "wi-wb01-001",
+        "item_kind": "INSTALLATION_REVIEW",
+        "status": "READY",
+        "assignee_identity_id": "user-wb-reviewer",
+        "row_version": 1,
+        "responsibility_version": 1,
+        "analysis_generation": 1,
+        "gmt_modified": 1789862403000
+      },
+      {
+        "id": "wi-wb01-002",
+        "item_kind": "RECONCILIATION",
+        "status": "READY",
+        "assignee_identity_id": "user-wb-reviewer",
+        "row_version": 1,
+        "responsibility_version": 1,
+        "analysis_generation": 1,
+        "gmt_modified": 1789862402000
+      },
+      {
+        "id": "wi-wb01-003",
+        "item_kind": "COORDINATION",
+        "status": "READY",
+        "assignee_identity_id": "user-wb-reviewer",
+        "row_version": 1,
+        "responsibility_version": 1,
+        "analysis_generation": 1,
+        "gmt_modified": 1789862401000
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "actions_json": "[\"READ_WORK_ITEM\",\"READ_WORK_ORDER\"]"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

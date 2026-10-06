@@ -1,0 +1,4 @@
+-- TC-INS-01.sql 草稿正常读取（API）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql（wi-tc-ins-prep-1 的 3 行 AI 草稿），无额外数据。
+-- 数据清理：候选 DDL 全部业务表受 no_delete 触发器保护，不能逐行 DELETE；
+--           清理方式为销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

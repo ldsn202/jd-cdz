@@ -1,0 +1,55 @@
+{
+  "scope": "Local localhost engineering acceptance, typical scenarios only",
+  "environment": "life-check-d",
+  "previousEnvironment": "life-check-c",
+  "initialDigest": "9dbbcfe40ec78ef48175859502b6ef459b1001aa090c7debeed31c8c6fe9857e",
+  "emptyEvidence": {
+    "envId": "life-check-d",
+    "providers": 0,
+    "workOrders": 0,
+    "workItems": 0,
+    "jobs": 0,
+    "uploads": 0,
+    "r2Uploads": 0,
+    "r2Verified": true
+  },
+  "verification": {
+    "status": "SCOPED_COMPLETE",
+    "actual": {
+      "envId": "life-check-d",
+      "providers": 5,
+      "workOrders": 20,
+      "workItems": 0,
+      "jobs": 0,
+      "uploads": 0,
+      "r2Uploads": 0,
+      "r2Verified": true
+    },
+    "initialDigest": "9dbbcfe40ec78ef48175859502b6ef459b1001aa090c7debeed31c8c6fe9857e",
+    "finishedAt": "2026-09-21T05:29:13.652Z"
+  },
+  "activeEntry": "http://127.0.0.1:18980",
+  "workerUrl": "http://127.0.0.1:56043",
+  "mockUrl": "http://127.0.0.1:56042",
+  "cleanup": {
+    "allOwnedPortsStopped": true,
+    "checkedPorts": [
+      18980,
+      54001,
+      54002,
+      54349,
+      54350,
+      55384,
+      55385,
+      56042,
+      56043,
+      56652,
+      56653
+    ]
+  },
+  "limitations": [
+    "Actual uploads API business acceptance was not executed; R2 uploads-prefix object protection was checked",
+    "SIGTERM during BUILDING was checked; SIGKILL crash recovery and full scenario matrix were not checked",
+    "No cloud deployment; all resources use local Wrangler persistence"
+  ]
+}

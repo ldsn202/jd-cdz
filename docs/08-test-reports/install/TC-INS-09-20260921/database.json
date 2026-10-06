@@ -1,0 +1,30 @@
+[
+  {
+    "results": [
+      {
+        "source_system": "LOCAL_UPLOAD",
+        "read_state": "VERIFIED",
+        "id": "smv-b88419ca-a892-4ce8-845e-97dfa9da78ad",
+        "completeness": "COMPLETE",
+        "units": 2
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "analysis_generation": 2,
+        "row_version": 7,
+        "status": "PREPARING"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

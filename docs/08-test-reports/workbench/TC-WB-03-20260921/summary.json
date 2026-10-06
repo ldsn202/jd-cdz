@@ -1,0 +1,1 @@
+{"code":0,"msg":"success","requestId":"req-a8f223f2-0713-4565-ba9f-dc558c75ae34","data":{"total":8,"byStatus":[{"value":"COMPLETED","count":1},{"value":"READY","count":5},{"value":"WAITING_SUPPLEMENT","count":2}],"byKind":[{"value":"COORDINATION","count":1},{"value":"INSTALLATION_REVIEW","count":6},{"value":"RECONCILIATION","count":1}],"asOf":"2026-09-21T05:20:39.102Z"}}

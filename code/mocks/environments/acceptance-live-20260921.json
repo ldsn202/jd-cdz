@@ -1,0 +1,7 @@
+{
+  "envId": "acceptance-live-20260921",
+  "port": 18890,
+  "dataset": "standard-v1",
+  "storageRoot": ".data/acceptance-live-20260921",
+  "appEnvRef": "jd-charging-acceptance-20260921"
+}

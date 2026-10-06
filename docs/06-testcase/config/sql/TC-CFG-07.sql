@@ -1,0 +1,9 @@
+-- TC-CFG-07.sql 启用后同类新资料走已启用版本（联调验证）
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql：cfg-01 生效版 cfgv-01-1（适用范围 ANJIE-ERP / INSTALLATION / AJ-FMT 2026.03）。
+-- 同类新资料由资料域上传链路真实送入并触发后台转换，不由本文件 SQL 预置转换产物。
+-- ========== 数据清理 ==========
+-- 删除联调步骤产生的新资料及其处理记录（先 SELECT 定位实际生成的 id 后定向删除），
+-- 并删除该资料对应的分析输入快照中引用 cfgv-01-1 的记录：
+-- SELECT id FROM analysis_input_snapshot WHERE config_versions_json LIKE '%cfgv-01-1%' AND id NOT IN ('snap-cfg-01-t1','snap-cfg-01-t2');
+-- （定位后逐一 DELETE 对应 snapshot / item / 资料域记录；SEED 基线行不得删除）

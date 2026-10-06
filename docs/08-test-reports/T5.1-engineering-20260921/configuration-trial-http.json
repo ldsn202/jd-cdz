@@ -1,0 +1,1426 @@
+[
+  {
+    "url": "/work-items/item/configuration",
+    "method": "GET",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-34ce5e54-3789-4b74-b666-76e165072af9",
+      "data": {
+        "configurationId": "cfg",
+        "candidateVersion": {
+          "versionId": "candidate",
+          "versionNo": 1,
+          "sourceFormatId": "fmt-1",
+          "sourceFormatVersion": "fv-1",
+          "formatStatus": "PROVIDED",
+          "applicability": {
+            "serviceProviderId": "provider-dev-b",
+            "sourceSystem": "provider-docs",
+            "purpose": "INSTALLATION",
+            "businessScopeKey": "install-main",
+            "formatStatus": "PROVIDED",
+            "sourceFormatId": "fmt-1",
+            "sourceFormatVersion": "fv-1",
+            "rowPath": "/rows",
+            "conditions": [],
+            "basisReferences": [
+              "provider-format"
+            ],
+            "unknownConditions": []
+          },
+          "rules": [
+            {
+              "ruleId": "installationItem",
+              "sourceFields": [
+                "/installationItem"
+              ],
+              "targetField": "installationItem",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installationItem"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "sourceFields": [
+                "/installedQuantity"
+              ],
+              "targetField": "installedQuantity",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installedQuantity"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "unit",
+              "sourceFields": [
+                "/unit"
+              ],
+              "targetField": "unit",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/unit"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "sourceFields": [
+                "/materialSupplier"
+              ],
+              "targetField": "materialSupplier",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/materialSupplier"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "sourceFields": [
+                "/serviceScope"
+              ],
+              "targetField": "serviceScope",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/serviceScope"
+                  }
+                ]
+              },
+              "conditions": []
+            }
+          ],
+          "ruleCatalogVersion": "charging-transform-1",
+          "analysisResultId": "analysis"
+        },
+        "activeVersion": null,
+        "activeVersionId": null,
+        "configurationRowVersion": 1,
+        "trial": null,
+        "openQuestions": [],
+        "rowVersion": 2,
+        "responsibilityVersion": 1
+      }
+    }
+  },
+  {
+    "url": "/work-items/item/configuration-draft",
+    "method": "PUT",
+    "status": 202,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-81bbc5de-1be9-4f84-a755-0efb7cbbfe7a",
+      "data": {
+        "configurationId": "cfg",
+        "candidateVersionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+        "jobId": "bj-f1d5eba6-73c8-4e87-8edf-df6234b65a1e",
+        "workItemId": "item",
+        "rowVersion": 3,
+        "status": "ACCEPTED"
+      }
+    }
+  },
+  {
+    "url": "/internal/job-attempts/ea-f55e6935-2964-4421-9f78-2a2d1af96062/dispatch-start",
+    "method": "POST",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-94d61b2c-dc1a-4da1-a811-64a45f9e85af",
+      "data": {
+        "attemptId": "ea-f55e6935-2964-4421-9f78-2a2d1af96062",
+        "dispatchState": "MAY_HAVE_BEEN_SENT"
+      }
+    }
+  },
+  {
+    "url": "/internal/job-attempts/ea-f55e6935-2964-4421-9f78-2a2d1af96062/configuration-trial",
+    "method": "POST",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-cdbdf69b-adac-4316-929f-8a0359753330",
+      "data": {
+        "attemptId": "ea-f55e6935-2964-4421-9f78-2a2d1af96062",
+        "jobId": "bj-f1d5eba6-73c8-4e87-8edf-df6234b65a1e",
+        "adopted": true,
+        "jobStatus": "SUCCEEDED"
+      }
+    }
+  },
+  {
+    "url": "/work-items/item/configuration",
+    "method": "GET",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-8a6c08c3-11c9-4b47-a048-7a6425d2e908",
+      "data": {
+        "configurationId": "cfg",
+        "candidateVersion": {
+          "versionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+          "versionNo": 2,
+          "sourceFormatId": "fmt-1",
+          "sourceFormatVersion": "fv-1",
+          "formatStatus": "PROVIDED",
+          "applicability": {
+            "serviceProviderId": "provider-dev-b",
+            "sourceSystem": "provider-docs",
+            "purpose": "INSTALLATION",
+            "businessScopeKey": "install-main",
+            "formatStatus": "PROVIDED",
+            "sourceFormatId": "fmt-1",
+            "sourceFormatVersion": "fv-1",
+            "rowPath": "/rows",
+            "conditions": [],
+            "basisReferences": [
+              "provider-format"
+            ],
+            "unknownConditions": []
+          },
+          "rules": [
+            {
+              "ruleId": "installationItem",
+              "sourceFields": [
+                "/installationItem"
+              ],
+              "targetField": "installationItem",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installationItem"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "sourceFields": [
+                "/installedQuantity"
+              ],
+              "targetField": "installedQuantity",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installedQuantity"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "unit",
+              "sourceFields": [
+                "/unit"
+              ],
+              "targetField": "unit",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/unit"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "sourceFields": [
+                "/materialSupplier"
+              ],
+              "targetField": "materialSupplier",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/materialSupplier"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "sourceFields": [
+                "/serviceScope"
+              ],
+              "targetField": "serviceScope",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/serviceScope"
+                  }
+                ]
+              },
+              "conditions": []
+            }
+          ],
+          "ruleCatalogVersion": "charging-transform-1",
+          "analysisResultId": "analysis"
+        },
+        "activeVersion": null,
+        "activeVersionId": null,
+        "configurationRowVersion": 1,
+        "trial": {
+          "trialId": "trial-fabb46e7-c1d3-4536-9bc5-06fbbcaa2762",
+          "configurationVersionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+          "inputSnapshotId": "trial-input-7b8b0e11-ca19-4197-a0d1-c28e37dd3e17",
+          "status": "PASSED",
+          "output": {
+            "records": [
+              {
+                "inputId": "provider-record",
+                "sourceVersion": "doc-v9",
+                "ruleCatalogVersion": "charging-transform-1",
+                "status": "PASSED",
+                "rows": [
+                  {
+                    "rowIndex": 0,
+                    "output": {
+                      "installationItem": "桥架",
+                      "installedQuantity": 12.5,
+                      "unit": "米",
+                      "materialSupplier": "服务商",
+                      "serviceScope": "安装"
+                    },
+                    "ruleResults": [
+                      {
+                        "ruleId": "installationItem",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installationItem"
+                        ],
+                        "output": "桥架",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "installedQuantity",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installedQuantity"
+                        ],
+                        "output": 12.5,
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "unit",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/unit"
+                        ],
+                        "output": "米",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "materialSupplier",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/materialSupplier"
+                        ],
+                        "output": "服务商",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "serviceScope",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/serviceScope"
+                        ],
+                        "output": "安装",
+                        "issues": []
+                      }
+                    ]
+                  },
+                  {
+                    "rowIndex": 1,
+                    "output": {
+                      "installationItem": "电缆",
+                      "installedQuantity": 0,
+                      "unit": "米",
+                      "materialSupplier": "服务商",
+                      "serviceScope": "安装"
+                    },
+                    "ruleResults": [
+                      {
+                        "ruleId": "installationItem",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installationItem"
+                        ],
+                        "output": "电缆",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "installedQuantity",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installedQuantity"
+                        ],
+                        "output": 0,
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "unit",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/unit"
+                        ],
+                        "output": "米",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "materialSupplier",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/materialSupplier"
+                        ],
+                        "output": "服务商",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "serviceScope",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/serviceScope"
+                        ],
+                        "output": "安装",
+                        "issues": []
+                      }
+                    ]
+                  }
+                ],
+                "issues": []
+              }
+            ]
+          },
+          "ruleResults": [
+            {
+              "ruleId": "installationItem",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "installationItem",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installationItem"
+                  ],
+                  "output": "桥架",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "installationItem",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installationItem"
+                  ],
+                  "output": "电缆",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/installationItem"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/installationItem"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "installationItem"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "installationItem"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "installedQuantity",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ],
+                  "output": 12.5,
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "installedQuantity",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ],
+                  "output": 0,
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "installedQuantity"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "installedQuantity"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "unit",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "unit",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/unit"
+                  ],
+                  "output": "米",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "unit",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/unit"
+                  ],
+                  "output": "米",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/unit"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/unit"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "unit"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "unit"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "materialSupplier",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ],
+                  "output": "服务商",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "materialSupplier",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ],
+                  "output": "服务商",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "materialSupplier"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "materialSupplier"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "serviceScope",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/serviceScope"
+                  ],
+                  "output": "安装",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "serviceScope",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/serviceScope"
+                  ],
+                  "output": "安装",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/serviceScope"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/serviceScope"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "serviceScope"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "serviceScope"
+                }
+              ],
+              "issues": []
+            }
+          ],
+          "issues": [],
+          "checks": {
+            "inputComplete": true,
+            "scopeValid": true,
+            "rulesCovered": true,
+            "outputsValid": true,
+            "meaningsResolved": true
+          }
+        },
+        "openQuestions": [],
+        "rowVersion": 3,
+        "responsibilityVersion": 1
+      }
+    }
+  },
+  {
+    "url": "/work-items/item/configuration-enablement",
+    "method": "POST",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-b583b184-a49e-4dee-8671-3fb2069cf126",
+      "data": {
+        "decisionId": "hd-68336ac1-6384-415f-8158-6e2d05b4f167",
+        "enablementId": "ce-e0d32ea6-e435-4370-9401-f3a01869a2bf",
+        "activationResultId": "car-1a8a64ed-6fae-4345-98a1-a723e680fd9a",
+        "configurationId": "cfg",
+        "activeVersionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+        "workItemId": "item",
+        "status": "APPLIED"
+      }
+    }
+  },
+  {
+    "url": "/work-items/item/configuration",
+    "method": "GET",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-9112bf01-f37f-4d52-a335-73ba001e64d9",
+      "data": {
+        "configurationId": "cfg",
+        "candidateVersion": {
+          "versionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+          "versionNo": 2,
+          "sourceFormatId": "fmt-1",
+          "sourceFormatVersion": "fv-1",
+          "formatStatus": "PROVIDED",
+          "applicability": {
+            "serviceProviderId": "provider-dev-b",
+            "sourceSystem": "provider-docs",
+            "purpose": "INSTALLATION",
+            "businessScopeKey": "install-main",
+            "formatStatus": "PROVIDED",
+            "sourceFormatId": "fmt-1",
+            "sourceFormatVersion": "fv-1",
+            "rowPath": "/rows",
+            "conditions": [],
+            "basisReferences": [
+              "provider-format"
+            ],
+            "unknownConditions": []
+          },
+          "rules": [
+            {
+              "ruleId": "installationItem",
+              "sourceFields": [
+                "/installationItem"
+              ],
+              "targetField": "installationItem",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installationItem"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "sourceFields": [
+                "/installedQuantity"
+              ],
+              "targetField": "installedQuantity",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installedQuantity"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "unit",
+              "sourceFields": [
+                "/unit"
+              ],
+              "targetField": "unit",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/unit"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "sourceFields": [
+                "/materialSupplier"
+              ],
+              "targetField": "materialSupplier",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/materialSupplier"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "sourceFields": [
+                "/serviceScope"
+              ],
+              "targetField": "serviceScope",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/serviceScope"
+                  }
+                ]
+              },
+              "conditions": []
+            }
+          ],
+          "ruleCatalogVersion": "charging-transform-1",
+          "analysisResultId": "analysis"
+        },
+        "activeVersion": {
+          "versionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+          "versionNo": 2,
+          "sourceFormatId": "fmt-1",
+          "sourceFormatVersion": "fv-1",
+          "formatStatus": "PROVIDED",
+          "applicability": {
+            "serviceProviderId": "provider-dev-b",
+            "sourceSystem": "provider-docs",
+            "purpose": "INSTALLATION",
+            "businessScopeKey": "install-main",
+            "formatStatus": "PROVIDED",
+            "sourceFormatId": "fmt-1",
+            "sourceFormatVersion": "fv-1",
+            "rowPath": "/rows",
+            "conditions": [],
+            "basisReferences": [
+              "provider-format"
+            ],
+            "unknownConditions": []
+          },
+          "rules": [
+            {
+              "ruleId": "installationItem",
+              "sourceFields": [
+                "/installationItem"
+              ],
+              "targetField": "installationItem",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installationItem"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "sourceFields": [
+                "/installedQuantity"
+              ],
+              "targetField": "installedQuantity",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/installedQuantity"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "unit",
+              "sourceFields": [
+                "/unit"
+              ],
+              "targetField": "unit",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/unit"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "sourceFields": [
+                "/materialSupplier"
+              ],
+              "targetField": "materialSupplier",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/materialSupplier"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "sourceFields": [
+                "/serviceScope"
+              ],
+              "targetField": "serviceScope",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/serviceScope"
+                  }
+                ]
+              },
+              "conditions": []
+            }
+          ],
+          "ruleCatalogVersion": "charging-transform-1",
+          "analysisResultId": "analysis"
+        },
+        "activeVersionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+        "configurationRowVersion": 2,
+        "trial": {
+          "trialId": "trial-fabb46e7-c1d3-4536-9bc5-06fbbcaa2762",
+          "configurationVersionId": "cfgv-f78d2828-b8e5-4c27-bd01-7132651b428b",
+          "inputSnapshotId": "trial-input-7b8b0e11-ca19-4197-a0d1-c28e37dd3e17",
+          "status": "PASSED",
+          "output": {
+            "records": [
+              {
+                "inputId": "provider-record",
+                "sourceVersion": "doc-v9",
+                "ruleCatalogVersion": "charging-transform-1",
+                "status": "PASSED",
+                "rows": [
+                  {
+                    "rowIndex": 0,
+                    "output": {
+                      "installationItem": "桥架",
+                      "installedQuantity": 12.5,
+                      "unit": "米",
+                      "materialSupplier": "服务商",
+                      "serviceScope": "安装"
+                    },
+                    "ruleResults": [
+                      {
+                        "ruleId": "installationItem",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installationItem"
+                        ],
+                        "output": "桥架",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "installedQuantity",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installedQuantity"
+                        ],
+                        "output": 12.5,
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "unit",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/unit"
+                        ],
+                        "output": "米",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "materialSupplier",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/materialSupplier"
+                        ],
+                        "output": "服务商",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "serviceScope",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/serviceScope"
+                        ],
+                        "output": "安装",
+                        "issues": []
+                      }
+                    ]
+                  },
+                  {
+                    "rowIndex": 1,
+                    "output": {
+                      "installationItem": "电缆",
+                      "installedQuantity": 0,
+                      "unit": "米",
+                      "materialSupplier": "服务商",
+                      "serviceScope": "安装"
+                    },
+                    "ruleResults": [
+                      {
+                        "ruleId": "installationItem",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installationItem"
+                        ],
+                        "output": "电缆",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "installedQuantity",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/installedQuantity"
+                        ],
+                        "output": 0,
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "unit",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/unit"
+                        ],
+                        "output": "米",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "materialSupplier",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/materialSupplier"
+                        ],
+                        "output": "服务商",
+                        "issues": []
+                      },
+                      {
+                        "ruleId": "serviceScope",
+                        "status": "PASSED",
+                        "sourceFields": [
+                          "/serviceScope"
+                        ],
+                        "output": "安装",
+                        "issues": []
+                      }
+                    ]
+                  }
+                ],
+                "issues": []
+              }
+            ]
+          },
+          "ruleResults": [
+            {
+              "ruleId": "installationItem",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "installationItem",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installationItem"
+                  ],
+                  "output": "桥架",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "installationItem",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installationItem"
+                  ],
+                  "output": "电缆",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/installationItem"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/installationItem"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "installationItem"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "installationItem"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "installedQuantity",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "installedQuantity",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ],
+                  "output": 12.5,
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "installedQuantity",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ],
+                  "output": 0,
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/installedQuantity"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "installedQuantity"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "installedQuantity"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "unit",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "unit",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/unit"
+                  ],
+                  "output": "米",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "unit",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/unit"
+                  ],
+                  "output": "米",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/unit"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/unit"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "unit"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "unit"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "materialSupplier",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "materialSupplier",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ],
+                  "output": "服务商",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "materialSupplier",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ],
+                  "output": "服务商",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/materialSupplier"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "materialSupplier"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "materialSupplier"
+                }
+              ],
+              "issues": []
+            },
+            {
+              "ruleId": "serviceScope",
+              "status": "PASSED",
+              "executions": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "ruleId": "serviceScope",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/serviceScope"
+                  ],
+                  "output": "安装",
+                  "issues": []
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "ruleId": "serviceScope",
+                  "status": "PASSED",
+                  "sourceFields": [
+                    "/serviceScope"
+                  ],
+                  "output": "安装",
+                  "issues": []
+                }
+              ],
+              "inputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "sourceFields": [
+                    "/serviceScope"
+                  ]
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "sourceFields": [
+                    "/serviceScope"
+                  ]
+                }
+              ],
+              "outputReferences": [
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 0,
+                  "targetField": "serviceScope"
+                },
+                {
+                  "inputId": "provider-record",
+                  "rowIndex": 1,
+                  "targetField": "serviceScope"
+                }
+              ],
+              "issues": []
+            }
+          ],
+          "issues": [],
+          "checks": {
+            "inputComplete": true,
+            "scopeValid": true,
+            "rulesCovered": true,
+            "outputsValid": true,
+            "meaningsResolved": true
+          }
+        },
+        "openQuestions": [],
+        "rowVersion": 4,
+        "responsibilityVersion": 1
+      }
+    }
+  }
+]

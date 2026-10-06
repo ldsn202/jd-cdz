@@ -1,0 +1,3 @@
+-- TC-INS-13.sql 缺项与冲突展示（UI）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql（草稿 openQuestions 含 q1 数量冲突、q2 缺批准记录），无额外数据。
+-- 数据清理：本用例为只读验证；如需重置环境，销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

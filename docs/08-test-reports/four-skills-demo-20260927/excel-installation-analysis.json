@@ -1,0 +1,513 @@
+{
+  "workItemId": "work-5c546375-e918-4888-af65-49978b2ec49a",
+  "title": "安装资料整理 · WO-2609-0001",
+  "kind": "INSTALLATION_PREPARATION",
+  "status": "READY",
+  "providerId": "SP-001",
+  "providerName": "安达充电桩安装（001）",
+  "workOrderId": "WO-2609-0001",
+  "assignee": {
+    "identityId": "local:acc-sp-001",
+    "displayName": "安达充电桩安装（001）账号"
+  },
+  "rowVersion": 8,
+  "responsibilityVersion": 1,
+  "analysisGeneration": 6,
+  "analysisStatus": "AVAILABLE",
+  "updatedAt": "2026-09-27T12:21:01.487Z",
+  "reconciliationSummary": null,
+  "reconciliationSummaryAccess": "NOT_APPLICABLE",
+  "analysis": {
+    "contextRecords": [
+      {
+        "inputId": "record-1",
+        "recordType": "INSTALLATION_WORK_ORDER",
+        "data": {
+          "installationWorkOrderId": "WO-2609-0001",
+          "purchaseOrderId": "PO-2609-0001",
+          "serviceProviderId": "SP-001",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "work-order-1",
+          "sourceUpdatedAt": "2026-09-01T01:00:00.000Z"
+        }
+      },
+      {
+        "inputId": "record-2",
+        "recordType": "INSTALLATION_PLAN",
+        "data": {
+          "installationPlanId": "PLAN-0001",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "plan-1",
+          "sourceUpdatedAt": "2026-09-01T01:00:00.000Z",
+          "items": [
+            {
+              "installationItem": "桥架安装",
+              "plannedQuantity": 47,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "接地装置安装",
+              "plannedQuantity": 1,
+              "unit": "组",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "电缆敷设",
+              "plannedQuantity": 9,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-3",
+        "recordType": "PURCHASE_ORDER",
+        "data": {
+          "purchaseOrderId": "PO-2609-0001",
+          "sourceSystem": "purchase_order_system",
+          "sourceVersion": "order-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00"
+        }
+      },
+      {
+        "inputId": "record-4",
+        "recordType": "INSTALLATION_ENTITLEMENT",
+        "data": {
+          "installationEntitlementId": "ENT-2609-0001",
+          "name": "充电桩安装权益",
+          "sourceSystem": "installation_entitlement_system",
+          "sourceVersion": "ent-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+          "coveredServiceScope": "充电桩安装",
+          "quantityType": "LIMITED",
+          "includedQuantity": 1,
+          "unit": "单",
+          "validity": "VALID",
+          "validityBasis": "源记录明确为当前有效",
+          "applicability": "APPLICABLE",
+          "applicabilityBasis": "源记录明确关联工单 WO-2609-0001"
+        }
+      },
+      {
+        "inputId": "record-5",
+        "recordType": "PROVIDER_RECORD",
+        "data": {
+          "retrievedAt": "2026-09-27T12:20:45.154Z",
+          "sourceRecord": {
+            "sourceSystem": "provider-docs",
+            "serviceProviderId": "SP-001",
+            "sourceRecordId": "PROV-INSTALL-0001",
+            "sourceVersion": "doc-1",
+            "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+            "purpose": "INSTALLATION",
+            "configurationPurpose": "INSTALLATION",
+            "businessScopeKey": "installation-materials",
+            "installationWorkOrderId": "WO-2609-0001",
+            "sourceFormatId": "FMT-001",
+            "sourceFormatVersion": "fv-1"
+          },
+          "contentComplete": true,
+          "rawJson": "{\"rows\":[{\"安装项目\":\"桥架安装\",\"实际安装数量\":\"47\",\"单位\":\"米\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"},{\"安装项目\":\"接地装置安装\",\"实际安装数量\":\"1\",\"单位\":\"组\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"},{\"安装项目\":\"电缆敷设\",\"实际安装数量\":\"9\",\"单位\":\"米\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"}]}",
+          "sourceMaterials": [],
+          "formatStatus": "PROVIDED",
+          "formatDefinition": {
+            "formatId": "FMT-001",
+            "sourceVersion": "fv-1",
+            "notes": "安达充电桩安装（001） 安装资料格式说明（字段含义以原说明为准）。",
+            "fields": [
+              {
+                "fieldKey": "安装项目",
+                "label": "安装项目",
+                "meaning": "实际安装项目名称",
+                "unit": null
+              },
+              {
+                "fieldKey": "实际安装数量",
+                "label": "实际安装数量",
+                "meaning": "实际安装数量",
+                "unit": null
+              },
+              {
+                "fieldKey": "单位",
+                "label": "单位",
+                "meaning": "实际安装数量的计量单位",
+                "unit": null
+              },
+              {
+                "fieldKey": "供料方",
+                "label": "供料方",
+                "meaning": "材料提供方",
+                "unit": null
+              },
+              {
+                "fieldKey": "服务范围",
+                "label": "服务范围",
+                "meaning": "本行实际完成的施工服务范围",
+                "unit": null
+              }
+            ],
+            "sourceMaterials": []
+          },
+          "completeness": "COMPLETE",
+          "missingParts": [],
+          "_controlledTransformation": {
+            "configurationId": "config-fa3a1e8d-3580-49f5-9df8-688f0b8fee77",
+            "configurationVersionId": "icv-4727df1a-c64e-45de-8e82-bd08bea206cc",
+            "activationResultId": "car-ab95de79-b5ff-4e5d-823e-83735f28961c",
+            "usage": "ACTIVE_TRANSFORM",
+            "serviceProviderId": "SP-001",
+            "sourceSystem": "provider-docs",
+            "purpose": "INSTALLATION",
+            "businessScopeKey": "installation-materials",
+            "sourceFormatId": "FMT-001",
+            "sourceFormatVersion": "fv-1",
+            "transformerVersion": "charging-transform-1",
+            "status": "PASSED",
+            "output": {
+              "records": [
+                {
+                  "inputId": "record-5",
+                  "sourceVersion": "doc-1",
+                  "ruleCatalogVersion": "charging-transform-1",
+                  "status": "PASSED",
+                  "rows": [
+                    {
+                      "rowIndex": 0,
+                      "output": {
+                        "installationItem": "桥架安装",
+                        "installedQuantity": 47,
+                        "unit": "米",
+                        "materialSupplier": "服务商",
+                        "serviceScope": "供料及安装"
+                      },
+                      "ruleResults": [
+                        {
+                          "ruleId": "installation-item",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/安装项目"
+                          ],
+                          "output": "桥架安装",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "installed-quantity",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/实际安装数量"
+                          ],
+                          "output": 47,
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "unit",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/单位"
+                          ],
+                          "output": "米",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "material-supplier",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/供料方"
+                          ],
+                          "output": "服务商",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "service-scope",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/服务范围"
+                          ],
+                          "output": "供料及安装",
+                          "issues": []
+                        }
+                      ]
+                    },
+                    {
+                      "rowIndex": 1,
+                      "output": {
+                        "installationItem": "接地装置安装",
+                        "installedQuantity": 1,
+                        "unit": "组",
+                        "materialSupplier": "服务商",
+                        "serviceScope": "供料及安装"
+                      },
+                      "ruleResults": [
+                        {
+                          "ruleId": "installation-item",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/安装项目"
+                          ],
+                          "output": "接地装置安装",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "installed-quantity",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/实际安装数量"
+                          ],
+                          "output": 1,
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "unit",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/单位"
+                          ],
+                          "output": "组",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "material-supplier",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/供料方"
+                          ],
+                          "output": "服务商",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "service-scope",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/服务范围"
+                          ],
+                          "output": "供料及安装",
+                          "issues": []
+                        }
+                      ]
+                    },
+                    {
+                      "rowIndex": 2,
+                      "output": {
+                        "installationItem": "电缆敷设",
+                        "installedQuantity": 9,
+                        "unit": "米",
+                        "materialSupplier": "服务商",
+                        "serviceScope": "供料及安装"
+                      },
+                      "ruleResults": [
+                        {
+                          "ruleId": "installation-item",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/安装项目"
+                          ],
+                          "output": "电缆敷设",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "installed-quantity",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/实际安装数量"
+                          ],
+                          "output": 9,
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "unit",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/单位"
+                          ],
+                          "output": "米",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "material-supplier",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/供料方"
+                          ],
+                          "output": "服务商",
+                          "issues": []
+                        },
+                        {
+                          "ruleId": "service-scope",
+                          "status": "PASSED",
+                          "sourceFields": [
+                            "/服务范围"
+                          ],
+                          "output": "供料及安装",
+                          "issues": []
+                        }
+                      ]
+                    }
+                  ],
+                  "issues": []
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "inputId": "record-6",
+        "recordType": "PROVIDER_FORMAT",
+        "data": {
+          "formatId": "FMT-001",
+          "sourceVersion": "fv-1",
+          "notes": "安达充电桩安装（001） 安装资料格式说明（字段含义以原说明为准）。",
+          "fields": [
+            {
+              "fieldKey": "安装项目",
+              "label": "安装项目",
+              "meaning": "实际安装项目名称",
+              "unit": null
+            },
+            {
+              "fieldKey": "实际安装数量",
+              "label": "实际安装数量",
+              "meaning": "实际安装数量",
+              "unit": null
+            },
+            {
+              "fieldKey": "单位",
+              "label": "单位",
+              "meaning": "实际安装数量的计量单位",
+              "unit": null
+            },
+            {
+              "fieldKey": "供料方",
+              "label": "供料方",
+              "meaning": "材料提供方",
+              "unit": null
+            },
+            {
+              "fieldKey": "服务范围",
+              "label": "服务范围",
+              "meaning": "本行实际完成的施工服务范围",
+              "unit": null
+            }
+          ],
+          "sourceMaterials": []
+        }
+      }
+    ],
+    "evidenceMaterials": [
+      {
+        "inputId": "parsing:parse:bj-843a7845-d562-4f48-98a6-5510d57ad84c",
+        "materialVersionId": "smv-1c408ffa-b82b-4db4-8fd0-7db7df020202",
+        "sourceSystem": "file-service",
+        "sourceMaterialId": "MAT-00001",
+        "sourceVersion": "material-1"
+      }
+    ],
+    "resultId": "ar-61cd656f-a56e-41e3-93c7-8203303d830a",
+    "runId": "analysis:work-5c546375-e918-4888-af65-49978b2ec49a:6",
+    "inputSnapshotId": "ais-801bcda9-9b7b-4d47-b1c5-b6875499b8fd",
+    "analysisGeneration": 6,
+    "status": "ANALYZED",
+    "summary": "已从工单 WO-2609-0001 的服务商安装资料 PROV-INSTALL-0001 及材料《施工记录》中整理出三个实际安装项目：桥架安装 47 米、接地装置安装 1 组、电缆敷设 9 米，供料方均为服务商，服务范围均为供料及安装。两份材料记录的实际安装事实一致，已合并为同一明细草稿，未发现缺失字段。请业务人员核对本草稿后再自行决定后续处理。",
+    "findings": [
+      {
+        "findingId": "finding-1",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "桥架安装",
+          "installedQuantity": 47,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/rawJson",
+            "quote": "{\"安装项目\":\"桥架安装\",\"实际安装数量\":\"47\",\"单位\":\"米\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"}"
+          },
+          {
+            "inputId": "parsing:parse:bj-843a7845-d562-4f48-98a6-5510d57ad84c",
+            "blockId": "sheet-1:B2",
+            "jsonPointer": null,
+            "quote": "桥架安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-2",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "接地装置安装",
+          "installedQuantity": 1,
+          "unit": "组",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/rawJson",
+            "quote": "{\"安装项目\":\"接地装置安装\",\"实际安装数量\":\"1\",\"单位\":\"组\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"}"
+          },
+          {
+            "inputId": "parsing:parse:bj-843a7845-d562-4f48-98a6-5510d57ad84c",
+            "blockId": "sheet-1:B3",
+            "jsonPointer": null,
+            "quote": "接地装置安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-3",
+        "type": "INSTALLATION_FACT",
+        "content": {
+          "installationItem": "电缆敷设",
+          "installedQuantity": 9,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/rawJson",
+            "quote": "{\"安装项目\":\"电缆敷设\",\"实际安装数量\":\"9\",\"单位\":\"米\",\"供料方\":\"服务商\",\"服务范围\":\"供料及安装\"}"
+          },
+          {
+            "inputId": "parsing:parse:bj-843a7845-d562-4f48-98a6-5510d57ad84c",
+            "blockId": "sheet-1:B4",
+            "jsonPointer": null,
+            "quote": "电缆敷设"
+          }
+        ]
+      }
+    ],
+    "openQuestions": [],
+    "validatedAt": "2026-09-27T12:21:01.487Z"
+  },
+  "analysisProgress": {
+    "state": "AVAILABLE",
+    "description": "分析已完成",
+    "errorCode": null
+  },
+  "analysisTriggerMode": "manual",
+  "analysisRuntimeError": null,
+  "canRequestAnalysis": true,
+  "activeSupplementRequest": null,
+  "pendingOperation": null,
+  "completion": null,
+  "allowedActions": [
+    "CONFIRM_INSTALLATION_DRAFT",
+    "SUBMIT_INSTALLATION_DETAIL"
+  ],
+  "blockedReasons": [],
+  "relatedItems": []
+}

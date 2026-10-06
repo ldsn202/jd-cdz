@@ -1,0 +1,564 @@
+{
+  "runAt": "2026-09-20T15:08:12.197Z",
+  "envId": "acc-run-1 / acc-run-2",
+  "datasetId": "standard-v1",
+  "phases": [
+    {
+      "phase": "环境检查",
+      "pass": true,
+      "detail": "acc-run-1 清单校验与存储初始化"
+    },
+    {
+      "phase": "来源生成",
+      "pass": true,
+      "detail": "100 家/1000 单/3 账期 + 预设负例"
+    },
+    {
+      "phase": "文件生成",
+      "pass": true,
+      "detail": "997 个真实文件（PDF/XLSX/PNG/JPEG）"
+    },
+    {
+      "phase": "验收预期冻结",
+      "pass": true,
+      "detail": "九场景八要素 + 5 负例预期"
+    },
+    {
+      "phase": "独立数据校验",
+      "pass": true,
+      "detail": "issues=0"
+    },
+    {
+      "phase": "规模与关联核对",
+      "pass": true,
+      "detail": "38 项断言"
+    },
+    {
+      "phase": "文件独立校验",
+      "pass": true,
+      "detail": "8 项断言"
+    },
+    {
+      "phase": "破坏注入检查",
+      "pass": true,
+      "detail": "坏关联/错金额/摘要不符/错版均抓出"
+    },
+    {
+      "phase": "golden 固定样本",
+      "pass": true,
+      "detail": "17 项断言（算式/情形/破坏探针）"
+    },
+    {
+      "phase": "HTTP 启动",
+      "pass": true,
+      "detail": "acc-run-1 实跑端口 8795"
+    },
+    {
+      "phase": "13+1 业务操作正反例",
+      "pass": true,
+      "detail": "27 项（失败 0）"
+    },
+    {
+      "phase": "重启后写回结果可查",
+      "pass": true,
+      "detail": "回查 SUCCEEDED"
+    },
+    {
+      "phase": "环境检查",
+      "pass": true,
+      "detail": "acc-run-2 清单校验与存储初始化"
+    },
+    {
+      "phase": "来源生成",
+      "pass": true,
+      "detail": "100 家/1000 单/3 账期 + 预设负例"
+    },
+    {
+      "phase": "文件生成",
+      "pass": true,
+      "detail": "997 个真实文件（PDF/XLSX/PNG/JPEG）"
+    },
+    {
+      "phase": "验收预期冻结",
+      "pass": true,
+      "detail": "九场景八要素 + 5 负例预期"
+    },
+    {
+      "phase": "独立数据校验",
+      "pass": true,
+      "detail": "issues=0"
+    },
+    {
+      "phase": "规模与关联核对",
+      "pass": true,
+      "detail": "38 项断言"
+    },
+    {
+      "phase": "文件独立校验",
+      "pass": true,
+      "detail": "8 项断言"
+    },
+    {
+      "phase": "破坏注入检查",
+      "pass": true,
+      "detail": "坏关联/错金额/摘要不符/错版均抓出"
+    },
+    {
+      "phase": "HTTP 启动",
+      "pass": true,
+      "detail": "acc-run-2 实跑端口 8796"
+    },
+    {
+      "phase": "13+1 业务操作正反例",
+      "pass": true,
+      "detail": "27 项（失败 0）"
+    },
+    {
+      "phase": "重启后写回结果可查",
+      "pass": true,
+      "detail": "回查 SUCCEEDED"
+    },
+    {
+      "phase": "两次生成可复现",
+      "pass": true,
+      "detail": "记录摘要 e3410bed6f4b… / 文件摘要 3c500724a290…"
+    }
+  ],
+  "operationResults": [
+    {
+      "id": "OP-01+",
+      "name": "身份上下文",
+      "positive": true,
+      "pass": true,
+      "detail": "200 grants=1"
+    },
+    {
+      "id": "OP-01-",
+      "name": "身份上下文无凭据",
+      "positive": false,
+      "pass": true,
+      "detail": "40101"
+    },
+    {
+      "id": "OP-02+",
+      "name": "工单上下文",
+      "positive": true,
+      "pass": true,
+      "detail": "200 completeness=COMPLETE"
+    },
+    {
+      "id": "OP-02-",
+      "name": "工单跨服务商",
+      "positive": false,
+      "pass": true,
+      "detail": "40301"
+    },
+    {
+      "id": "OP-03+",
+      "name": "购买权益",
+      "positive": true,
+      "pass": true,
+      "detail": "200 LIMITED 上限 1"
+    },
+    {
+      "id": "OP-03-",
+      "name": "订单不存在",
+      "positive": false,
+      "pass": true,
+      "detail": "40401"
+    },
+    {
+      "id": "OP-04+",
+      "name": "服务商原资料",
+      "positive": true,
+      "pass": true,
+      "detail": "200 formatStatus=PROVIDED"
+    },
+    {
+      "id": "OP-04-",
+      "name": "来源未配置",
+      "positive": false,
+      "pass": true,
+      "detail": "40001"
+    },
+    {
+      "id": "OP-05+",
+      "name": "原始文件字节",
+      "positive": true,
+      "pass": true,
+      "detail": "200 5288B 摘要=191618888ce9…"
+    },
+    {
+      "id": "OP-05-",
+      "name": "文件版本不可取得",
+      "positive": false,
+      "pass": true,
+      "detail": "40901"
+    },
+    {
+      "id": "OP-06+",
+      "name": "京东账单",
+      "positive": true,
+      "pass": true,
+      "detail": "200 总额=1275.00"
+    },
+    {
+      "id": "OP-06-",
+      "name": "账单工单不符",
+      "positive": false,
+      "pass": true,
+      "detail": "40901"
+    },
+    {
+      "id": "OP-07+",
+      "name": "服务商应收",
+      "positive": true,
+      "pass": true,
+      "detail": "200 总额=1275.00"
+    },
+    {
+      "id": "OP-07-",
+      "name": "应收不存在",
+      "positive": false,
+      "pass": true,
+      "detail": "40401"
+    },
+    {
+      "id": "OP-08+",
+      "name": "费用依据",
+      "positive": true,
+      "pass": true,
+      "detail": "200 terms=1 approvals=1"
+    },
+    {
+      "id": "OP-08-",
+      "name": "费用依据越权",
+      "positive": false,
+      "pass": true,
+      "detail": "403（按范围控制）"
+    },
+    {
+      "id": "OP-09+",
+      "name": "明细提交写入",
+      "positive": true,
+      "pass": true,
+      "detail": "SUCCEEDED detail-1"
+    },
+    {
+      "id": "OP-09-",
+      "name": "提交版本不符",
+      "positive": false,
+      "pass": true,
+      "detail": "40901"
+    },
+    {
+      "id": "OP-10+",
+      "name": "提交回查",
+      "positive": true,
+      "pass": true,
+      "detail": "回查一致"
+    },
+    {
+      "id": "OP-10-",
+      "name": "回查不存在",
+      "positive": false,
+      "pass": true,
+      "detail": "40401"
+    },
+    {
+      "id": "OP-11+",
+      "name": "退回补充写入",
+      "positive": true,
+      "pass": true,
+      "detail": "SUCCEEDED"
+    },
+    {
+      "id": "OP-11-",
+      "name": "退回意见为空",
+      "positive": false,
+      "pass": true,
+      "detail": "40001"
+    },
+    {
+      "id": "OP-12+",
+      "name": "动作回查",
+      "positive": true,
+      "pass": true,
+      "detail": "回查一致"
+    },
+    {
+      "id": "OP-12-",
+      "name": "动作不存在",
+      "positive": false,
+      "pass": true,
+      "detail": "40401"
+    },
+    {
+      "id": "OP-13+",
+      "name": "变化发现",
+      "positive": true,
+      "pass": true,
+      "detail": "基线+写入事件 38 条（含明细提交事件=true）"
+    },
+    {
+      "id": "OP-13-",
+      "name": "变化发现越权",
+      "positive": false,
+      "pass": true,
+      "detail": "40301"
+    },
+    {
+      "id": "OP-14+",
+      "name": "丢响应恢复",
+      "positive": true,
+      "pass": true,
+      "detail": "504→回查 SUCCEEDED（没有收到响应≠没有写入）"
+    }
+  ],
+  "tcStatus": [
+    {
+      "tcId": "TC-MCK-01",
+      "name": "模拟外部接口分层入口与合同包装",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-02",
+      "name": "后台 HTTP 适配、脱敏与失败分支",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-03",
+      "name": "来源调用前失败",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-04",
+      "name": "材料版本与读取错误",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-05",
+      "name": "服务商格式四条件",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-06",
+      "name": "多服务商账号与范围隔离",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-07",
+      "name": "来源调用前失败恢复",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-08",
+      "name": "超时、结果未知与回查恢复",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-09",
+      "name": "写入后响应丢失",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-10",
+      "name": "同操作编号并发与重复提交",
+      "generationStage": "PASS",
+      "sourceStage": "NOT_RUN",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-11",
+      "name": "服务商修订应收并重读",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-12",
+      "name": "服务商回复后的分析与复核衔接",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-13",
+      "name": "权限撤销与失效会话",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-14",
+      "name": "双方账目字段完整性",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-15",
+      "name": "缺权限与自报身份参数",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-16",
+      "name": "越权读取与跨服务商",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-17",
+      "name": "无权限与深链接 404 口径",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-18",
+      "name": "上传文件实际保留",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-19",
+      "name": "上传与模拟材料浏览隔离",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-20",
+      "name": "模拟数据经接口进入工作台",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-21",
+      "name": "常规集规模、场景与覆盖核对",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-22",
+      "name": "初始复现与时间推进",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-23",
+      "name": "五件交付文件齐备与完整性",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-24",
+      "name": "预设负例保留、命中与答案隔离",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-25",
+      "name": "来源跨接口关联与对照独立",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-26",
+      "name": "非法生成配置拒绝与有效对照",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-27",
+      "name": "来源读写持久化与重启恢复",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-28",
+      "name": "配对环境恢复、上传保护与切换",
+      "generationStage": "PASS",
+      "sourceStage": "PASS",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    },
+    {
+      "tcId": "TC-MCK-29",
+      "name": "Skill 产物保存",
+      "generationStage": "PASS",
+      "sourceStage": "BLOCKED",
+      "businessStage": "BLOCKED",
+      "businessDependency": "T4.2 真实业务应用联调（工作台、D1、调度与 Skill 执行）未实现，不以来源 200 或文档检查换算业务 PASS"
+    }
+  ],
+  "tcSummary": {
+    "total": 29,
+    "generationPass": 29,
+    "sourcePass": 22,
+    "businessBlocked": 29
+  },
+  "reproducibility": {
+    "comparedWith": "acc-run-2",
+    "sourceRecordsIdentical": true,
+    "filesIdentical": true
+  },
+  "conclusion": "阶段结论：模拟来源可用（生成、来源接口与持久化恢复均已实证）；该结论与完整业务验收分开，业务联调相关子场景保持 BLOCKED，依赖 T4.2 真实业务应用联调。"
+}

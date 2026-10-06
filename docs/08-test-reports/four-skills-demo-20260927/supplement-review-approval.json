@@ -1,0 +1,24 @@
+{
+  "operationId": "rv-71843e95-56ab-4808-8ca1-e825a928d089",
+  "workItemId": "work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e",
+  "status": "SUCCEEDED",
+  "receipt": {
+    "operationId": "rv-71843e95-56ab-4808-8ca1-e825a928d089",
+    "workItemId": "work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e",
+    "installationWorkOrderId": "WO-2609-0046",
+    "action": "APPROVE",
+    "operationStatus": "SUCCEEDED",
+    "pendingReason": null,
+    "sourceRecord": {
+      "sourceSystem": "installation_management",
+      "sourceRecordId": "review-rv-71843e95-56ab-4808-8ca1-e825a928d089",
+      "sourceVersion": "review-1",
+      "workOrderSourceVersion": "work-order-4"
+    },
+    "resultDescription": "核查通过结果已保存（不表示费用获批或业务结束）",
+    "verifiedAt": "2026-09-27T12:33:34.730Z",
+    "workOrderId": "WO-2609-0046"
+  },
+  "verifiedAt": "2026-09-27T12:33:34.734Z",
+  "localContinuationStatus": "COMPLETED"
+}

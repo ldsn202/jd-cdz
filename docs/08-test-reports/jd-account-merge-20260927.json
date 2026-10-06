@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-09-27T08:32:09.491Z",
+  "session": {
+    "identityId": "local:acc-jd-business",
+    "displayName": "京东业务账号",
+    "businessRoles": [
+      "FULFILLMENT_COORDINATOR",
+      "INSTALLATION_REVIEWER",
+      "BUSINESS_RECONCILER"
+    ]
+  },
+  "switchableAccounts": 102,
+  "orders": 1000,
+  "mine": 1100,
+  "reconciliation": 300,
+  "assigned": [
+    {
+      "item_kind": "INSTALLATION_REVIEW",
+      "count": 800
+    },
+    {
+      "item_kind": "RECONCILIATION",
+      "count": 300
+    }
+  ],
+  "oldActive": 0,
+  "mergeEvents": 1100,
+  "legacyCookies": "all three resolve to acc-jd-business"
+}

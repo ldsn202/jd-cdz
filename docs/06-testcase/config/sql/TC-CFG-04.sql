@@ -1,0 +1,11 @@
+-- TC-CFG-04.sql 修订候选并自动试转换（PUT configuration-draft）
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql：wi-cfg-01（row_version=3、responsibility_version=1）、候选 cfgv-01-2、PASSED 试转换 ct-01-2。
+-- 修订通过接口 PUT /api/admin/charging/work-items/wi-cfg-01/configuration-draft 真实发起，不由 SQL 预置产物。
+-- ========== 数据清理 ==========
+-- 接口产生的新候选版本（cfg-01 的 version_no=3）及其自动试转换记录受 DDL 触发器保护，禁止 DELETE；
+-- 执行后重置本地库（重载各域 DDL + TC-CFG-SEED.sql）恢复基线。
+-- 产物核验（供步骤 2 对照）：
+-- SELECT id, version_no, origin, save_key FROM integration_config_version WHERE integration_config_id='cfg-01' ORDER BY version_no;
+-- SELECT id, configuration_version_id, status FROM configuration_trial WHERE configuration_version_id IN
+--   (SELECT id FROM integration_config_version WHERE integration_config_id='cfg-01');

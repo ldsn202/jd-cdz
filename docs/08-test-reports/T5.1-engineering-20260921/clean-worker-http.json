@@ -1,0 +1,49 @@
+{
+  "health": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-6260a87a-ef16-44ba-b8d4-1922eebcecc0",
+      "data": {
+        "ok": true,
+        "service": "jd-charging-api",
+        "externalMode": "mock",
+        "aiMode": "mock"
+      }
+    }
+  },
+  "session": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-657f5e5b-2a65-44d0-aacf-96beb143b6e7",
+      "data": {
+        "identityId": "ir-dev-jd-review",
+        "displayName": "京东核查员（开发）",
+        "subjectType": "HUMAN",
+        "businessRoles": [
+          "INSTALLATION_REVIEWER"
+        ],
+        "authorizationVersion": "dev-auth-v1",
+        "verifiedAt": "2026-09-20T00:00:00.000Z"
+      }
+    }
+  },
+  "empty-work-items": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-228e1af1-027a-46e5-817b-f3dab2203826",
+      "data": {
+        "list": [],
+        "total": 0,
+        "page": 1,
+        "pageSize": 10,
+        "asOf": "2026-09-21T04:00:26.295Z"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "datasetId": "extension-v1",
+  "setType": "extension",
+  "generatorVersion": "1.0.0",
+  "seed": 20260920,
+  "initialBusinessTime": "2026-09-01T09:00:00+08:00",
+  "providers": 120,
+  "workOrders": 1200,
+  "billingPeriods": ["2026-05", "2026-06", "2026-07", "2026-08"],
+  "scenarios": {
+    "pending_materials": 240,
+    "evidence_consistent": 216,
+    "quantity_diff": 144,
+    "material_lacking": 120,
+    "billing_matched": 168,
+    "billing_diff": 120,
+    "billing_evidence_incomplete": 72,
+    "coordination": 72,
+    "read_only": 48
+  },
+  "formatVersions": { "complete": 84, "meaning_unknown": 12, "no_spec": 12, "association_mismatch": 12 },
+  "materialForms": { "clear_table": 24, "restructured_table": 24, "alt_unit_table": 24, "pdf_record": 24, "image_record": 24 }
+}

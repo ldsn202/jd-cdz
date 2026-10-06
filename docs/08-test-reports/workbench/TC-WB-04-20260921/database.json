@@ -1,0 +1,25 @@
+[
+  {
+    "results": [
+      {
+        "item_kind": "INSTALLATION_REVIEW",
+        "status": "READY",
+        "n": 1
+      },
+      {
+        "item_kind": "RECONCILIATION",
+        "status": "PROCESSING",
+        "n": 1
+      },
+      {
+        "item_kind": "RECONCILIATION",
+        "status": "READY",
+        "n": 3
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 1
+    }
+  }
+]

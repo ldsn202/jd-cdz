@@ -1,0 +1,91 @@
+{
+  "datasetId": "golden-v1",
+  "note": "小份可人工逐字段核实的固定样本：单位差异、同名异义、拆合项、固定费用、未知/零/负金额、范围不一致、总分不符、材料不足。每条记录的算式与原文位置在 golden-expected.json 冻结。",
+  "initialBusinessTime": "2026-09-01T09:00:00+08:00",
+  "providers": [
+    { "providerId": "G-SP-001", "displayName": "华测安装（golden）", "form": "clear_table", "formatId": "G-FMT-1", "formatVersion": "fv-1" },
+    { "providerId": "G-SP-002", "displayName": "段记工程（golden）", "form": "alt_unit_table", "formatId": "G-FMT-2", "formatVersion": "fv-1" }
+  ],
+  "accounts": [
+    { "accountId": "acc-g-sp-001", "displayName": "华测安装资料账号", "role": "PROVIDER_DATA", "serviceProviderId": "G-SP-001", "scopeProviderIds": ["G-SP-001"] },
+    { "accountId": "acc-g-sp-002", "displayName": "段记工程资料账号", "role": "PROVIDER_DATA", "serviceProviderId": "G-SP-002", "scopeProviderIds": ["G-SP-002"] },
+    { "accountId": "acc-g-jd-recon", "displayName": "京东对账账号（golden）", "role": "JD_RECONCILIATION", "serviceProviderId": null, "scopeProviderIds": ["G-SP-001", "G-SP-002"] }
+  ],
+  "workOrders": [
+    { "id": "WO-G-001", "providerId": "G-SP-001", "purchaseOrderId": "PO-G-001", "entitlementId": "ENT-G-001",
+      "planItems": [ { "installationItem": "桥架安装", "quantity": 12, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" }, { "installationItem": "电缆敷设", "quantity": 10, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "detailItems": [ { "installationItem": "桥架安装", "quantity": 12, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" }, { "installationItem": "电缆敷设", "quantity": 10, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "materials": [ { "sourceMaterialId": "MAT-G-001", "name": "现场施工记录-G001.pdf", "mediaType": "application/pdf", "sourceVersion": "material-1", "fileAvailable": true } ] },
+    { "id": "WO-G-002", "providerId": "G-SP-002", "purchaseOrderId": "PO-G-002", "entitlementId": "ENT-G-002",
+      "planItems": [ { "installationItem": "桥架安装", "quantity": 8, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" }, { "installationItem": "入场搬运", "quantity": 1, "unit": "次", "materialSupplier": "服务商", "serviceScope": "仅安装" } ],
+      "detailItems": [ { "installationItem": "桥架安装", "quantity": 8, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" }, { "installationItem": "入场搬运", "quantity": 1, "unit": "次", "materialSupplier": "服务商", "serviceScope": "仅安装" } ],
+      "materials": [ { "sourceMaterialId": "MAT-G-002", "name": "现场施工记录-G002.xlsx", "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "sourceVersion": "material-1", "fileAvailable": true } ] },
+    { "id": "WO-G-003", "providerId": "G-SP-001", "purchaseOrderId": "PO-G-003", "entitlementId": "ENT-G-003",
+      "planItems": [ { "installationItem": "临时设施", "quantity": 1, "unit": "项", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "detailItems": [ { "installationItem": "临时设施", "quantity": 1, "unit": "项", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "materials": [ { "sourceMaterialId": "MAT-G-003", "name": "现场施工记录-G003.pdf", "mediaType": "application/pdf", "sourceVersion": "material-1", "fileAvailable": true } ] },
+    { "id": "WO-G-004", "providerId": "G-SP-002", "purchaseOrderId": "PO-G-004", "entitlementId": "ENT-G-004",
+      "planItems": [ { "installationItem": "桥架安装", "quantity": 10, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "detailItems": [ { "installationItem": "桥架安装", "quantity": 10, "unit": "米", "materialSupplier": "服务商", "serviceScope": "供料及安装" } ],
+      "materials": [] }
+  ],
+  "bills": [
+    { "jdBillId": "JD-BILL-G-001", "providerReceivableId": "REC-G-001", "serviceProviderId": "G-SP-001", "billingPeriod": "2026-08", "workOrderIds": ["WO-G-001"],
+      "jdItems": [
+        { "billItemId": "jd-item-g1-1", "itemName": "桥架安装", "installationWorkOrderId": "WO-G-001", "chargeScope": "安装施工费用", "billedQuantity": "12", "unit": "米", "unitPrice": "30.00", "amount": "360.00" },
+        { "billItemId": "jd-item-g1-2", "itemName": "电缆敷设", "installationWorkOrderId": "WO-G-001", "chargeScope": "安装施工费用", "billedQuantity": "10", "unit": "米", "unitPrice": "45.00", "amount": "450.00" }
+      ],
+      "jdReportedTotal": "810.00",
+      "receivableItems": [
+        { "billItemId": "rec-item-g1-1", "itemName": "桥架电缆综合施工", "installationWorkOrderId": "WO-G-001", "chargeScope": "安装施工费用", "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "810.00" }
+      ],
+      "receivableReportedTotal": "810.00" },
+    { "jdBillId": "JD-BILL-G-002", "providerReceivableId": "REC-G-002", "serviceProviderId": "G-SP-002", "billingPeriod": "2026-08", "workOrderIds": ["WO-G-002"],
+      "jdItems": [
+        { "billItemId": "jd-item-g2-1", "itemName": "桥架安装", "installationWorkOrderId": "WO-G-002", "chargeScope": "安装施工费用", "billedQuantity": "8", "unit": "米", "unitPrice": "30.00", "amount": "240.00" },
+        { "billItemId": "jd-item-g2-2", "itemName": "入场搬运", "installationWorkOrderId": "WO-G-002", "chargeScope": "固定收费", "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "60.00" }
+      ],
+      "jdReportedTotal": "300.00",
+      "receivableItems": [
+        { "billItemId": "rec-item-g2-1", "itemName": "桥架安装", "installationWorkOrderId": "WO-G-002", "chargeScope": "安装施工费用", "billedQuantity": "8", "unit": "米", "unitPrice": "30.00", "amount": "240.00" },
+        { "billItemId": "rec-item-g2-2", "itemName": "入场搬运", "installationWorkOrderId": "WO-G-002", "chargeScope": "固定收费", "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "60.00" }
+      ],
+      "receivableReportedTotal": "300.00" },
+    { "jdBillId": "JD-BILL-G-003", "providerReceivableId": "REC-G-003", "serviceProviderId": "G-SP-001", "billingPeriod": "2026-08", "workOrderIds": ["WO-G-003"],
+      "jdItems": [
+        { "billItemId": "jd-item-g3-1", "itemName": "临时设施", "installationWorkOrderId": "WO-G-003", "chargeScope": null, "billedQuantity": null, "unit": null, "unitPrice": null, "amount": null }
+      ],
+      "jdReportedTotal": null,
+      "receivableItems": [
+        { "billItemId": "rec-item-g3-1", "itemName": "临时设施", "installationWorkOrderId": "WO-G-003", "chargeScope": null, "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "0.00" },
+        { "billItemId": "rec-item-g3-2", "itemName": "前期扣减", "installationWorkOrderId": "WO-G-003", "chargeScope": "调整", "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "-30.00" }
+      ],
+      "receivableReportedTotal": "-30.00" },
+    { "jdBillId": "JD-BILL-G-004", "providerReceivableId": "REC-G-004", "serviceProviderId": "G-SP-002", "billingPeriod": "2026-08", "workOrderIds": ["WO-G-004"],
+      "jdItems": [
+        { "billItemId": "jd-item-g4-1", "itemName": "桥架安装", "installationWorkOrderId": "WO-G-004", "chargeScope": "安装施工费用", "billedQuantity": "10", "unit": "米", "unitPrice": "30.00", "amount": "300.00" },
+        { "billItemId": "jd-item-g4-2", "itemName": "共同费用", "installationWorkOrderId": null, "chargeScope": null, "billedQuantity": null, "unit": null, "unitPrice": null, "amount": "5.00" }
+      ],
+      "jdReportedTotal": "310.00",
+      "receivableItems": [
+        { "billItemId": "rec-item-g4-1", "itemName": "桥架安装", "installationWorkOrderId": "WO-G-004", "chargeScope": "安装施工费用", "billedQuantity": "10", "unit": "米", "unitPrice": "30.00", "amount": "300.00" }
+      ],
+      "receivableReportedTotal": "300.00" }
+  ],
+  "formatSpecs": [
+    { "formatId": "G-FMT-1", "sourceVersion": "fv-1", "serviceProviderId": "G-SP-001", "notes": "华测安装表格字段说明。", "fields": [ { "fieldKey": "数量", "label": "数量", "meaning": "施工长度（米数）", "unit": "米" }, { "fieldKey": "供料方", "label": "供料方", "meaning": "材料提供方", "unit": null } ] },
+    { "formatId": "G-FMT-2", "sourceVersion": "fv-1", "serviceProviderId": "G-SP-002", "notes": "段记工程表格字段说明：数量按段记录。", "fields": [ { "fieldKey": "数量", "label": "数量", "meaning": "施工段数（每段 4 米）", "unit": "段" }, { "fieldKey": "计量表达", "label": "计量表达", "meaning": "段×单段米数表达式", "unit": null } ] }
+  ],
+  "terms": [
+    { "termsId": "TERMS-G-SP-001-2026-08", "serviceProviderId": "G-SP-001", "billingPeriod": "2026-08", "coveredItems": ["桥架安装", "电缆敷设", "临时设施"], "unitPrices": { "桥架安装": "30.00", "电缆敷设": "45.00" } },
+    { "termsId": "TERMS-G-SP-002-2026-08", "serviceProviderId": "G-SP-002", "billingPeriod": "2026-08", "coveredItems": ["桥架安装", "入场搬运"], "unitPrices": { "桥架安装": "30.00" } }
+  ],
+  "approvals": [
+    { "approvalId": "APR-G-001", "jdBillId": "JD-BILL-G-001", "serviceProviderId": "G-SP-001", "approvedWorkOrderIds": ["WO-G-001"] },
+    { "approvalId": "APR-G-002", "jdBillId": "JD-BILL-G-002", "serviceProviderId": "G-SP-002", "approvedWorkOrderIds": ["WO-G-002"] }
+  ],
+  "negatives": [
+    { "negativeId": "NEG-G1", "kind": "TOTAL_MISMATCH", "targetDescription": "京东账单 JD-BILL-G-004 原总额 310.00 与分项合计 305.00 不符（预设负例）", "installationWorkOrderId": "WO-G-004", "expectedHandling": "总分不符进入核实，不得按总额一致关闭核对" },
+    { "negativeId": "NEG-G2", "kind": "REQUIRED_MATERIAL_MISSING", "targetDescription": "工单 WO-G-004 必需现场施工记录实际缺失（预设负例）", "installationWorkOrderId": "WO-G-004", "expectedHandling": "缺项保持缺项，不得以其他材料或默认结论补齐" }
+  ]
+}

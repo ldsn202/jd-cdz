@@ -1,0 +1,23 @@
+{
+  "datasetId": "quick-v1",
+  "setType": "quick",
+  "generatorVersion": "1.0.0",
+  "seed": 20260920,
+  "initialBusinessTime": "2026-09-01T09:00:00+08:00",
+  "providers": 5,
+  "workOrders": 20,
+  "billingPeriods": ["2026-07", "2026-08"],
+  "scenarios": {
+    "pending_materials": 4,
+    "evidence_consistent": 4,
+    "quantity_diff": 2,
+    "material_lacking": 2,
+    "billing_matched": 3,
+    "billing_diff": 3,
+    "billing_evidence_incomplete": 1,
+    "coordination": 1,
+    "read_only": 0
+  },
+  "formatVersions": { "complete": 3, "meaning_unknown": 1, "no_spec": 1, "association_mismatch": 0 },
+  "materialForms": { "clear_table": 1, "restructured_table": 1, "alt_unit_table": 1, "pdf_record": 1, "image_record": 1 }
+}

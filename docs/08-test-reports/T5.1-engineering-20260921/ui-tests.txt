@@ -1,0 +1,21 @@
+
+> jd-charging-web@0.1.0 test
+> node --experimental-strip-types --test tests/*.test.mjs
+
+✔ replaying an uncertain write retains exact request key and body (26.781583ms)
+✔ upload carries optimistic version and leaves byte content intact (0.542959ms)
+✔ draft edit notes cover every changed business field and preserve unknown quantities (1.058333ms)
+✔ enable requires a passed trial for the current candidate and resolved questions (0.179958ms)
+✔ concurrent repeated clicks issue one write and share its acceptance (0.144ms)
+✔ only uncertain writes lock editing; validation rejections allow correction (0.056917ms)
+✔ multipart upload leaves Content-Type to the browser boundary (26.838333ms)
+✔ pending-write error retains the original operation for safe recovery (1.018042ms)
+✔ provider picker retrieves all authorized pages instead of silently limiting to first ten (0.828167ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 182.9385

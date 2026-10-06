@@ -1,0 +1,18 @@
+{
+  "workOrderId": "WO-2609-0051",
+  "workItemId": "work-5d265d67-f834-4f77-8334-104f6ec9b67d",
+  "modelJobs": 0,
+  "jobs": [
+    {
+      "purpose": "READ_SOURCE",
+      "status": "READY",
+      "count": 2
+    },
+    {
+      "purpose": "READ_SOURCE",
+      "status": "SUCCEEDED",
+      "count": 1
+    }
+  ],
+  "activeModelJobsBeforeRestore": 0
+}

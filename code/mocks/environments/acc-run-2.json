@@ -1,0 +1,7 @@
+{
+  "envId": "acc-run-2",
+  "port": 8796,
+  "dataset": "standard-v1",
+  "storageRoot": ".data/acc-run-2",
+  "appEnvRef": "jd-charging-local"
+}

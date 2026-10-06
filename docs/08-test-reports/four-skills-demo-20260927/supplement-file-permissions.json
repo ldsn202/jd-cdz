@@ -1,0 +1,17 @@
+[
+  {
+    "account": "acc-jd-business",
+    "status": 200,
+    "originalBytesMatch": true
+  },
+  {
+    "account": "acc-sp-008",
+    "status": 200,
+    "originalBytesMatch": true
+  },
+  {
+    "account": "acc-sp-001",
+    "status": 404,
+    "originalBytesMatch": false
+  }
+]

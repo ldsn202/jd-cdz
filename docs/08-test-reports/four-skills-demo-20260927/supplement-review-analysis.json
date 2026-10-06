@@ -1,0 +1,546 @@
+{
+  "workItemId": "work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e",
+  "title": "安装资料核查 · WO-2609-0046",
+  "kind": "INSTALLATION_REVIEW",
+  "status": "READY",
+  "providerId": "SP-008",
+  "providerName": "华能充电桩安装（008）",
+  "workOrderId": "WO-2609-0046",
+  "assignee": {
+    "identityId": "local:acc-jd-business",
+    "displayName": "京东业务账号"
+  },
+  "rowVersion": 20,
+  "responsibilityVersion": 3,
+  "analysisGeneration": 8,
+  "analysisStatus": "AVAILABLE",
+  "updatedAt": "2026-09-27T12:33:33.703Z",
+  "reconciliationSummary": null,
+  "reconciliationSummaryAccess": "NOT_APPLICABLE",
+  "analysis": {
+    "contextRecords": [
+      {
+        "inputId": "record-1",
+        "recordType": "INSTALLATION_WORK_ORDER",
+        "data": {
+          "installationWorkOrderId": "WO-2609-0046",
+          "purchaseOrderId": "PO-2609-0046",
+          "serviceProviderId": "SP-008",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "work-order-3",
+          "sourceUpdatedAt": "2026-09-27T12:22:16.079Z"
+        }
+      },
+      {
+        "inputId": "record-2",
+        "recordType": "INSTALLATION_PLAN",
+        "data": {
+          "installationPlanId": "PLAN-0046",
+          "installationWorkOrderId": "WO-2609-0046",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "plan-1",
+          "sourceUpdatedAt": "2026-09-01T01:45:00.000Z",
+          "items": [
+            {
+              "installationItem": "电缆敷设",
+              "plannedQuantity": 15,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "仅安装"
+            },
+            {
+              "installationItem": "入场搬运",
+              "plannedQuantity": 1,
+              "unit": "次",
+              "materialSupplier": "不涉及材料",
+              "serviceScope": "搬运服务"
+            },
+            {
+              "installationItem": "充电桩基础施工",
+              "plannedQuantity": 1,
+              "unit": "项",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "桥架安装",
+              "plannedQuantity": 43,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "仅安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-3",
+        "recordType": "INSTALLATION_DETAIL",
+        "data": {
+          "installationDetailId": "DTL-0046",
+          "installationWorkOrderId": "WO-2609-0046",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "detail-1",
+          "sourceUpdatedAt": "2026-09-01T01:45:00.000Z",
+          "items": [
+            {
+              "installationItem": "电缆敷设",
+              "installedQuantity": 15,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "仅安装"
+            },
+            {
+              "installationItem": "入场搬运",
+              "installedQuantity": 1,
+              "unit": "次",
+              "materialSupplier": "不涉及材料",
+              "serviceScope": "搬运服务"
+            },
+            {
+              "installationItem": "充电桩基础施工",
+              "installedQuantity": 1,
+              "unit": "项",
+              "materialSupplier": "服务商",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "桥架安装",
+              "installedQuantity": 43,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "仅安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-4",
+        "recordType": "PURCHASE_ORDER",
+        "data": {
+          "purchaseOrderId": "PO-2609-0046",
+          "sourceSystem": "purchase_order_system",
+          "sourceVersion": "order-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00"
+        }
+      },
+      {
+        "inputId": "record-5",
+        "recordType": "INSTALLATION_ENTITLEMENT",
+        "data": {
+          "installationEntitlementId": "ENT-2609-0046",
+          "name": "充电桩安装权益",
+          "sourceSystem": "installation_entitlement_system",
+          "sourceVersion": "ent-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+          "coveredServiceScope": "充电桩安装",
+          "quantityType": "LIMITED",
+          "includedQuantity": 1,
+          "unit": "单",
+          "validity": "VALID",
+          "validityBasis": "源记录明确为当前有效",
+          "applicability": "APPLICABLE",
+          "applicabilityBasis": "源记录明确关联工单 WO-2609-0046"
+        }
+      },
+      {
+        "inputId": "record-6",
+        "recordType": "SUPPLEMENTAL_RESPONSE",
+        "data": {
+          "installationWorkOrderId": "WO-2609-0046",
+          "serviceProviderId": "SP-008",
+          "replyText": "已补充本工单完整施工记录：电缆15米、入场搬运1次、基础施工1项、桥架43米，供料方和服务范围见附件。",
+          "sourceMaterials": [
+            {
+              "sourceSystem": "LOCAL_UPLOAD",
+              "sourceMaterialId": "up-d7cedea9-e07f-4da5-a198-5a6d36c68109",
+              "sourceVersion": "local:up-d7cedea9-e07f-4da5-a198-5a6d36c68109"
+            }
+          ],
+          "verifiedAt": 1790511736082
+        }
+      }
+    ],
+    "evidenceMaterials": [
+      {
+        "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+        "materialVersionId": "smv-f174eb74-31a6-4290-9ce7-4e94f2ca1aef",
+        "sourceSystem": "LOCAL_UPLOAD",
+        "sourceMaterialId": "up-d7cedea9-e07f-4da5-a198-5a6d36c68109",
+        "sourceVersion": "local:up-d7cedea9-e07f-4da5-a198-5a6d36c68109"
+      }
+    ],
+    "resultId": "ar-4529af8b-e91c-42eb-bc29-0b58694fb402",
+    "runId": "analysis:work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e:8",
+    "inputSnapshotId": "ais-9256333a-d9df-45c4-813b-3113be3a2509",
+    "analysisGeneration": 8,
+    "status": "ANALYZED",
+    "summary": "工单 WO-2609-0046（服务商 SP-008）的方案、正式安装明细与补充材料中的安装明细表相互一致：电缆敷设15米、入场搬运1次、充电桩基础施工1项、桥架安装43米，供料方与服务范围逐项对应。补充回复所述内容与其所附安装明细表相符，未发现缺页或未提供的核查项目。本分析只说明证据之间的一致性关系，是否通过仍由人员依据业务判断决定。",
+    "findings": [
+      {
+        "findingId": "finding-1",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "工单与服务商归属一致",
+          "explanation": "安装工单记录为 WO-2609-0046，服务商为 SP-008；安装方案 PLAN-0046、正式安装明细 DTL-0046 以及补充回复均关联同一工单 WO-2609-0046，补充回复填写的服务商同为 SP-008，所附安装明细表各行也标注工单 WO-2609-0046，未出现指向其他工单或服务商的情况。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-1",
+            "blockId": null,
+            "jsonPointer": "/installationWorkOrderId",
+            "quote": "WO-2609-0046"
+          },
+          {
+            "inputId": "record-1",
+            "blockId": null,
+            "jsonPointer": "/serviceProviderId",
+            "quote": "SP-008"
+          },
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/installationWorkOrderId",
+            "quote": "WO-2609-0046"
+          },
+          {
+            "inputId": "record-3",
+            "blockId": null,
+            "jsonPointer": "/installationWorkOrderId",
+            "quote": "WO-2609-0046"
+          },
+          {
+            "inputId": "record-6",
+            "blockId": null,
+            "jsonPointer": "/serviceProviderId",
+            "quote": "SP-008"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:A2",
+            "jsonPointer": null,
+            "quote": "WO-2609-0046"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-2",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "电缆敷设数量一致",
+          "explanation": "安装方案 PLAN-0046 中电缆敷设计划数量为15米，正式安装明细 DTL-0046 记录实际安装15米，补充材料所附安装明细表第2行电缆敷设实际安装数量为15米、单位为米，三处数量一致；此处方案数量仅作比较依据，实际量以明细与安装记录为准。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/0/plannedQuantity",
+            "quote": "15"
+          },
+          {
+            "inputId": "record-3",
+            "blockId": null,
+            "jsonPointer": "/items/0/installedQuantity",
+            "quote": "15"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:B2",
+            "jsonPointer": null,
+            "quote": "电缆敷设"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:C2",
+            "jsonPointer": null,
+            "quote": "15"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:D2",
+            "jsonPointer": null,
+            "quote": "米"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-3",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "入场搬运数量一致",
+          "explanation": "安装方案中入场搬运计划1次，正式安装明细记录实际安装1次，补充材料所附安装明细表第3行入场搬运实际安装数量为1次，三处数量一致。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/1/plannedQuantity",
+            "quote": "1"
+          },
+          {
+            "inputId": "record-3",
+            "blockId": null,
+            "jsonPointer": "/items/1/installedQuantity",
+            "quote": "1"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:B3",
+            "jsonPointer": null,
+            "quote": "入场搬运"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:C3",
+            "jsonPointer": null,
+            "quote": "1"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:D3",
+            "jsonPointer": null,
+            "quote": "次"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-4",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "充电桩基础施工数量一致",
+          "explanation": "安装方案中充电桩基础施工计划1项，正式安装明细记录实际安装1项，补充材料所附安装明细表第4行充电桩基础施工实际安装数量为1项，三处数量一致。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/2/plannedQuantity",
+            "quote": "1"
+          },
+          {
+            "inputId": "record-3",
+            "blockId": null,
+            "jsonPointer": "/items/2/installedQuantity",
+            "quote": "1"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:B4",
+            "jsonPointer": null,
+            "quote": "充电桩基础施工"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:C4",
+            "jsonPointer": null,
+            "quote": "1"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:D4",
+            "jsonPointer": null,
+            "quote": "项"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-5",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "桥架安装数量一致",
+          "explanation": "安装方案中桥架安装计划43米，正式安装明细记录实际安装43米，补充材料所附安装明细表第5行桥架安装实际安装数量为43米、单位为米，三处数量一致。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/3/plannedQuantity",
+            "quote": "43"
+          },
+          {
+            "inputId": "record-3",
+            "blockId": null,
+            "jsonPointer": "/items/3/installedQuantity",
+            "quote": "43"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:B5",
+            "jsonPointer": null,
+            "quote": "桥架安装"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:C5",
+            "jsonPointer": null,
+            "quote": "43"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:D5",
+            "jsonPointer": null,
+            "quote": "米"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-6",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "供料方与服务范围逐项一致",
+          "explanation": "安装方案、正式安装明细与所附安装明细表对供料方和服务范围的记录逐项一致：电缆敷设为京东供料、仅安装；入场搬运不涉及材料、搬运服务；充电桩基础施工由服务商供料及安装；桥架安装为京东供料、仅安装。各条记录项目均只有一条，对应关系明确。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/0/materialSupplier",
+            "quote": "京东"
+          },
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/0/serviceScope",
+            "quote": "仅安装"
+          },
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/2/materialSupplier",
+            "quote": "服务商"
+          },
+          {
+            "inputId": "record-2",
+            "blockId": null,
+            "jsonPointer": "/items/2/serviceScope",
+            "quote": "供料及安装"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:E2",
+            "jsonPointer": null,
+            "quote": "京东"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:F2",
+            "jsonPointer": null,
+            "quote": "仅安装"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:E4",
+            "jsonPointer": null,
+            "quote": "服务商"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:F4",
+            "jsonPointer": null,
+            "quote": "供料及安装"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-7",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "补充回复陈述与其附件安装记录相符",
+          "explanation": "补充回复由服务商作出陈述，称已补充本工单完整施工记录：电缆15米、入场搬运1次、基础施工1项、桥架43米，供料方和服务范围见附件。其附件安装明细表（sourceMaterialId 为 up-d7cedea9-e07f-4da5-a198-5a6d36c68109）所载各项目、数量、单位与供料方、服务范围均与该陈述及正式安装明细一致，服务商陈述可由附件记录印证，附件为本次解析的完整安装明细表。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-6",
+            "blockId": null,
+            "jsonPointer": "/replyText",
+            "quote": "已补充本工单完整施工记录：电缆15米、入场搬运1次、基础施工1项、桥架43米，供料方和服务范围见附件。"
+          },
+          {
+            "inputId": "record-6",
+            "blockId": null,
+            "jsonPointer": "/sourceMaterials/0/sourceMaterialId",
+            "quote": "up-d7cedea9-e07f-4da5-a198-5a6d36c68109"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:A1",
+            "jsonPointer": null,
+            "quote": "安装工单"
+          },
+          {
+            "inputId": "parsing:parse:bj-2c85665c-173b-44cb-b179-7e8d27beb59f",
+            "blockId": "sheet-1:C1",
+            "jsonPointer": null,
+            "quote": "实际安装数量"
+          }
+        ]
+      },
+      {
+        "findingId": "finding-8",
+        "type": "EVIDENCE_CHECK",
+        "content": {
+          "topic": "安装权益来源记录有效并关联本工单",
+          "explanation": "安装权益记录 ENT-2609-0046 名称为充电桩安装权益，覆盖服务范围为充电桩安装，来源记录注明当前有效、且明确关联工单 WO-2609-0046，覆盖数量为1单。此为权益来源记录自身陈述的证据关系，方案、明细与实际安装是否适用仍由人员结合业务判断。",
+          "assessment": "SUPPORTED"
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/installationEntitlementId",
+            "quote": "ENT-2609-0046"
+          },
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/coveredServiceScope",
+            "quote": "充电桩安装"
+          },
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/validity",
+            "quote": "VALID"
+          },
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/validityBasis",
+            "quote": "源记录明确为当前有效"
+          },
+          {
+            "inputId": "record-5",
+            "blockId": null,
+            "jsonPointer": "/applicabilityBasis",
+            "quote": "源记录明确关联工单 WO-2609-0046"
+          }
+        ]
+      }
+    ],
+    "openQuestions": [],
+    "validatedAt": "2026-09-27T12:33:33.703Z"
+  },
+  "analysisProgress": {
+    "state": "AVAILABLE",
+    "description": "分析已完成",
+    "errorCode": null
+  },
+  "analysisTriggerMode": "manual",
+  "analysisRuntimeError": null,
+  "canRequestAnalysis": true,
+  "activeSupplementRequest": null,
+  "pendingOperation": null,
+  "completion": null,
+  "allowedActions": [
+    "DECIDE_INSTALLATION_REVIEW",
+    "RECORD_EXCEPTION_RESULT"
+  ],
+  "blockedReasons": [],
+  "relatedItems": []
+}

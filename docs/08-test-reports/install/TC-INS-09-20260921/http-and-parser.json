@@ -1,0 +1,222 @@
+{
+  "startedAt": "2026-09-21T04:05:56.898Z",
+  "upload": {
+    "http": 202,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-f542ac5a-3514-4e7e-89e0-01ab83f64848",
+      "data": {
+        "uploadId": "up-8a7ea9b1-0153-4c6b-a4da-fc35cc7d5fc5",
+        "materialVersionId": "smv-b88419ca-a892-4ce8-845e-97dfa9da78ad",
+        "workItemId": "wi-tc-ins-prep-1",
+        "jobId": "bj-c0c4a969-627a-4bf9-ad16-5118f8b829d7",
+        "status": "RECEIVED"
+      }
+    }
+  },
+  "parsing": {
+    "runId": "parse:bj-c0c4a969-627a-4bf9-ad16-5118f8b829d7",
+    "operation": "PARSE_MATERIAL",
+    "profileId": "local-material-parser",
+    "implementationVersion": "1.0.0",
+    "inputSnapshotId": null,
+    "analysis": null,
+    "parsing": {
+      "parseId": "parsing:parse:bj-c0c4a969-627a-4bf9-ad16-5118f8b829d7",
+      "sourceSystem": "LOCAL_UPLOAD",
+      "sourceMaterialId": "up-8a7ea9b1-0153-4c6b-a4da-fc35cc7d5fc5",
+      "sourceVersion": "local:up-8a7ea9b1-0153-4c6b-a4da-fc35cc7d5fc5",
+      "contentSha256": "4e6ca08de67300eb1646dcba2d634df2028f712db50c4a0cc4212874d25bfc77",
+      "units": [
+        {
+          "unitId": "sheet-1",
+          "kind": "SHEET",
+          "index": 1,
+          "name": "安装明细",
+          "status": "COMPLETE"
+        },
+        {
+          "unitId": "sheet-2",
+          "kind": "SHEET",
+          "index": 2,
+          "name": "附件说明",
+          "status": "COMPLETE"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "sheet-1:A1",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "安装项目",
+          "cellRange": "A1",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:B1",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "实际数量",
+          "cellRange": "B1",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:C1",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "单位",
+          "cellRange": "C1",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:D1",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "供料方",
+          "cellRange": "D1",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:E1",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "服务范围",
+          "cellRange": "E1",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:A2",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "电缆敷设",
+          "cellRange": "A2",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:B2",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "52",
+          "cellRange": "B2",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:C2",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "米",
+          "cellRange": "C2",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:D2",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "服务商",
+          "cellRange": "D2",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-1:E2",
+          "unitId": "sheet-1",
+          "kind": "TABLE_CELL",
+          "text": "配电箱至车位",
+          "cellRange": "E2",
+          "formula": null,
+          "cachedValue": null
+        },
+        {
+          "blockId": "sheet-2:A1",
+          "unitId": "sheet-2",
+          "kind": "TABLE_CELL",
+          "text": "已核实施工数量",
+          "cellRange": "A1",
+          "formula": null,
+          "cachedValue": null
+        }
+      ],
+      "issues": [],
+      "completeness": "COMPLETE"
+    }
+  },
+  "adoption": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-dc81bed9-f13e-4f33-928d-aac63caad111",
+      "data": {
+        "attemptId": "ea-6e3aa290-0d17-410f-ad7d-2a7ca5cf3f87",
+        "jobId": "bj-c0c4a969-627a-4bf9-ad16-5118f8b829d7",
+        "adopted": true,
+        "jobStatus": "SUCCEEDED"
+      }
+    }
+  },
+  "status": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-9f712a88-3966-4b17-b166-52d74df311f4",
+      "data": {
+        "uploadId": "up-8a7ea9b1-0153-4c6b-a4da-fc35cc7d5fc5",
+        "materialVersionId": "smv-b88419ca-a892-4ce8-845e-97dfa9da78ad",
+        "workItemId": "wi-tc-ins-prep-1",
+        "jobId": "bj-c0c4a969-627a-4bf9-ad16-5118f8b829d7",
+        "status": "READY",
+        "issues": []
+      }
+    }
+  },
+  "item": {
+    "http": 200,
+    "body": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-30e4910c-1c1b-4f83-8f3c-076a15d6b5e4",
+      "data": {
+        "workItemId": "wi-tc-ins-prep-1",
+        "title": "桂语庭安装资料整理与提交",
+        "kind": "INSTALLATION_PREPARATION",
+        "status": "PREPARING",
+        "providerId": "sp-tc-ins-anjia",
+        "providerName": "安家安装",
+        "workOrderId": "wo-tc-ins-gyt",
+        "assignee": {
+          "identityId": "idt-tc-ins-clerk1",
+          "displayName": "安家资料员甲"
+        },
+        "rowVersion": 7,
+        "responsibilityVersion": 2,
+        "analysisGeneration": 2,
+        "analysisStatus": "NOT_READY",
+        "updatedAt": "2026-09-21T04:05:56.934Z",
+        "reconciliationSummary": null,
+        "reconciliationSummaryAccess": "NOT_APPLICABLE",
+        "analysis": null,
+        "activeSupplementRequest": null,
+        "pendingOperation": null,
+        "completion": null,
+        "allowedActions": [
+          "CONFIRM_INSTALLATION_DRAFT",
+          "SUBMIT_INSTALLATION_DETAIL"
+        ],
+        "blockedReasons": [],
+        "relatedItems": []
+      }
+    }
+  },
+  "passed": true,
+  "finishedAt": "2026-09-21T04:05:57.011Z"
+}

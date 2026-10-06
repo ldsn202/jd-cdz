@@ -1,0 +1,618 @@
+{
+  "cfg": {
+    "configurationId": "config-fa3a1e8d-3580-49f5-9df8-688f0b8fee77",
+    "candidateVersion": {
+      "versionId": "icv-4727df1a-c64e-45de-8e82-bd08bea206cc",
+      "versionNo": 1,
+      "sourceFormatId": "FMT-001",
+      "sourceFormatVersion": "fv-1",
+      "formatStatus": "PROVIDED",
+      "applicability": {
+        "serviceProviderId": "SP-001",
+        "sourceSystem": "provider-docs",
+        "purpose": "INSTALLATION",
+        "businessScopeKey": "installation-materials",
+        "formatStatus": "PROVIDED",
+        "sourceFormatId": "FMT-001",
+        "sourceFormatVersion": "fv-1",
+        "rowPath": "/rows",
+        "conditions": [],
+        "basisReferences": [
+          {
+            "inputId": "uploaded-record",
+            "blockId": null,
+            "jsonPointer": "/rawJson",
+            "quote": "\"安装项目\":\"桥架安装\",\"实际安装数量\":\"12\""
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/2",
+            "quote": "安装项目"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/3",
+            "quote": "实际安装数量"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/1",
+            "quote": "计量单位"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/0",
+            "quote": "材料提供方"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/4",
+            "quote": "服务范围"
+          },
+          {
+            "inputId": "parsing:parse:bj-946297ca-a18e-415e-8d90-fa2ef99b75eb",
+            "blockId": "sheet-1:B2",
+            "jsonPointer": null,
+            "quote": "12"
+          }
+        ],
+        "unknownConditions": []
+      },
+      "rules": [
+        {
+          "ruleId": "installation-item",
+          "sourceFields": [
+            "/安装项目"
+          ],
+          "targetField": "installationItem",
+          "operation": "PIPELINE",
+          "parameters": {
+            "steps": [
+              {
+                "op": "field",
+                "path": "/安装项目"
+              },
+              {
+                "op": "trim"
+              }
+            ]
+          },
+          "conditions": []
+        },
+        {
+          "ruleId": "installed-quantity",
+          "sourceFields": [
+            "/实际安装数量"
+          ],
+          "targetField": "installedQuantity",
+          "operation": "PIPELINE",
+          "parameters": {
+            "steps": [
+              {
+                "op": "field",
+                "path": "/实际安装数量"
+              },
+              {
+                "op": "trim"
+              },
+              {
+                "op": "decimal"
+              }
+            ]
+          },
+          "conditions": []
+        },
+        {
+          "ruleId": "unit",
+          "sourceFields": [
+            "/单位"
+          ],
+          "targetField": "unit",
+          "operation": "PIPELINE",
+          "parameters": {
+            "steps": [
+              {
+                "op": "field",
+                "path": "/单位"
+              },
+              {
+                "op": "trim"
+              }
+            ]
+          },
+          "conditions": []
+        },
+        {
+          "ruleId": "material-supplier",
+          "sourceFields": [
+            "/供料方"
+          ],
+          "targetField": "materialSupplier",
+          "operation": "PIPELINE",
+          "parameters": {
+            "steps": [
+              {
+                "op": "field",
+                "path": "/供料方"
+              },
+              {
+                "op": "trim"
+              }
+            ]
+          },
+          "conditions": []
+        },
+        {
+          "ruleId": "service-scope",
+          "sourceFields": [
+            "/服务范围"
+          ],
+          "targetField": "serviceScope",
+          "operation": "PIPELINE",
+          "parameters": {
+            "steps": [
+              {
+                "op": "field",
+                "path": "/服务范围"
+              },
+              {
+                "op": "trim"
+              }
+            ]
+          },
+          "conditions": []
+        }
+      ],
+      "ruleCatalogVersion": "charging-transform-1",
+      "analysisResultId": "ar-81812ba0-e459-412a-9cd7-77eb02632acf"
+    },
+    "activeVersion": null,
+    "activeVersionId": null,
+    "configurationRowVersion": 1,
+    "trial": {
+      "trialId": "trial-37860f1f-5630-4e56-bae9-0b7be18878f6",
+      "configurationVersionId": "icv-4727df1a-c64e-45de-8e82-bd08bea206cc",
+      "inputSnapshotId": "trial-input-7f13508a-8b0d-43dc-8307-2d65300c2405",
+      "status": "PASSED",
+      "output": {
+        "records": [
+          {
+            "inputId": "uploaded-record",
+            "sourceVersion": "local:up-9f5b6a92-5dd1-4820-a422-e9c1db47d16b",
+            "ruleCatalogVersion": "charging-transform-1",
+            "status": "PASSED",
+            "rows": [
+              {
+                "rowIndex": 0,
+                "output": {
+                  "installationItem": "桥架安装",
+                  "installedQuantity": 12,
+                  "unit": "米",
+                  "materialSupplier": "服务商",
+                  "serviceScope": "供料及安装"
+                },
+                "ruleResults": [
+                  {
+                    "ruleId": "installation-item",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/安装项目"
+                    ],
+                    "output": "桥架安装",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "installed-quantity",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/实际安装数量"
+                    ],
+                    "output": 12,
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "unit",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/单位"
+                    ],
+                    "output": "米",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "material-supplier",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/供料方"
+                    ],
+                    "output": "服务商",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "service-scope",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/服务范围"
+                    ],
+                    "output": "供料及安装",
+                    "issues": []
+                  }
+                ]
+              },
+              {
+                "rowIndex": 1,
+                "output": {
+                  "installationItem": "电缆敷设",
+                  "installedQuantity": 45,
+                  "unit": "米",
+                  "materialSupplier": "京东",
+                  "serviceScope": "仅安装"
+                },
+                "ruleResults": [
+                  {
+                    "ruleId": "installation-item",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/安装项目"
+                    ],
+                    "output": "电缆敷设",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "installed-quantity",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/实际安装数量"
+                    ],
+                    "output": 45,
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "unit",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/单位"
+                    ],
+                    "output": "米",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "material-supplier",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/供料方"
+                    ],
+                    "output": "京东",
+                    "issues": []
+                  },
+                  {
+                    "ruleId": "service-scope",
+                    "status": "PASSED",
+                    "sourceFields": [
+                      "/服务范围"
+                    ],
+                    "output": "仅安装",
+                    "issues": []
+                  }
+                ]
+              }
+            ],
+            "issues": []
+          }
+        ]
+      },
+      "ruleResults": [
+        {
+          "ruleId": "installation-item",
+          "status": "PASSED",
+          "executions": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "ruleId": "installation-item",
+              "status": "PASSED",
+              "sourceFields": [
+                "/安装项目"
+              ],
+              "output": "桥架安装",
+              "issues": []
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "ruleId": "installation-item",
+              "status": "PASSED",
+              "sourceFields": [
+                "/安装项目"
+              ],
+              "output": "电缆敷设",
+              "issues": []
+            }
+          ],
+          "inputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "sourceFields": [
+                "/安装项目"
+              ]
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "sourceFields": [
+                "/安装项目"
+              ]
+            }
+          ],
+          "outputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "targetField": "installationItem"
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "targetField": "installationItem"
+            }
+          ],
+          "issues": []
+        },
+        {
+          "ruleId": "installed-quantity",
+          "status": "PASSED",
+          "executions": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "ruleId": "installed-quantity",
+              "status": "PASSED",
+              "sourceFields": [
+                "/实际安装数量"
+              ],
+              "output": 12,
+              "issues": []
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "ruleId": "installed-quantity",
+              "status": "PASSED",
+              "sourceFields": [
+                "/实际安装数量"
+              ],
+              "output": 45,
+              "issues": []
+            }
+          ],
+          "inputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "sourceFields": [
+                "/实际安装数量"
+              ]
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "sourceFields": [
+                "/实际安装数量"
+              ]
+            }
+          ],
+          "outputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "targetField": "installedQuantity"
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "targetField": "installedQuantity"
+            }
+          ],
+          "issues": []
+        },
+        {
+          "ruleId": "unit",
+          "status": "PASSED",
+          "executions": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "ruleId": "unit",
+              "status": "PASSED",
+              "sourceFields": [
+                "/单位"
+              ],
+              "output": "米",
+              "issues": []
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "ruleId": "unit",
+              "status": "PASSED",
+              "sourceFields": [
+                "/单位"
+              ],
+              "output": "米",
+              "issues": []
+            }
+          ],
+          "inputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "sourceFields": [
+                "/单位"
+              ]
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "sourceFields": [
+                "/单位"
+              ]
+            }
+          ],
+          "outputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "targetField": "unit"
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "targetField": "unit"
+            }
+          ],
+          "issues": []
+        },
+        {
+          "ruleId": "material-supplier",
+          "status": "PASSED",
+          "executions": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "ruleId": "material-supplier",
+              "status": "PASSED",
+              "sourceFields": [
+                "/供料方"
+              ],
+              "output": "服务商",
+              "issues": []
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "ruleId": "material-supplier",
+              "status": "PASSED",
+              "sourceFields": [
+                "/供料方"
+              ],
+              "output": "京东",
+              "issues": []
+            }
+          ],
+          "inputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "sourceFields": [
+                "/供料方"
+              ]
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "sourceFields": [
+                "/供料方"
+              ]
+            }
+          ],
+          "outputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "targetField": "materialSupplier"
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "targetField": "materialSupplier"
+            }
+          ],
+          "issues": []
+        },
+        {
+          "ruleId": "service-scope",
+          "status": "PASSED",
+          "executions": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "ruleId": "service-scope",
+              "status": "PASSED",
+              "sourceFields": [
+                "/服务范围"
+              ],
+              "output": "供料及安装",
+              "issues": []
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "ruleId": "service-scope",
+              "status": "PASSED",
+              "sourceFields": [
+                "/服务范围"
+              ],
+              "output": "仅安装",
+              "issues": []
+            }
+          ],
+          "inputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "sourceFields": [
+                "/服务范围"
+              ]
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "sourceFields": [
+                "/服务范围"
+              ]
+            }
+          ],
+          "outputReferences": [
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 0,
+              "targetField": "serviceScope"
+            },
+            {
+              "inputId": "uploaded-record",
+              "rowIndex": 1,
+              "targetField": "serviceScope"
+            }
+          ],
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "checks": {
+        "inputComplete": true,
+        "scopeValid": true,
+        "rulesCovered": true,
+        "outputsValid": true,
+        "meaningsResolved": true
+      }
+    },
+    "openQuestions": [],
+    "rowVersion": 5,
+    "responsibilityVersion": 1
+  },
+  "enabled": {
+    "decisionId": "hd-f2683fbd-063d-4f21-91eb-0a694d419046",
+    "enablementId": "ce-0bfc79bb-7583-4fa7-b153-1f5d2d8b511c",
+    "activationResultId": "car-ab95de79-b5ff-4e5d-823e-83735f28961c",
+    "configurationId": "config-fa3a1e8d-3580-49f5-9df8-688f0b8fee77",
+    "activeVersionId": "icv-4727df1a-c64e-45de-8e82-bd08bea206cc",
+    "workItemId": "work-config-516c2ca8-839f-4a39-bde5-3b1c17bfca6a",
+    "status": "APPLIED"
+  }
+}

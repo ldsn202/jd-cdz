@@ -1,0 +1,75 @@
+[
+  {
+    "path": "/job-claims",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-730487c7-c1af-4d7a-b38f-d0f7565cd129",
+      "data": {
+        "claims": [
+          {
+            "jobId": "bj-d269fadf-20c6-4da2-9f53-553f33959c18",
+            "attemptId": "ea-3a76e66e-8df7-4102-a889-e809c69f8201",
+            "purpose": "WRITE_EXTERNAL",
+            "target": {
+              "operationId": "rv-85953642-e5f1-4d9e-a4d4-eb0e397278c0",
+              "installationWorkOrderId": "WO-2609-0856",
+              "workItemId": "work-c0778581-f660-410c-b29a-7886424c587c",
+              "interfaceKind": "REVIEW_SYNC",
+              "request": {
+                "operationId": "rv-85953642-e5f1-4d9e-a4d4-eb0e397278c0",
+                "workItemId": "work-c0778581-f660-410c-b29a-7886424c587c",
+                "expectedWorkItemVersion": "4",
+                "humanDecisionId": "hd-a760fe5d-3d5d-4931-abc4-1b89add3917d",
+                "action": "APPROVE",
+                "installationDetailId": "import-detail-0502189a-6504-4b5d-862c-f7c81d37fb39",
+                "expectedDetailVersion": "detail-1",
+                "expectedWorkOrderVersion": "work-order-1",
+                "expectedAnalysisVersion": "ar-ae398950-88ea-47e8-97fb-caf6fee25313",
+                "replyToOperationId": null,
+                "comment": "已核对方案、正式明细、现场记录与权益，本次确认审核通过。",
+                "sourceMaterials": []
+              },
+              "queryOnly": false
+            },
+            "leaseEpoch": 1,
+            "leaseUntil": 1789970409814
+          }
+        ]
+      }
+    }
+  },
+  {
+    "path": "/job-attempts/ea-3a76e66e-8df7-4102-a889-e809c69f8201/dispatch-start",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-6474d689-8fe9-4bd3-8742-ecac1c8a91eb",
+      "data": {
+        "attemptId": "ea-3a76e66e-8df7-4102-a889-e809c69f8201",
+        "dispatchState": "MAY_HAVE_BEEN_SENT"
+      }
+    }
+  },
+  {
+    "error": "授权范围内明细不存在",
+    "code": 40401
+  },
+  {
+    "path": "/job-attempts/ea-3a76e66e-8df7-4102-a889-e809c69f8201/results",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-db15c810-126b-49f6-9ee2-f8b2638b9d94",
+      "data": {
+        "attemptId": "ea-3a76e66e-8df7-4102-a889-e809c69f8201",
+        "jobId": "bj-d269fadf-20c6-4da2-9f53-553f33959c18",
+        "adopted": true,
+        "jobStatus": "BLOCKED"
+      }
+    }
+  }
+]

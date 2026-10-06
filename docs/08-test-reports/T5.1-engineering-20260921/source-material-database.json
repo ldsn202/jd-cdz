@@ -1,0 +1,108 @@
+[
+  {
+    "results": [
+      {
+        "purpose": "ANALYZE_SKILL",
+        "status": "READY",
+        "n": 1
+      },
+      {
+        "purpose": "DISCOVER_RELATIONS",
+        "status": "READY",
+        "n": 17
+      },
+      {
+        "purpose": "DISCOVER_RELATIONS",
+        "status": "SUCCEEDED",
+        "n": 3
+      },
+      {
+        "purpose": "PARSE_MATERIAL",
+        "status": "SUCCEEDED",
+        "n": 2
+      },
+      {
+        "purpose": "READ_SOURCE",
+        "status": "READY",
+        "n": 1
+      },
+      {
+        "purpose": "READ_SOURCE",
+        "status": "RUNNING",
+        "n": 1
+      },
+      {
+        "purpose": "READ_SOURCE",
+        "status": "SUCCEEDED",
+        "n": 3
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 1
+    }
+  },
+  {
+    "results": [
+      {
+        "id": "smv-47381e17-c81b-40a2-b784-a4fac5a33667",
+        "read_state": "VERIFIED",
+        "name": "现场施工记录-0856.xlsx",
+        "byte_length": 5288,
+        "content_sha256": "7eaa93d0738e6df03fe20c20a357646f12826cc2d021ea7b5c64d25270f607c3"
+      },
+      {
+        "id": "smv-34be4f43-1ad3-4096-b7e0-08d3e1e3731f",
+        "read_state": "VERIFIED",
+        "name": "现场施工记录-0091.xlsx",
+        "byte_length": 5832,
+        "content_sha256": "401bf93344615abd001deb5aed091b70ad42b9a9c99bdf7404e340bdc3eb0c78"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "id": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+        "completeness": "COMPLETE"
+      },
+      {
+        "id": "parsing:parse:bj-0687d255-d29b-43c6-9176-f54568bd5a51",
+        "completeness": "COMPLETE"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "id": "ais-9516dc8f-7ccb-4094-b7c4-38fcf3a14d95",
+        "analysis_generation": 1,
+        "work_item_id": "work-c0778581-f660-410c-b29a-7886424c587c",
+        "service_provider_id": "SP-001",
+        "expected_work_item_version": 1,
+        "skill": "INSTALLATION_EVIDENCE",
+        "skill_version": "1.0.0",
+        "output_schema_version": "1.0.0",
+        "config_versions_json": "[]",
+        "required_input_state": "COMPLETE",
+        "input_issues_json": "[]",
+        "input_item_count": 6,
+        "content_sha256": "53d312e2dc2b324f13216bd15e4bbbaa1c7044918c3d718e6d7db72b9b3829a7",
+        "gmt_create": 1789967144695,
+        "gmt_modified": 1789967144695
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

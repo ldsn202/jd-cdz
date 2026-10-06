@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/job-attempts/ea-466bb14b-996c-4610-80ab-eb91e9dce3ec/dispatch-start",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-8526c572-9d56-4bfc-97a5-f9ca83ce60da",
+      "data": {
+        "attemptId": "ea-466bb14b-996c-4610-80ab-eb91e9dce3ec",
+        "dispatchState": "MAY_HAVE_BEEN_SENT"
+      }
+    }
+  },
+  {
+    "path": "/job-attempts/ea-466bb14b-996c-4610-80ab-eb91e9dce3ec/heartbeats",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-5a5252fb-58a1-4323-95db-c04ed8335585",
+      "data": {
+        "attemptId": "ea-466bb14b-996c-4610-80ab-eb91e9dce3ec",
+        "leaseUntil": 1789968150279
+      }
+    }
+  },
+  {
+    "path": "/job-attempts/ea-466bb14b-996c-4610-80ab-eb91e9dce3ec/heartbeats",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-140eb2d8-3039-49e7-a850-c39b33714a4e",
+      "data": {
+        "attemptId": "ea-466bb14b-996c-4610-80ab-eb91e9dce3ec",
+        "leaseUntil": 1789968180238
+      }
+    }
+  },
+  {
+    "path": "/job-attempts/ea-466bb14b-996c-4610-80ab-eb91e9dce3ec/results",
+    "http": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-b5c0e9fe-14c4-439e-977f-b0a3ee41327d",
+      "data": {
+        "attemptId": "ea-466bb14b-996c-4610-80ab-eb91e9dce3ec",
+        "jobId": "bj-9dd7d3a8-02b6-4f1c-a225-a008b3edada5",
+        "adopted": true,
+        "jobStatus": "SUCCEEDED"
+      }
+    }
+  }
+]

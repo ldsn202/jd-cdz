@@ -1,0 +1,5 @@
+-- TC-INS-12.sql 依据定位侧栏（UI）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql
+--           （analysis_result ar-tc-ins-001 的证据引用指向 parse-tc-ins-001 的 b1/b2/b3 与 parse-tc-ins-002 的 c1），
+--           无额外数据。
+-- 数据清理：本用例为只读验证；如需重置环境，销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

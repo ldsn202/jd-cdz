@@ -1,0 +1,46 @@
+{
+  "workItemId": "work-5d265d67-f834-4f77-8334-104f6ec9b67d",
+  "title": "安装费用核对 · WO-2609-0051",
+  "kind": "RECONCILIATION",
+  "status": "READY",
+  "providerId": "SP-005",
+  "providerName": "天佑充电桩安装（005）",
+  "workOrderId": "WO-2609-0051",
+  "assignee": {
+    "identityId": "local:acc-jd-business",
+    "displayName": "京东业务账号"
+  },
+  "rowVersion": 5,
+  "responsibilityVersion": 1,
+  "analysisGeneration": 3,
+  "analysisStatus": "AVAILABLE",
+  "updatedAt": "2026-09-27T12:35:35.457Z",
+  "reconciliationSummary": {
+    "reconciliationId": "reconciliation-ea1208ef-ac94-487d-bbef-144b33dcce26",
+    "inputSnapshotId": "ais-ae746461-f8a8-4fd1-9713-ee22ba5b9cd8",
+    "status": "RECONCILED",
+    "currency": "CNY",
+    "jdTotal": "2510.00",
+    "providerTotal": "2510.00",
+    "difference": "0"
+  },
+  "reconciliationSummaryAccess": "ALLOWED",
+  "analysis": null,
+  "analysisProgress": {
+    "state": "CHECKED",
+    "description": "程序已逐项核对，双方数量、单价、金额及费用范围一致，无需 AI 分析。",
+    "errorCode": null
+  },
+  "analysisTriggerMode": "manual",
+  "analysisRuntimeError": null,
+  "canRequestAnalysis": false,
+  "activeSupplementRequest": null,
+  "pendingOperation": null,
+  "completion": null,
+  "allowedActions": [
+    "REQUEST_BILLING_VERIFICATION",
+    "RECORD_EXCEPTION_RESULT"
+  ],
+  "blockedReasons": [],
+  "relatedItems": []
+}

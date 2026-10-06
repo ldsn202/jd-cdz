@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-09-20T14:52:55.567265+08:00",
+  "scope": "Document review only; no model calls or repeated existing tests",
+  "modifiedDocumentCount": 30,
+  "localLinksChecked": 513,
+  "missingLinks": 0,
+  "providedRouteCount": 38,
+  "uniqueRoutes": 38,
+  "fourSkillPackagesAndRuntimeUnchangedFromHEAD": true,
+  "existingUnrelatedChange": "04-skills/README.md already carries PRD backlinks; unchanged by this task and excluded from commit",
+  "findings": {
+    "orderAggregation": "contract added, plus workOrderId filter and separate entitlement source",
+    "reviewKind": "existing INSTALLATION_REVIEW retained; no new enum",
+    "supplementSnapshot": "existing RECORD and SUPPLEMENTAL_RESPONSE mapped to successful immutable reply",
+    "returnProjection": "existing PROCESSING clarified with external/local continuation states",
+    "billingList": "backend batch summary from current_reconciliation_id"
+  },
+  "roleWalkthrough": [
+    "order viewer sees zero-item orders and authorized counts",
+    "billing user gets amounts without opening each detail",
+    "reviewer cannot approve during unresolved external write",
+    "provider submits successful supplement once; background recovers analysis"
+  ],
+  "notVerified": [
+    "API implementation",
+    "database transactions in deployed service",
+    "browser/backend integration",
+    "new mock generator scenarios"
+  ]
+}

@@ -1,0 +1,11 @@
+-- TC-CFG-18.sql 新资料缺字段/未知值 → 形成待确认问题进入配置调整事项（联调验证）
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql：cfg-01 生效版 cfgv-01-1（适用范围 ANJIE-ERP / INSTALLATION / AJ-FMT 2026.03）。
+-- 缺字段（缺「实装长度」）与未知枚举值（单位「英尺」未登记对照）的新资料由资料域上传链路真实送入，
+-- 保留原数据与问题的处理结果由程序真实产生，不由本文件 SQL 预置。
+-- ========== 数据清理 ==========
+-- 程序生成的配置调整事项及关联记录受 DDL 触发器保护，禁止 DELETE/REPLACE；
+-- 执行后重置本地库（重载各域 DDL + TC-CFG-SEED.sql）恢复基线。
+-- 结果核验（供步骤 3 对照，应出现 1 条 SEED 之外的 CONFIGURATION 事项）：
+-- SELECT id, title, status FROM work_item WHERE item_kind='CONFIGURATION' AND service_provider_id='sp-01'
+--   AND id<>'wi-cfg-01';

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "R2 storage engineering protection; not uploads API acceptance",
+  "envId": "life-check-d",
+  "http": 409,
+  "objectKey": "uploads/lifecycle-protection-e9564788-f498-4e6a-9b39-bac12e65e8ee.txt",
+  "sha256": "0a9b73c6630e8d9f8acb125d351895af954d3bae710ebb76f48aecabdccfcfa2",
+  "objectPreserved": true,
+  "originalEnvironmentStillActive": true,
+  "finishedAt": "2026-09-21T05:30:46.250Z"
+}

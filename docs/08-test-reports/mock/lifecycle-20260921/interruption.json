@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "envId": "life-interrupted-a",
+  "interruptedWhile": "BUILDING",
+  "result": "FAILED",
+  "priorActiveEnvId": "life-check-d",
+  "activePointerUnchanged": true,
+  "originalInitialDigestRetained": true,
+  "finishedAt": "2026-09-21T05:31:34.395Z"
+}

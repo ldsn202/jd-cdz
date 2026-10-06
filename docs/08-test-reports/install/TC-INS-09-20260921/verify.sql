@@ -1,0 +1,2 @@
+SELECT sm.source_system,v.read_state,v.id,p.completeness,json_array_length(p.units_json) AS units FROM source_material sm JOIN source_material_version v ON v.source_material_id=sm.id JOIN material_parsing p ON p.source_material_version_id=v.id WHERE v.id='smv-b88419ca-a892-4ce8-845e-97dfa9da78ad';
+SELECT analysis_generation,row_version,status FROM work_item WHERE id='wi-tc-ins-prep-1';

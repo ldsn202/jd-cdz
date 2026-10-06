@@ -1,0 +1,38 @@
+{
+  "datasetId": "demo-10-v4",
+  "setType": "standard",
+  "generatorVersion": "4.0.0",
+  "seed": 20260920,
+  "initialBusinessTime": "2026-09-01T09:00:00+08:00",
+  "providers": 10,
+  "workOrders": 100,
+  "billingPeriods": [
+    "2026-06",
+    "2026-07",
+    "2026-08"
+  ],
+  "scenarios": {
+    "pending_materials": 20,
+    "evidence_consistent": 15,
+    "quantity_diff": 10,
+    "material_lacking": 5,
+    "billing_matched": 10,
+    "billing_diff": 30,
+    "billing_evidence_incomplete": 4,
+    "coordination": 3,
+    "read_only": 3
+  },
+  "formatVersions": {
+    "complete": 9,
+    "meaning_unknown": 1,
+    "no_spec": 0,
+    "association_mismatch": 0
+  },
+  "materialForms": {
+    "clear_table": 6,
+    "restructured_table": 0,
+    "alt_unit_table": 0,
+    "pdf_record": 2,
+    "image_record": 2
+  }
+}

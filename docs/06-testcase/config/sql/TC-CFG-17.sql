@@ -1,0 +1,7 @@
+-- TC-CFG-17.sql 试转换结果刷新保留
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql（候选 cfgv-01-2 已有已保存的 PASSED 试转换 ct-01-2）。
+-- ========== 数据清理 ==========
+-- 无（本用例只读）。核验刷新未产生新执行记录：
+-- SELECT COUNT(*) FROM configuration_trial WHERE configuration_version_id='cfgv-01-2';
+-- 结果应仍为 1（仅 ct-01-2）。

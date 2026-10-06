@@ -1,0 +1,453 @@
+{
+  "runId": "analysis:work-c0778581-f660-410c-b29a-7886424c587c:1",
+  "operation": "ANALYZE_SKILL",
+  "profileId": "opencode-skill",
+  "parseInput": null,
+  "analysisInput": {
+    "skill": "INSTALLATION_EVIDENCE",
+    "skillVersion": "1.0.0",
+    "outputSchemaVersion": "1.0.0",
+    "inputSnapshotId": "ais-9516dc8f-7ccb-4094-b7c4-38fcf3a14d95",
+    "records": [
+      {
+        "inputId": "record-1",
+        "recordType": "INSTALLATION_WORK_ORDER",
+        "sourceSystem": "installation_management",
+        "sourceRecordId": "WO-2609-0856",
+        "sourceVersion": "work-order-1",
+        "data": {
+          "installationWorkOrderId": "WO-2609-0856",
+          "purchaseOrderId": "PO-2609-0856",
+          "serviceProviderId": "SP-001",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "work-order-1",
+          "sourceUpdatedAt": "2026-09-01T15:15:00.000Z"
+        }
+      },
+      {
+        "inputId": "record-2",
+        "recordType": "INSTALLATION_PLAN",
+        "sourceSystem": "installation_management",
+        "sourceRecordId": "PLAN-0856",
+        "sourceVersion": "plan-1",
+        "data": {
+          "installationPlanId": "PLAN-0856",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "plan-1",
+          "sourceUpdatedAt": "2026-09-01T15:15:00.000Z",
+          "items": [
+            {
+              "installationItem": "接地装置安装",
+              "plannedQuantity": 46,
+              "unit": "组",
+              "materialSupplier": "京东",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "桥架安装",
+              "plannedQuantity": 29,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "电缆敷设",
+              "plannedQuantity": 42,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "仅安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-3",
+        "recordType": "INSTALLATION_DETAIL",
+        "sourceSystem": "installation_management",
+        "sourceRecordId": "DTL-0856",
+        "sourceVersion": "detail-1",
+        "data": {
+          "installationDetailId": "DTL-0856",
+          "sourceSystem": "installation_management",
+          "sourceVersion": "detail-1",
+          "sourceUpdatedAt": "2026-09-01T15:15:00.000Z",
+          "items": [
+            {
+              "installationItem": "接地装置安装",
+              "installedQuantity": 46,
+              "unit": "组",
+              "materialSupplier": "京东",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "桥架安装",
+              "installedQuantity": 29,
+              "unit": "米",
+              "materialSupplier": "京东",
+              "serviceScope": "供料及安装"
+            },
+            {
+              "installationItem": "电缆敷设",
+              "installedQuantity": 42,
+              "unit": "米",
+              "materialSupplier": "服务商",
+              "serviceScope": "仅安装"
+            }
+          ]
+        }
+      },
+      {
+        "inputId": "record-4",
+        "recordType": "PURCHASE_ORDER",
+        "sourceSystem": "purchase_order_system",
+        "sourceRecordId": "PO-2609-0856",
+        "sourceVersion": "order-1",
+        "data": {
+          "purchaseOrderId": "PO-2609-0856",
+          "sourceSystem": "purchase_order_system",
+          "sourceVersion": "order-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00"
+        }
+      },
+      {
+        "inputId": "record-5",
+        "recordType": "INSTALLATION_ENTITLEMENT",
+        "sourceSystem": "installation_entitlement_system",
+        "sourceRecordId": "ENT-2609-0856",
+        "sourceVersion": "ent-1",
+        "data": {
+          "installationEntitlementId": "ENT-2609-0856",
+          "name": "充电桩安装权益",
+          "sourceSystem": "installation_entitlement_system",
+          "sourceVersion": "ent-1",
+          "sourceUpdatedAt": "2026-09-01T09:00:00+08:00",
+          "coveredServiceScope": "充电桩安装",
+          "quantityType": "LIMITED",
+          "includedQuantity": 1,
+          "unit": "单",
+          "validity": "VALID",
+          "validityBasis": "源记录明确为当前有效",
+          "applicability": "APPLICABLE",
+          "applicabilityBasis": "源记录明确关联工单 WO-2609-0856"
+        }
+      }
+    ],
+    "parsedMaterials": [
+      {
+        "parseId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+        "sourceSystem": "file-service",
+        "sourceMaterialId": "MAT-00814",
+        "sourceVersion": "material-1",
+        "contentSha256": "7eaa93d0738e6df03fe20c20a357646f12826cc2d021ea7b5c64d25270f607c3",
+        "completeness": "COMPLETE",
+        "units": [
+          {
+            "unitId": "sheet-1",
+            "kind": "SHEET",
+            "index": 1,
+            "name": "分段记录",
+            "status": "COMPLETE"
+          },
+          {
+            "unitId": "sheet-2",
+            "kind": "SHEET",
+            "index": 2,
+            "name": "汇总",
+            "status": "COMPLETE"
+          }
+        ],
+        "blocks": [
+          {
+            "blockId": "sheet-1:A1",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "安装工单",
+            "cellRange": "A1",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:B1",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "WO-2609-0856",
+            "cellRange": "B1",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:A2",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "段号",
+            "cellRange": "A2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:B2",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "项目",
+            "cellRange": "B2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:C2",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "供料",
+            "cellRange": "C2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:D2",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "安装",
+            "cellRange": "D2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:A3",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "1",
+            "cellRange": "A3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:B3",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "接地装置安装",
+            "cellRange": "B3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:C3",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "46组",
+            "cellRange": "C3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:D3",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "46组",
+            "cellRange": "D3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:A4",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "2",
+            "cellRange": "A4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:B4",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "桥架安装",
+            "cellRange": "B4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:C4",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "29米",
+            "cellRange": "C4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:D4",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "29米",
+            "cellRange": "D4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:A5",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "3",
+            "cellRange": "A5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:B5",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "电缆敷设",
+            "cellRange": "B5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:C5",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "42米",
+            "cellRange": "C5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-1:D5",
+            "unitId": "sheet-1",
+            "kind": "TABLE_CELL",
+            "text": "42米",
+            "cellRange": "D5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:A1",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "安装工单",
+            "cellRange": "A1",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:B1",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "WO-2609-0856",
+            "cellRange": "B1",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:A2",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "项目",
+            "cellRange": "A2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:B2",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "合计数量",
+            "cellRange": "B2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:C2",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "单位",
+            "cellRange": "C2",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:A3",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "接地装置安装",
+            "cellRange": "A3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:B3",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "46",
+            "cellRange": "B3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:C3",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "组",
+            "cellRange": "C3",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:A4",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "桥架安装",
+            "cellRange": "A4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:B4",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "29",
+            "cellRange": "B4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:C4",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "米",
+            "cellRange": "C4",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:A5",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "电缆敷设",
+            "cellRange": "A5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:B5",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "42",
+            "cellRange": "B5",
+            "formula": null,
+            "cachedValue": null
+          },
+          {
+            "blockId": "sheet-2:C5",
+            "unitId": "sheet-2",
+            "kind": "TABLE_CELL",
+            "text": "米",
+            "cellRange": "C5",
+            "formula": null,
+            "cachedValue": null
+          }
+        ],
+        "issues": []
+      }
+    ]
+  }
+}

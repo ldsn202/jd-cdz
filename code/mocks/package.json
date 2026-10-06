@@ -1,0 +1,16 @@
+{
+  "name": "jd-charging-mocks",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "外部系统本地模拟服务（mock 专题 T0.1）：各来源独立 SQLite 存储，业务后端仅经 HTTP 访问",
+  "scripts": {
+    "start": "node src/server.ts",
+    "env:check": "node src/env-check.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}

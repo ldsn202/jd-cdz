@@ -1,0 +1,48 @@
+[
+  {
+    "results": [
+      {
+        "id": "ar-ae398950-88ea-47e8-97fb-caf6fee25313",
+        "status": "ANALYZED",
+        "summary": "对工单 WO-2609-0856、方案 PLAN-0856、明细 DTL-0856、材料 MAT-00814 及安装权益 ENT-2609-0856 做证据一致性核查。材料解析完整、页面状态均为 COMPLETE、无解析问题。核查结果：方案与明细对三项安装项目的数量、单位和供料方/服务范围记录一致；现场分段记录与汇总的数量/单位与方案、明细一致；材料明确标注归属工单 WO-2609-0856；权益记录标记为 VALID、APPLICABLE 并关联该工单。未发现相互不符的记录，未决事项为空。以上仅为当前版本快照下的核查事实，不表示审核通过、费用批准或任何业务动作已发生。",
+        "open_questions_json": "[]"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "id": "work-794aaa15-4d11-4347-bad3-00f5431c9312",
+        "item_kind": "INSTALLATION_PREPARATION",
+        "status": "PREPARING",
+        "current_analysis_result_id": null,
+        "row_version": 1,
+        "analysis_generation": 1
+      },
+      {
+        "id": "work-c0778581-f660-410c-b29a-7886424c587c",
+        "item_kind": "INSTALLATION_REVIEW",
+        "status": "READY",
+        "current_analysis_result_id": "ar-ae398950-88ea-47e8-97fb-caf6fee25313",
+        "row_version": 3,
+        "analysis_generation": 1
+      },
+      {
+        "id": "work-f4b008ae-fd2b-4625-8b7d-3a9482be0f56",
+        "item_kind": "INSTALLATION_PREPARATION",
+        "status": "PREPARING",
+        "current_analysis_result_id": null,
+        "row_version": 1,
+        "analysis_generation": 1
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

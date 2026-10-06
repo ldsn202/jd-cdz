@@ -1,0 +1,81 @@
+{
+  "draft": {
+    "draftId": "draft-8e81f2c0-ba86-4de4-a640-9b701c53a787",
+    "draftVersionId": "draft-version-595f13d4-86d9-4a10-90b0-909b206f73ad",
+    "versionNo": 1,
+    "origin": "AI",
+    "editorIdentityId": null,
+    "rowVersion": 10,
+    "contextSnapshotId": "ctx-253a44ef-445d-48b7-a14e-8c149aa13346",
+    "analysisResultId": "ar-a976d5df-34ec-488c-a925-ced884abaaee",
+    "items": [
+      {
+        "installationItem": "接地装置安装",
+        "installedQuantity": 1,
+        "unit": "组",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      },
+      {
+        "installationItem": "充电桩基础施工",
+        "installedQuantity": 1,
+        "unit": "项",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      },
+      {
+        "installationItem": "电缆敷设",
+        "installedQuantity": 10,
+        "unit": "米",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      },
+      {
+        "installationItem": "桥架安装",
+        "installedQuantity": 52,
+        "unit": "米",
+        "materialSupplier": "服务商",
+        "serviceScope": "供料及安装"
+      }
+    ],
+    "sourceMaterials": [
+      {
+        "materialVersionId": "smv-c17ee2ef-3a61-41b6-bfbf-f7700a29c370",
+        "sourceSystem": "file-service",
+        "sourceMaterialId": "MAT-00002",
+        "sourceVersion": "material-1"
+      }
+    ],
+    "openQuestions": [],
+    "editNotes": []
+  },
+  "accepted": {
+    "decisionId": "hd-7c028aaa-434e-40bb-9acd-1de1b06617b5",
+    "operationId": "sub-4e282a2c-2ec1-4c85-8e2e-23ec9866c5b7",
+    "jobId": "bj-2eaf3146-1945-420d-9c59-ffa3cd74ec1b",
+    "workItemId": "work-fc2573af-6105-45a8-9352-d6ab3a0acee1",
+    "rowVersion": 11,
+    "status": "ACCEPTED"
+  },
+  "result": {
+    "operationId": "sub-4e282a2c-2ec1-4c85-8e2e-23ec9866c5b7",
+    "workItemId": "work-fc2573af-6105-45a8-9352-d6ab3a0acee1",
+    "status": "SUCCEEDED",
+    "receipt": {
+      "submissionId": "sub-4e282a2c-2ec1-4c85-8e2e-23ec9866c5b7",
+      "installationWorkOrderId": "WO-2609-0002",
+      "submissionStatus": "SUCCEEDED",
+      "pendingReason": null,
+      "installationDetail": {
+        "sourceSystem": "installation_management",
+        "installationDetailId": "DTL-0002",
+        "sourceVersion": "detail-1"
+      },
+      "resultDescription": "安装明细已提交，进入京东核查",
+      "verifiedAt": "2026-09-27T12:03:22.382Z",
+      "workOrderId": "WO-2609-0002"
+    },
+    "verifiedAt": "2026-09-27T12:03:22.386Z",
+    "localContinuationStatus": "COMPLETED"
+  }
+}

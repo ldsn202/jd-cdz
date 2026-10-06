@@ -1,0 +1,4 @@
+-- TC-INS-15.sql 编辑保存 UI（UI）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql（wi-tc-ins-prep-1，当前草稿版本 dv-tc-ins-001），无额外数据。
+-- 数据清理：本用例会在页面上保存草稿新版本（HUMAN v2），草稿表受 no_delete 保护；
+--           清理方式为销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "purpose": "pre_coding_plan_consistency_check",
+  "activeTaskId": "T5.1",
+  "activeSubPlanPath": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T5.1-e2e-integration.md",
+  "errors": [],
+  "warnings": [],
+  "sources": {
+    "mainPlan": {
+      "path": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/main-delivery-plan-jd-charging.md",
+      "cockpitPresent": false,
+      "cockpitActiveTaskId": null,
+      "cockpitSubPlanTarget": null
+    },
+    "taskKanban": {
+      "path": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/task-kanban-jd-charging.md",
+      "activeTaskIds": [
+        "T5.1"
+      ]
+    },
+    "subPlan": {
+      "path": "/Users/hoho/maincode/study/课程相关/职计划AI NATIVE系列课程/92期/01-coding系列/02-京东充电桩/03-交付物/项目实现工作区/docs/07-delivery-plans/sub-delivery-plan-jd-charging-T5.1-e2e-integration.md",
+      "status": "进行中"
+    }
+  }
+}

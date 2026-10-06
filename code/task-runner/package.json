@@ -1,0 +1,10 @@
+{
+  "name": "jd-charging-task-runner",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "once": "node runner.mjs --once",
+    "loop": "node runner.mjs --loop"
+  }
+}

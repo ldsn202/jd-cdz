@@ -1,0 +1,5 @@
+-- TC-INS-09.sql 上传 INSTALLATION_MATERIAL 进入相同解析流程（API）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql（wi-tc-ins-prep-1，rowVersion=6），无额外数据。
+--           用例执行时需准备一份可正常解析的 XLSX 样本文件（如 tc-ins-补充明细.xlsx）。
+-- 数据清理：上传产生的材料记录受 no_delete 保护；
+--           清理方式为销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

@@ -1,0 +1,25 @@
+[
+  {
+    "results": [
+      {
+        "id": "wi-wb02-001",
+        "assignee_identity_id": "user-wb-reviewer",
+        "service_provider_id": "provider-dev-a"
+      },
+      {
+        "id": "wi-wb02-002",
+        "assignee_identity_id": "user-wb-reviewer",
+        "service_provider_id": "provider-dev-a"
+      },
+      {
+        "id": "wi-wb02-003",
+        "assignee_identity_id": "user-wb-other",
+        "service_provider_id": "provider-dev-a"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

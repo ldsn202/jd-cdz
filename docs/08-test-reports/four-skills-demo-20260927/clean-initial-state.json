@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-27T12:41:32.117472+00:00",
+  "providers": 10,
+  "orders": 100,
+  "items": 154,
+  "modelJobs": 0,
+  "externalWrites": 0,
+  "states": [
+    {
+      "status": "PREPARING",
+      "n": 154
+    }
+  ],
+  "acc-jd-business": {
+    "cases": 10,
+    "manualAnalysis": true,
+    "emptyEntries": [],
+    "providers": [
+      "SP-001",
+      "SP-002",
+      "SP-003",
+      "SP-004",
+      "SP-005",
+      "SP-006",
+      "SP-007",
+      "SP-008",
+      "SP-009",
+      "SP-010"
+    ]
+  },
+  "acc-sp-002": {
+    "cases": 1,
+    "manualAnalysis": true,
+    "emptyEntries": [],
+    "providers": [
+      "SP-002"
+    ]
+  }
+}

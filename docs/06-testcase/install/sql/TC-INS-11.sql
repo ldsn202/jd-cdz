@@ -1,0 +1,3 @@
+-- TC-INS-11.sql 草稿明细区渲染（UI）
+-- 数据准备：本用例仅依赖 TC-INS-SEED.sql（wi-tc-ins-prep-1 的 3 行 AI 草稿，行 2 数量 null），无额外数据。
+-- 数据清理：本用例为只读验证；如需重置环境，销毁隔离测试库并重新建表后重跑 TC-INS-SEED.sql。

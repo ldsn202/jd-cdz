@@ -1,0 +1,28 @@
+[
+  {
+    "results": [
+      {
+        "id": "wi-wb05-001",
+        "title": "春和庭安装资料核查",
+        "service_provider_id": "provider-dev-a",
+        "source_id": "WO-SD-20260901"
+      },
+      {
+        "id": "wi-wb05-002",
+        "title": "尚澜府安装资料核查",
+        "service_provider_id": "provider-dev-a",
+        "source_id": "WO-SD-20260902"
+      },
+      {
+        "id": "wi-wb05-003",
+        "title": "清河湾安装资料核查",
+        "service_provider_id": "provider-dev-b",
+        "source_id": "WO-SD-20260903"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

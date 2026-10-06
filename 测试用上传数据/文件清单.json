@@ -1,0 +1,551 @@
+{
+  "datasetId": "demo-10-v4",
+  "files": [
+    {
+      "file": "01-映射配置/SP-001-安装明细样表.xlsx",
+      "providerId": "SP-001",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-002-安装明细样表.xlsx",
+      "providerId": "SP-002",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "施工项目",
+          "实装数量",
+          "计量单位",
+          "材料提供方",
+          "施工范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-003-安装明细样表.xlsx",
+      "providerId": "SP-003",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "项目名称",
+          "完成数量",
+          "单位",
+          "供料单位",
+          "施工内容"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-004-安装明细样表.xlsx",
+      "providerId": "SP-004",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-005-安装明细样表.xlsx",
+      "providerId": "SP-005",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "施工项目",
+          "实装数量",
+          "计量单位",
+          "材料提供方",
+          "施工范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-006-安装明细样表.xlsx",
+      "providerId": "SP-006",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "项目名称",
+          "完成数量",
+          "单位",
+          "供料单位",
+          "施工内容"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-007-安装明细样表.xlsx",
+      "providerId": "SP-007",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-008-安装明细样表.xlsx",
+      "providerId": "SP-008",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "施工项目",
+          "实装数量",
+          "计量单位",
+          "材料提供方",
+          "施工范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-009-安装明细样表.xlsx",
+      "providerId": "SP-009",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "项目名称",
+          "完成数量",
+          "单位",
+          "供料单位",
+          "施工内容"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-010-安装明细样表.xlsx",
+      "providerId": "SP-010",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-002-小数与零数量.xlsx",
+      "providerId": "SP-002",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "施工项目",
+          "实装数量",
+          "计量单位",
+          "材料提供方",
+          "施工范围"
+        ],
+        [
+          "桥架安装",
+          17.25,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          0,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "01-映射配置/SP-010-字段含义修正版.xlsx",
+      "providerId": "SP-010",
+      "workOrderId": null,
+      "purpose": "PROVIDER_FORMAT",
+      "rows": [
+        [
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "桥架安装",
+          12,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "电缆敷设",
+          45,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "03-退回补充/SP-008-WO-2609-0046-补充施工记录.xlsx",
+      "providerId": "SP-008",
+      "workOrderId": "WO-2609-0046",
+      "purpose": "SUPPLEMENT",
+      "rows": [
+        [
+          "安装工单",
+          "安装项目",
+          "实际安装数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "WO-2609-0046",
+          "电缆敷设",
+          15,
+          "米",
+          "京东",
+          "仅安装"
+        ],
+        [
+          "WO-2609-0046",
+          "入场搬运",
+          1,
+          "次",
+          "不涉及材料",
+          "搬运服务"
+        ],
+        [
+          "WO-2609-0046",
+          "充电桩基础施工",
+          1,
+          "项",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "WO-2609-0046",
+          "桥架安装",
+          43,
+          "米",
+          "京东",
+          "仅安装"
+        ]
+      ]
+    },
+    {
+      "file": "02-安装资料/SP-001-WO-2609-0001.xlsx",
+      "providerId": "SP-001",
+      "workOrderId": "WO-2609-0001",
+      "purpose": "INSTALLATION_MATERIAL",
+      "items": [
+        {
+          "installationItem": "桥架安装",
+          "quantity": 47,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "接地装置安装",
+          "quantity": 1,
+          "unit": "组",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "电缆敷设",
+          "quantity": 9,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        }
+      ],
+      "rows": [
+        [
+          "安装工单",
+          "项目",
+          "数量",
+          "单位",
+          "供料方",
+          "服务范围"
+        ],
+        [
+          "WO-2609-0001",
+          "桥架安装",
+          47,
+          "米",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "WO-2609-0001",
+          "接地装置安装",
+          1,
+          "组",
+          "服务商",
+          "供料及安装"
+        ],
+        [
+          "WO-2609-0001",
+          "电缆敷设",
+          9,
+          "米",
+          "服务商",
+          "供料及安装"
+        ]
+      ]
+    },
+    {
+      "file": "02-安装资料/SP-003-WO-2609-0002.pdf",
+      "providerId": "SP-003",
+      "workOrderId": "WO-2609-0002",
+      "purpose": "INSTALLATION_MATERIAL",
+      "items": [
+        {
+          "installationItem": "接地装置安装",
+          "quantity": 1,
+          "unit": "组",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "充电桩基础施工",
+          "quantity": 1,
+          "unit": "项",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "电缆敷设",
+          "quantity": 10,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "桥架安装",
+          "quantity": 52,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        }
+      ]
+    },
+    {
+      "file": "02-安装资料/SP-004-WO-2609-0003.png",
+      "providerId": "SP-004",
+      "workOrderId": "WO-2609-0003",
+      "purpose": "INSTALLATION_MATERIAL",
+      "items": [
+        {
+          "installationItem": "入场搬运",
+          "quantity": 1,
+          "unit": "次",
+          "materialSupplier": "不涉及材料",
+          "serviceScope": "搬运服务"
+        },
+        {
+          "installationItem": "桥架安装",
+          "quantity": 54,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        },
+        {
+          "installationItem": "充电桩基础施工",
+          "quantity": 1,
+          "unit": "项",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        }
+      ]
+    },
+    {
+      "file": "02-安装资料/SP-007-WO-2609-0004.jpg",
+      "providerId": "SP-007",
+      "workOrderId": "WO-2609-0004",
+      "purpose": "INSTALLATION_MATERIAL",
+      "items": [
+        {
+          "installationItem": "接地装置安装",
+          "quantity": 1,
+          "unit": "组",
+          "materialSupplier": "京东",
+          "serviceScope": "仅安装"
+        },
+        {
+          "installationItem": "电缆敷设",
+          "quantity": 37,
+          "unit": "米",
+          "materialSupplier": "服务商",
+          "serviceScope": "供料及安装"
+        }
+      ]
+    }
+  ]
+}

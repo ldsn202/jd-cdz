@@ -1,0 +1,28 @@
+[
+  {
+    "results": [
+      {
+        "id": "user-wb-reviewer",
+        "subject_type": "HUMAN",
+        "display_name": "张三",
+        "verified_at": 1789968458618,
+        "business_role": "INSTALLATION_REVIEWER"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "n": 0
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

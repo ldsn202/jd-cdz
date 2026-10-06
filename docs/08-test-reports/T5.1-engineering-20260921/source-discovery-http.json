@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/source-monitor/initialize",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-01c979ae-51b2-4d44-919e-e52f9d98d9ca",
+      "data": {
+        "feedId": "bootstrap-f1f53705-c24c-4bf6-86b6-c9622dc197ab",
+        "generationId": "generation:bootstrap-f1f53705-c24c-4bf6-86b6-c9622dc197ab:1",
+        "cursor": "cur-1-10"
+      }
+    }
+  },
+  {
+    "path": "/source-monitor/poll",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-76470a57-23ed-42af-b7de-36a4ab51c4f4",
+      "data": {
+        "batchId": "cb-9ba70445-5301-46e0-ba6c-09d0785cd9e6",
+        "acceptedCount": 10,
+        "currentCursor": "cur-1-20",
+        "jobIds": [
+          "bj-6f32fe55-ec82-49ed-8691-1c7a5ec1f43f",
+          "bj-892ab52d-1c51-421e-a446-0d6f248884b0",
+          "bj-b6c0fe5b-a1c8-443d-be86-3821854d1e2e",
+          "bj-e9a8a3a8-70f1-49b1-be54-404ec5a05b8b",
+          "bj-e9a38e88-5b69-49a6-841b-6b7e1cc5ac4a",
+          "bj-e2128200-fb96-4094-a66d-ff90663a218e",
+          "bj-4b4efaf6-9b42-4829-82b2-777c4519102f",
+          "bj-d8a1caac-246e-4007-bae7-f7155027c8c4",
+          "bj-6434ac51-b0a9-47b0-a36a-d3bea1e434d2",
+          "bj-9951a949-517a-4032-86cf-2882a5b826b4"
+        ],
+        "hasMore": true
+      }
+    }
+  },
+  {
+    "path": "/job-attempts/ea-af0ca90a-0511-4b87-a59a-429545f76cb3/source-discovery",
+    "status": 200,
+    "response": {
+      "code": 0,
+      "msg": "success",
+      "requestId": "req-d22bd845-3a3e-43a0-a83d-14f8ef9fa070",
+      "data": {
+        "attemptId": "ea-af0ca90a-0511-4b87-a59a-429545f76cb3",
+        "jobId": "bj-07821499-fe29-46bb-851e-e62de438e91b",
+        "adopted": true,
+        "jobStatus": "SUCCEEDED"
+      }
+    }
+  }
+]

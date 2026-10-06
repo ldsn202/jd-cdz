@@ -1,0 +1,13 @@
+-- TC-CFG-08.sql 启用时版本已变化（40901，不切换生效指针）
+-- 场景：页面读到 wi-cfg-01 的 row_version=3；提交前另一操作已将事项推进到 row_version=4。
+-- 说明：integration_config 的指针只能随真实 APPLIED 结果推进（DDL 触发器），无法用 SQL 直接模拟
+--       "配置 row_version 竞争"；事项/责任/候选版本变化与配置版本变化同属 40901 路径（common-contract.md §4），
+--       本文件以事项版本变化触发。
+-- ========== 数据准备 ==========
+-- 依赖 TC-CFG-SEED.sql。模拟并发变更（等价于另一责任人完成了一次事项更新）：
+UPDATE work_item SET row_version=4, gmt_modified=1789873200000 WHERE id='wi-cfg-01' AND row_version=3;
+-- ========== 数据清理 ==========
+-- work_item 的 row_version 只能递增，无法回退；执行后重置本地库（重载各域 DDL + TC-CFG-SEED.sql）恢复基线。
+-- 残留核验（40901 后应无启用产物、配置指针不变）：
+-- SELECT COUNT(*) FROM configuration_enablement WHERE configuration_version_id='cfgv-01-2';
+-- SELECT current_version_id, row_version FROM integration_config WHERE id='cfg-01';

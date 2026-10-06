@@ -1,0 +1,245 @@
+{
+  "skill": "INSTALLATION_EVIDENCE",
+  "skillVersion": "1.0.0",
+  "outputSchemaVersion": "1.0.0",
+  "inputSnapshotId": "ais-9516dc8f-7ccb-4094-b7c4-38fcf3a14d95",
+  "status": "ANALYZED",
+  "summary": "对工单 WO-2609-0856、方案 PLAN-0856、明细 DTL-0856、材料 MAT-00814 及安装权益 ENT-2609-0856 做证据一致性核查。材料解析完整、页面状态均为 COMPLETE、无解析问题。核查结果：方案与明细对三项安装项目的数量、单位和供料方/服务范围记录一致；现场分段记录与汇总的数量/单位与方案、明细一致；材料明确标注归属工单 WO-2609-0856；权益记录标记为 VALID、APPLICABLE 并关联该工单。未发现相互不符的记录，未决事项为空。以上仅为当前版本快照下的核查事实，不表示审核通过、费用批准或任何业务动作已发生。",
+  "findings": [
+    {
+      "findingId": "finding-1",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "工单与服务商归属关联",
+        "explanation": "工单记录 WO-2609-0856 载明服务商 SP-001 及采购单 PO-2609-0856。工单仅提供归属字段，未包含数量、单位或施工范围，故此处仅确认工单与服务商之间的关联，不把工单当作数量依据。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "record-1",
+          "blockId": null,
+          "jsonPointer": "/installationWorkOrderId",
+          "quote": "WO-2609-0856"
+        },
+        {
+          "inputId": "record-1",
+          "blockId": null,
+          "jsonPointer": "/serviceProviderId",
+          "quote": "SP-001"
+        },
+        {
+          "inputId": "record-1",
+          "blockId": null,
+          "jsonPointer": "/purchaseOrderId",
+          "quote": "PO-2609-0856"
+        }
+      ]
+    },
+    {
+      "findingId": "finding-2",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "方案与明细的数量、单位一致性",
+        "explanation": "方案 PLAN-0856 与实际明细 DTL-0856 对三项安装项目逐字段一致：接地装置安装均为 46 组、桥架安装均为 29 米、电缆敷设均为 42 米。方案量仅作比较依据，明细记录实际安装量，两者在名称、单位与数值上一致。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/0/plannedQuantity",
+          "quote": "46"
+        },
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/1/plannedQuantity",
+          "quote": "29"
+        },
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/2/plannedQuantity",
+          "quote": "42"
+        },
+        {
+          "inputId": "record-3",
+          "blockId": null,
+          "jsonPointer": "/items/0/installedQuantity",
+          "quote": "46"
+        },
+        {
+          "inputId": "record-3",
+          "blockId": null,
+          "jsonPointer": "/items/1/installedQuantity",
+          "quote": "29"
+        },
+        {
+          "inputId": "record-3",
+          "blockId": null,
+          "jsonPointer": "/items/2/installedQuantity",
+          "quote": "42"
+        }
+      ]
+    },
+    {
+      "findingId": "finding-3",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "现场分段记录与汇总相对方案、明细的一致性",
+        "explanation": "材料 MAT-00814 的 sheet-1「分段记录」与 sheet-2「汇总」载明接地装置安装 46 组、桥架安装 29 米、电缆敷设 42 米，与方案、明细的数量和单位一致。分段表按段号 1/2/3 各对应一个项目，未出现需跨段合计的情形。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-1:C3",
+          "jsonPointer": null,
+          "quote": "46组"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-1:C4",
+          "jsonPointer": null,
+          "quote": "29米"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-1:C5",
+          "jsonPointer": null,
+          "quote": "42米"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-2:B3",
+          "jsonPointer": null,
+          "quote": "46"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-2:B4",
+          "jsonPointer": null,
+          "quote": "29"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-2:B5",
+          "jsonPointer": null,
+          "quote": "42"
+        }
+      ]
+    },
+    {
+      "findingId": "finding-4",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "供料方与服务范围在方案与明细间的一致性",
+        "explanation": "供料方与服务范围字段由方案与明细提供，两者记录一致：接地装置安装、桥架安装为京东且服务范围「供料及安装」，电缆敷设为服务商且服务范围「仅安装」。材料 MAT-00814 未载明供料方，故该字段不能写成所有记录均已提供。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/0/materialSupplier",
+          "quote": "京东"
+        },
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/0/serviceScope",
+          "quote": "供料及安装"
+        },
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/2/materialSupplier",
+          "quote": "服务商"
+        },
+        {
+          "inputId": "record-2",
+          "blockId": null,
+          "jsonPointer": "/items/2/serviceScope",
+          "quote": "仅安装"
+        },
+        {
+          "inputId": "record-3",
+          "blockId": null,
+          "jsonPointer": "/items/0/materialSupplier",
+          "quote": "京东"
+        },
+        {
+          "inputId": "record-3",
+          "blockId": null,
+          "jsonPointer": "/items/2/serviceScope",
+          "quote": "仅安装"
+        }
+      ]
+    },
+    {
+      "findingId": "finding-5",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "材料与工单的归属关联",
+        "explanation": "材料 MAT-00814 在 sheet-1 与 sheet-2 均以「安装工单 / WO-2609-0856」标明归属，与工单记录编号一致，可作为现场资料的归属依据。方案与明细记录本身未含工单编号字段，本核查仅依据材料与工单的显式编号对应。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-1:A1",
+          "jsonPointer": null,
+          "quote": "安装工单"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-1:B1",
+          "jsonPointer": null,
+          "quote": "WO-2609-0856"
+        },
+        {
+          "inputId": "parsing:parse:bj-b5df009e-34b9-4620-ac01-f3d933e98c99",
+          "blockId": "sheet-2:B1",
+          "jsonPointer": null,
+          "quote": "WO-2609-0856"
+        }
+      ]
+    },
+    {
+      "findingId": "finding-6",
+      "type": "EVIDENCE_CHECK",
+      "content": {
+        "topic": "安装权益的有效性及与工单关联",
+        "explanation": "权益 ENT-2609-0856 的源记录标记 validity=VALID、applicability=APPLICABLE，applicabilityBasis 明确关联工单 WO-2609-0856，包含数量为 1 单、覆盖服务范围为「充电桩安装」。以上为源记录声明，不据此作出费用或审批结论。",
+        "assessment": "SUPPORTED"
+      },
+      "evidenceRefs": [
+        {
+          "inputId": "record-5",
+          "blockId": null,
+          "jsonPointer": "/validity",
+          "quote": "VALID"
+        },
+        {
+          "inputId": "record-5",
+          "blockId": null,
+          "jsonPointer": "/applicability",
+          "quote": "APPLICABLE"
+        },
+        {
+          "inputId": "record-5",
+          "blockId": null,
+          "jsonPointer": "/applicabilityBasis",
+          "quote": "源记录明确关联工单 WO-2609-0856"
+        },
+        {
+          "inputId": "record-5",
+          "blockId": null,
+          "jsonPointer": "/coveredServiceScope",
+          "quote": "充电桩安装"
+        }
+      ]
+    }
+  ],
+  "openQuestions": []
+}

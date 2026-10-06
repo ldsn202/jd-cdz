@@ -1,0 +1,36 @@
+-- TC-REV-15.sql 失败恢复动作（UI）— PRD：05-subprd-installation-review.md §7 验收#5
+-- 前置：已执行 TC-REV-SEED.sql（锦绣里事项处于 BLOCKED 失败态）
+-- 说明：标注【恢复替代段】的语句模拟"重新分析成功并发布"的终态；真实链路由后台准备任务 + Skill 调用产生
+
+-- ============ 数据准备 ============
+-- 无新增数据；初始失败态同 TC-REV-14（wi-rev-jxl BLOCKED、无当前分析、材料索引可见）
+
+-- ============ 【恢复替代段】步骤 2：恢复读取与重新分析发布（同一代次 generation=1 首次可得结果） ============
+-- 材料补齐：现场照片版本取得正文（REFERENCED → VERIFIED）
+-- UPDATE source_material_version SET read_state='VERIFIED', media_type='image/jpeg', byte_length=204800,
+--   content_sha256='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+--   content_locator='testfs://charging/photo-ph-v1.jpg', retrieved_at=1789920003200, gmt_modified=1789920003200
+-- WHERE id='smv-photo-v1';
+-- 新解析 + 新输入快照 + 新分析结果，并发布为当前指针
+-- INSERT INTO material_parsing (id, run_id, source_material_version_id, content_sha256, profile_id, implementation_version, completeness, units_json, blocks_json, issues_json, gmt_create, gmt_modified)
+-- VALUES ('mp-photo-v1', 'run-parse-photo-v1', 'smv-photo-v1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'profile-parse-img-1', 'parse-impl-1.0.0', 'COMPLETE',
+--  '[{"unitId":"u1","kind":"IMAGE","index":1,"name":null,"status":"COMPLETE"}]',
+--  '[{"blockId":"b1","unitId":"u1","kind":"IMAGE_DESCRIPTION","text":"签字照片，可辨识为施工方班组长签字","cellRange":null,"formula":null,"cachedValue":null}]', '[]', 1789920003300, 1789920003300);
+-- INSERT INTO analysis_input_snapshot (analysis_generation, id, work_item_id, service_provider_id, expected_work_item_version, skill, skill_version, output_schema_version, config_versions_json, required_input_state, input_issues_json, input_item_count, content_sha256, gmt_create, gmt_modified)
+-- VALUES (1, 'ais-rev15-g1', 'wi-rev-jxl', 'sp-hongrun', 1, 'install-evidence-finder', '1.0.0', 'io-contract-1.0', '[]', 'COMPLETE', '[]', 3, 'sha-ais-rev15-g1', 1789920003400, 1789920003400);
+-- INSERT INTO analysis_input_item (id, snapshot_id, input_key, input_kind, record_type, source_system, source_record_id, source_version, data_json, parsing_id, retrieved_at, gmt_create, gmt_modified) VALUES
+-- ('aii-rev15-plan', 'ais-rev15-g1', 'rec-plan-jxl', 'RECORD', 'INSTALLATION_PLAN', 'jd-install-oms', 'PLAN-JXL-01', 'plan-v1', '{"items":[{"installationItem":"充电桩电缆敷设","plannedQuantity":12,"unit":"米"}]}', NULL, 1789920003400, 1789920003400, 1789920003400),
+-- ('aii-rev15-dtl',  'ais-rev15-g1', 'rec-dtl-jxl',  'RECORD', 'INSTALLATION_DETAIL', 'jd-install-oms', 'DTL-JXL-01', 'dtl-v1', '{"items":[{"installationItem":"充电桩电缆敷设","installedQuantity":12,"unit":"米"}]}', NULL, 1789920003400, 1789920003400, 1789920003400),
+-- ('aii-rev15-parse','ais-rev15-g1', 'mp-photo-v1', 'PARSED_MATERIAL', NULL, NULL, NULL, NULL, NULL, 'mp-photo-v1', 1789920003400, 1789920003400, 1789920003400);
+-- INSERT INTO analysis_result (id, run_id, work_item_id, snapshot_id, profile_id, implementation_version, status, summary, findings_json, open_questions_json, validated_at, gmt_create, gmt_modified)
+-- VALUES ('ar-rev15', 'run-ana-rev15', 'wi-rev-jxl', 'ais-rev15-g1', 'profile-evidence-1', 'ief-1.0.0', 'ANALYZED', '方案与明细均为 12 米，签字照片可辨识',
+--  '[{"findingId":"f-rev15-1","type":"EVIDENCE_CHECK","content":{"topic":"方案与明细数量一致性","explanation":"方案 12 米、明细 12 米一致，签字可辨识","assessment":"SUPPORTED"},"evidenceRefs":[{"inputId":"mp-photo-v1","blockId":"b1","jsonPointer":null,"quote":null}]}]', '[]', 1789920003500, 1789920003500, 1789920003500);
+-- UPDATE work_item SET status='READY', blocked_reason=NULL, current_analysis_result_id='ar-rev15', row_version=row_version+1 WHERE id='wi-rev-jxl';
+
+-- ============ 数据清理 ============
+-- UPDATE work_item SET status='BLOCKED', blocked_reason='材料读取失败：现场照片 MAT-PH-01 版本 ph-v1 未取得正文', current_analysis_result_id=NULL, row_version=1 WHERE id='wi-rev-jxl';
+-- UPDATE source_material_version SET read_state='REFERENCED', media_type=NULL, byte_length=NULL, content_sha256=NULL, content_locator=NULL, retrieved_at=NULL WHERE id='smv-photo-v1';
+-- DELETE FROM analysis_result WHERE id='ar-rev15';
+-- DELETE FROM analysis_input_item WHERE snapshot_id='ais-rev15-g1';
+-- DELETE FROM analysis_input_snapshot WHERE id='ais-rev15-g1';
+-- DELETE FROM material_parsing WHERE id='mp-photo-v1';

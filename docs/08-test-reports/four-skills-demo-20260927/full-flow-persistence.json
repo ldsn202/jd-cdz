@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "id": "work-5c546375-e918-4888-af65-49978b2ec49a",
+      "workOrderId": "WO-2609-0001",
+      "item_kind": "INSTALLATION_PREPARATION",
+      "status": "COMPLETED",
+      "analysis_generation": 6
+    },
+    {
+      "id": "work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e",
+      "workOrderId": "WO-2609-0046",
+      "item_kind": "INSTALLATION_REVIEW",
+      "status": "COMPLETED",
+      "analysis_generation": 8
+    },
+    {
+      "id": "w-3bd7a4ea-aeb0-4d69-b146-4b2bc9d4f56d",
+      "workOrderId": "WO-2609-0001",
+      "item_kind": "INSTALLATION_REVIEW",
+      "status": "COMPLETED",
+      "analysis_generation": 2
+    }
+  ],
+  "operations": [
+    {
+      "id": "rv-f5e3f894-e646-4178-b027-6b9012635058",
+      "workOrderId": "WO-2609-0046",
+      "action": "REQUEST_SUPPLEMENT",
+      "status": "SUCCEEDED",
+      "receipt_json": "{\"operationId\":\"rv-f5e3f894-e646-4178-b027-6b9012635058\",\"workItemId\":\"work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e\",\"installationWorkOrderId\":\"WO-2609-0046\",\"action\":\"REQUEST_SUPPLEMENT\",\"operationStatus\":\"SUCCEEDED\",\"pendingReason\":null,\"sourceRecord\":{\"sourceSystem\":\"installation_management\",\"sourceRecordId\":\"review-rv-f5e3f894-e646-4178-b027-6b9012635058\",\"sourceVersion\":\"review-1\",\"workOrderSourceVersion\":\"work-order-2\"},\"resultDescription\":\"退回补充已保存，原事项待服务商回复\",\"verifiedAt\":\"2026-09-27T12:21:01.503Z\",\"workOrderId\":\"WO-2609-0046\"}"
+    },
+    {
+      "id": "sub-54b5caa2-71ee-4a8b-8469-eaa0694d0218",
+      "workOrderId": "WO-2609-0001",
+      "action": "SUBMIT_INSTALLATION",
+      "status": "SUCCEEDED",
+      "receipt_json": "{\"submissionId\":\"sub-54b5caa2-71ee-4a8b-8469-eaa0694d0218\",\"installationWorkOrderId\":\"WO-2609-0001\",\"submissionStatus\":\"SUCCEEDED\",\"pendingReason\":null,\"installationDetail\":{\"sourceSystem\":\"installation_management\",\"installationDetailId\":\"DTL-0001\",\"sourceVersion\":\"detail-1\"},\"resultDescription\":\"安装明细已提交，进入京东核查\",\"verifiedAt\":\"2026-09-27T12:21:02.535Z\",\"workOrderId\":\"WO-2609-0001\"}"
+    },
+    {
+      "id": "rv-c95056b8-38f0-4cae-b078-54f2cbb75982",
+      "workOrderId": "WO-2609-0046",
+      "action": "SUBMIT_SUPPLEMENT",
+      "status": "SUCCEEDED",
+      "receipt_json": "{\"operationId\":\"rv-c95056b8-38f0-4cae-b078-54f2cbb75982\",\"workItemId\":\"work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e\",\"installationWorkOrderId\":\"WO-2609-0046\",\"action\":\"SUBMIT_SUPPLEMENT\",\"operationStatus\":\"SUCCEEDED\",\"pendingReason\":null,\"sourceRecord\":{\"sourceSystem\":\"installation_management\",\"sourceRecordId\":\"review-rv-c95056b8-38f0-4cae-b078-54f2cbb75982\",\"sourceVersion\":\"review-1\",\"workOrderSourceVersion\":\"work-order-3\"},\"resultDescription\":\"补充回复已保存，原事项将更新分析并交京东复核\",\"verifiedAt\":\"2026-09-27T12:22:16.079Z\",\"workOrderId\":\"WO-2609-0046\"}"
+    },
+    {
+      "id": "rv-fcb64f18-fd0b-4be5-8108-b7693f693a38",
+      "workOrderId": "WO-2609-0001",
+      "action": "APPROVE",
+      "status": "SUCCEEDED",
+      "receipt_json": "{\"operationId\":\"rv-fcb64f18-fd0b-4be5-8108-b7693f693a38\",\"workItemId\":\"w-3bd7a4ea-aeb0-4d69-b146-4b2bc9d4f56d\",\"installationWorkOrderId\":\"WO-2609-0001\",\"action\":\"APPROVE\",\"operationStatus\":\"SUCCEEDED\",\"pendingReason\":null,\"sourceRecord\":{\"sourceSystem\":\"installation_management\",\"sourceRecordId\":\"review-rv-fcb64f18-fd0b-4be5-8108-b7693f693a38\",\"sourceVersion\":\"review-1\",\"workOrderSourceVersion\":\"work-order-2\"},\"resultDescription\":\"核查通过结果已保存（不表示费用获批或业务结束）\",\"verifiedAt\":\"2026-09-27T12:29:37.272Z\",\"workOrderId\":\"WO-2609-0001\"}"
+    },
+    {
+      "id": "rv-71843e95-56ab-4808-8ca1-e825a928d089",
+      "workOrderId": "WO-2609-0046",
+      "action": "APPROVE",
+      "status": "SUCCEEDED",
+      "receipt_json": "{\"operationId\":\"rv-71843e95-56ab-4808-8ca1-e825a928d089\",\"workItemId\":\"work-5dc81734-4f81-4b20-9ddd-6ded2e327b8e\",\"installationWorkOrderId\":\"WO-2609-0046\",\"action\":\"APPROVE\",\"operationStatus\":\"SUCCEEDED\",\"pendingReason\":null,\"sourceRecord\":{\"sourceSystem\":\"installation_management\",\"sourceRecordId\":\"review-rv-71843e95-56ab-4808-8ca1-e825a928d089\",\"sourceVersion\":\"review-1\",\"workOrderSourceVersion\":\"work-order-4\"},\"resultDescription\":\"核查通过结果已保存（不表示费用获批或业务结束）\",\"verifiedAt\":\"2026-09-27T12:33:34.730Z\",\"workOrderId\":\"WO-2609-0046\"}"
+    }
+  ]
+}

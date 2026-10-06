@@ -1,0 +1,48 @@
+[
+  {
+    "results": [
+      {
+        "status": "COMPLETED",
+        "completion_code": "CONFIGURATION_ENABLED"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "status": "PASSED",
+        "checks_json": "{\"input_complete\":true,\"scope_valid\":true,\"rules_covered\":true,\"outputs_valid\":true,\"meanings_resolved\":true}"
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "enablements": 1
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "activations": 1
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

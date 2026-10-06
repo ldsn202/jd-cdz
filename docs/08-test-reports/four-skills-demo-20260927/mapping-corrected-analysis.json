@@ -1,0 +1,351 @@
+{
+  "workItemId": "work-config-fdfe9333-a623-46f2-add2-764cb37bcb98",
+  "title": "资料接入配置 · installation-materials",
+  "kind": "CONFIGURATION",
+  "status": "READY",
+  "providerId": "SP-010",
+  "providerName": "精诚充电桩安装（010）",
+  "workOrderId": null,
+  "assignee": {
+    "identityId": "local:acc-sp-010",
+    "displayName": "精诚充电桩安装（010）账号"
+  },
+  "rowVersion": 8,
+  "responsibilityVersion": 1,
+  "analysisGeneration": 2,
+  "analysisStatus": "AVAILABLE",
+  "updatedAt": "2026-09-27T12:10:31.559Z",
+  "reconciliationSummary": null,
+  "reconciliationSummaryAccess": "NOT_APPLICABLE",
+  "analysis": {
+    "contextRecords": [
+      {
+        "inputId": "uploaded-format",
+        "recordType": "PROVIDER_FORMAT",
+        "data": {
+          "formatId": "FMT-010",
+          "sourceVersion": "fv-1",
+          "notes": "人员上传 Excel；首行是原字段名，逐表保留实际数据。字段含义仅引用已有明确说明，未知含义保留待核实。",
+          "fields": [
+            {
+              "fieldKey": "供料方",
+              "label": "供料方",
+              "meaning": "材料提供方",
+              "unit": null
+            },
+            {
+              "fieldKey": "单位",
+              "label": "单位",
+              "meaning": "计量单位",
+              "unit": null
+            },
+            {
+              "fieldKey": "安装项目",
+              "label": "安装项目",
+              "meaning": "安装项目",
+              "unit": null
+            },
+            {
+              "fieldKey": "实际安装数量",
+              "label": "实际安装数量",
+              "meaning": "实际安装数量",
+              "unit": null
+            },
+            {
+              "fieldKey": "服务范围",
+              "label": "服务范围",
+              "meaning": "服务范围",
+              "unit": null
+            }
+          ],
+          "sourceMaterials": []
+        }
+      },
+      {
+        "inputId": "uploaded-record",
+        "recordType": "PROVIDER_RECORD",
+        "data": {
+          "sourceRecord": {
+            "sourceSystem": "provider-docs",
+            "serviceProviderId": "SP-010",
+            "sourceRecordId": "upload:up-984cad61-755e-4197-a418-d4aefb92d100",
+            "sourceVersion": "local:up-984cad61-755e-4197-a418-d4aefb92d100",
+            "purpose": "CONFIGURATION",
+            "configurationPurpose": "INSTALLATION",
+            "businessScopeKey": "installation-materials",
+            "installationWorkOrderId": null,
+            "sourceFormatId": "FMT-010",
+            "sourceFormatVersion": "fv-1"
+          },
+          "contentComplete": true,
+          "completeness": "COMPLETE",
+          "missingParts": [],
+          "formatStatus": "PROVIDED",
+          "rawJson": "{\"rows\":[{\"供料方\":\"服务商\",\"单位\":\"米\",\"安装项目\":\"桥架安装\",\"实际安装数量\":\"12\",\"服务范围\":\"供料及安装\"},{\"供料方\":\"京东\",\"单位\":\"米\",\"安装项目\":\"电缆敷设\",\"实际安装数量\":\"45\",\"服务范围\":\"仅安装\"}]}",
+          "formatDefinition": {
+            "formatId": "FMT-010",
+            "sourceVersion": "fv-1",
+            "notes": "人员上传 Excel；首行是原字段名，逐表保留实际数据。字段含义仅引用已有明确说明，未知含义保留待核实。",
+            "fields": [
+              {
+                "fieldKey": "供料方",
+                "label": "供料方",
+                "meaning": "材料提供方",
+                "unit": null
+              },
+              {
+                "fieldKey": "单位",
+                "label": "单位",
+                "meaning": "计量单位",
+                "unit": null
+              },
+              {
+                "fieldKey": "安装项目",
+                "label": "安装项目",
+                "meaning": "安装项目",
+                "unit": null
+              },
+              {
+                "fieldKey": "实际安装数量",
+                "label": "实际安装数量",
+                "meaning": "实际安装数量",
+                "unit": null
+              },
+              {
+                "fieldKey": "服务范围",
+                "label": "服务范围",
+                "meaning": "服务范围",
+                "unit": null
+              }
+            ],
+            "sourceMaterials": []
+          },
+          "sourceMaterials": [],
+          "uploadedMaterial": {
+            "sourceSystem": "LOCAL_UPLOAD",
+            "materialVersionId": "smv-55eb3aa4-b6e9-48f6-8f7d-9f71778c562b",
+            "name": "SP-010-字段含义修正版.xlsx",
+            "contentSha256": "44b5744fe11e20609e0f34cfd88e683614b085c884998b3bca45647bf298654a",
+            "rowPositions": [
+              {
+                "sheet": "安装明细",
+                "row": 2
+              },
+              {
+                "sheet": "安装明细",
+                "row": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "evidenceMaterials": [
+      {
+        "inputId": "parsing:parse:bj-753f2ddf-81b3-4f76-9e4e-99b626a6dac5",
+        "materialVersionId": "smv-55eb3aa4-b6e9-48f6-8f7d-9f71778c562b",
+        "sourceSystem": "LOCAL_UPLOAD",
+        "sourceMaterialId": "up-984cad61-755e-4197-a418-d4aefb92d100",
+        "sourceVersion": "local:up-984cad61-755e-4197-a418-d4aefb92d100"
+      }
+    ],
+    "resultId": "ar-97a4ad0c-5988-4026-83d4-af32cdf17f37",
+    "runId": "analysis:work-config-fdfe9333-a623-46f2-add2-764cb37bcb98:2",
+    "inputSnapshotId": "ais-fd06ec1e-5064-4fb6-97fa-ea333a937f6f",
+    "analysisGeneration": 2,
+    "status": "ANALYZED",
+    "summary": "已识别安装项目、实际安装数量、单位、供料方和服务范围五列，含义均由原定义明确，转换参数与明细样例一致，等待试转换及人员确认。",
+    "findings": [
+      {
+        "findingId": "installation-config-fmt-010-fv-1",
+        "type": "TRANSFORMATION_CONFIG",
+        "content": {
+          "ruleCatalogVersion": "charging-transform-1",
+          "purpose": "INSTALLATION",
+          "sourceFormatId": "FMT-010",
+          "sourceFormatVersion": "fv-1",
+          "rowPath": "/rows",
+          "rules": [
+            {
+              "ruleId": "r-installation-item",
+              "sourceFields": [
+                "/安装项目"
+              ],
+              "targetField": "installationItem",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/安装项目"
+                  },
+                  {
+                    "op": "trim"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "r-installed-quantity",
+              "sourceFields": [
+                "/实际安装数量"
+              ],
+              "targetField": "installedQuantity",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/实际安装数量"
+                  },
+                  {
+                    "op": "halfwidth"
+                  },
+                  {
+                    "op": "decimal"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "r-unit",
+              "sourceFields": [
+                "/单位"
+              ],
+              "targetField": "unit",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/单位"
+                  },
+                  {
+                    "op": "trim"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "r-material-supplier",
+              "sourceFields": [
+                "/供料方"
+              ],
+              "targetField": "materialSupplier",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/供料方"
+                  },
+                  {
+                    "op": "trim"
+                  }
+                ]
+              },
+              "conditions": []
+            },
+            {
+              "ruleId": "r-service-scope",
+              "sourceFields": [
+                "/服务范围"
+              ],
+              "targetField": "serviceScope",
+              "operation": "PIPELINE",
+              "parameters": {
+                "steps": [
+                  {
+                    "op": "field",
+                    "path": "/服务范围"
+                  },
+                  {
+                    "op": "trim"
+                  }
+                ]
+              },
+              "conditions": []
+            }
+          ]
+        },
+        "evidenceRefs": [
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/2/meaning",
+            "quote": "安装项目"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/3/meaning",
+            "quote": "实际安装数量"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/1/meaning",
+            "quote": "计量单位"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/0/meaning",
+            "quote": "材料提供方"
+          },
+          {
+            "inputId": "uploaded-format",
+            "blockId": null,
+            "jsonPointer": "/fields/4/meaning",
+            "quote": "服务范围"
+          },
+          {
+            "inputId": "uploaded-record",
+            "blockId": null,
+            "jsonPointer": "/rawJson",
+            "quote": "\"安装项目\":\"桥架安装\",\"实际安装数量\":\"12\""
+          },
+          {
+            "inputId": "parsing:parse:bj-753f2ddf-81b3-4f76-9e4e-99b626a6dac5",
+            "blockId": "sheet-1:B1",
+            "jsonPointer": null,
+            "quote": "实际安装数量"
+          },
+          {
+            "inputId": "parsing:parse:bj-753f2ddf-81b3-4f76-9e4e-99b626a6dac5",
+            "blockId": "sheet-1:D2",
+            "jsonPointer": null,
+            "quote": "服务商"
+          },
+          {
+            "inputId": "parsing:parse:bj-753f2ddf-81b3-4f76-9e4e-99b626a6dac5",
+            "blockId": "sheet-1:E3",
+            "jsonPointer": null,
+            "quote": "仅安装"
+          }
+        ]
+      }
+    ],
+    "openQuestions": [],
+    "validatedAt": "2026-09-27T12:10:31.559Z"
+  },
+  "analysisProgress": {
+    "state": "AVAILABLE",
+    "description": "分析已完成",
+    "errorCode": null
+  },
+  "analysisTriggerMode": "manual",
+  "analysisRuntimeError": null,
+  "canRequestAnalysis": true,
+  "activeSupplementRequest": null,
+  "pendingOperation": null,
+  "completion": null,
+  "allowedActions": [
+    "ENABLE_INTEGRATION_CONFIG"
+  ],
+  "blockedReasons": [],
+  "relatedItems": []
+}

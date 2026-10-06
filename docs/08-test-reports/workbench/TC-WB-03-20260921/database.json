@@ -1,0 +1,42 @@
+[
+  {
+    "results": [
+      {
+        "status": "COMPLETED",
+        "n": 1
+      },
+      {
+        "status": "READY",
+        "n": 5
+      },
+      {
+        "status": "WAITING_SUPPLEMENT",
+        "n": 2
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  },
+  {
+    "results": [
+      {
+        "item_kind": "COORDINATION",
+        "n": 1
+      },
+      {
+        "item_kind": "INSTALLATION_REVIEW",
+        "n": 6
+      },
+      {
+        "item_kind": "RECONCILIATION",
+        "n": 1
+      }
+    ],
+    "success": true,
+    "meta": {
+      "duration": 0
+    }
+  }
+]

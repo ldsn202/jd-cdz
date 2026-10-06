@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-27T08:50:25.268Z",
+  "humanAccounts": 101,
+  "providerAccounts": 100,
+  "configurationAssignments": 100,
+  "mergeEvents": 100,
+  "scopedGrants": 300,
+  "companies": [
+    {
+      "account": "安达充电桩安装（001）账号",
+      "identityId": "local:acc-sp-001",
+      "roles": [
+        "PROVIDER_DOCUMENT_CLERK",
+        "PROVIDER_INTEGRATION_CONTACT",
+        "PROVIDER_RECEIVABLE_OWNER"
+      ],
+      "orders": 8,
+      "configurationItem": "work-config-1371a9b4-e59a-409e-8ee0-7dc2773e3477"
+    },
+    {
+      "account": "恒捷充电桩安装（002）账号",
+      "identityId": "local:acc-sp-002",
+      "roles": [
+        "PROVIDER_DOCUMENT_CLERK",
+        "PROVIDER_INTEGRATION_CONTACT",
+        "PROVIDER_RECEIVABLE_OWNER"
+      ],
+      "orders": 10,
+      "configurationItem": "work-config-8a0716cb-407f-4d8b-ac3a-0d491e49ad47"
+    }
+  ],
+  "crossCompanyRead": "both directions 404",
+  "retiredCookie": "returns default JD business account",
+  "orders": 1000,
+  "items": 1400
+}
